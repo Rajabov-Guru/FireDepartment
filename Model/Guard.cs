@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FireDepartment.Model
 {
+    //Расчет
     public class Guard
     {
     }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FireDepartment.Model
 {
+    //Боец
     public class Fireman
     {
     }

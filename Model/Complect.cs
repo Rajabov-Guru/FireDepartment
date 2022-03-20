@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace FireDepartment.Model
 {
+    //Комплект
     public class Complect
     {
         
