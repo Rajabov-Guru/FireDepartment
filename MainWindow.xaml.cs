@@ -23,7 +23,7 @@ namespace FireDepartment
         public MainWindow()
         {
             InitializeComponent();
-            Console.WriteLine("Hello world");
+            
         }
     }
 }
