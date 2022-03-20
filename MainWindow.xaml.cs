@@ -23,6 +23,7 @@ namespace FireDepartment
         public MainWindow()
         {
             InitializeComponent();
+            Console.WriteLine("HGG");
         }
     }
 }
