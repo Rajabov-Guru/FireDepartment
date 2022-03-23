@@ -28,13 +28,13 @@ namespace FireDepartment.Model
         [Required]
         public DateTime Indate { get; set; }
         [Required]
-        public string obj_ignition { get; set; }
+        public string Obj_ignition { get; set; }
 
         [Required]
-        public string name_division { get; set; }
+        public string Name_division { get; set; }
 
         [Required]
-        public string type_ignition { get; set; }
+        public string Type_ignition { get; set; }
 
         public virtual ICollection<Guard> guards { get; set; }
 
