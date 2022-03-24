@@ -7,7 +7,7 @@ namespace FireDepartment.Model
     public class FireDB : DbContext
     {
         
-        public FireDB() : base("FireDB")
+        public FireDB() : base("name=FireDB")
         {
         }
         public virtual DbSet<Complect> Complects { get; set; }
