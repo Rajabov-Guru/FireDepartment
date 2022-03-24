@@ -24,5 +24,10 @@ namespace FireDepartment.Model
 
         public string FIO => $"{this.Surname} {this.Name} {this.Patronymic}";
         public string IOF => $"{this.Name} {this.Patronymic} {this.Surname}";
+
+        public Fireman() 
+        {
+
+        }
     }
 }

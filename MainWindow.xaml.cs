@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace FireDepartment
         public MainWindow()
         {
             InitializeComponent();
+
+            //это код который инициирует создание БД (потом убрать)
+            using (FireDB db = new FireDB()) 
+            {
+                db.Acts.Count();
+            }
         }
     }
 }

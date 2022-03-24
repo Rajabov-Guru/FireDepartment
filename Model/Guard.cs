@@ -17,5 +17,9 @@ namespace FireDepartment.Model
         [Required]
         public int Id_Complect { get; set; }
         public virtual Travel Travel { get; set; }
+        public Guard() 
+        {
+
+        }
     }
 }
