@@ -11,8 +11,8 @@ namespace FireDepartment.Model
     public class Complect
     {
         [Key]
-        public int ID { get; set; }
-
+        public int Id { get; set; }
+        //список оборудования
         public string EquipmentList { get; set; }
         public Complect() 
         {

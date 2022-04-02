@@ -1,9 +1,8 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace FireDepartment.Model
 {
@@ -11,12 +10,21 @@ namespace FireDepartment.Model
     public class Guard
     {
         [Key]
-        public int ID { get; set; }
+        public int Id { get; set; }
+
         [Required]
+        public int ComplectId { get; set; }
+
+
+        [Required]
+        //начальник караула
         public string Senior { get; set; }
-        [Required]
-        public int Id_Complect { get; set; }
-        public virtual Travel Travel { get; set; }
+
+        [ForeignKey("ComplectId")]
+        public virtual Complect Complect { get; set; }
+
+        public virtual ICollection<Travel> Travels { get; set; }
+
         public Guard() 
         {
 

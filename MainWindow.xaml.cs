@@ -1,4 +1,5 @@
-﻿using FireDepartment.Model;
+﻿using FireDepartment.Classes;
+using FireDepartment.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,10 +27,12 @@ namespace FireDepartment
             InitializeComponent();
 
             //это код который инициирует создание БД (потом убрать)
-            using (FireDB db = new FireDB()) 
-            {
-                db.Acts.Count();
-            }
+            //using (FireDB db = new FireDB())
+            //{
+            //    Console.WriteLine(db.Complects.Count());
+            //}
+
+            ParseMethods.FillDB();
         }
     }
 }
