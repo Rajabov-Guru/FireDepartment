@@ -24,6 +24,7 @@ namespace FireDepartment.Model
         public virtual Complect Complect { get; set; }
 
         public virtual ICollection<Travel> Travels { get; set; }
+        public virtual ICollection<Fireman> Firemans{ get; set; }
 
         public Guard() 
         {

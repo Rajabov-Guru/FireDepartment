@@ -32,7 +32,8 @@ namespace FireDepartment
             //    Console.WriteLine(db.Complects.Count());
             //}
 
-            ParseMethods.FillDB();
+            //ParseMethods.FillDB();
+            StaticMethods.Report();
         }
     }
 }
