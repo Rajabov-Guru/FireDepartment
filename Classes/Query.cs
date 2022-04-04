@@ -38,7 +38,15 @@ namespace FireDepartment.Classes
                 return comps.Select(c => c.Parished).Sum();
             }
         }
-
+        //8.    Данные акта о пожаре по принадлежности
+        public static List<Act> MainQuery8(string belonging)
+        {
+            using (FireDB db = new FireDB())
+            {
+                List <Act>  acts = db.Acts.Where(x=>x.Belonging==belonging).ToList();
+                return acts;
+            }
+        }
         //9.	Данные о поврежденной поэтажной площади за определенный период
         public static int MainQuery9(DateTime BegDate, DateTime EndDate)
         {
@@ -60,6 +68,15 @@ namespace FireDepartment.Classes
                 mas[0] = comps.Select(c => c.InjuredEmployees).Sum();
                 mas[1] = comps.Select(c => c.ParishedEmployees).Sum();
                 return mas[0] + mas[1];
+            }
+        }
+        //11.   По номеру путевки вывести данные о ней
+        public static Travel MainQuery11(int id)
+        {
+            using (FireDB db = new FireDB())
+            {
+                Travel travel = db.Travels.Where(x => x.Id == id).First();
+                return travel;
             }
         }
     }
