@@ -27,8 +27,6 @@ namespace FireDepartment
         {
             InitializeComponent();
             MainFrame.Content = new MainPage();
-
-            
         }
     }
 }
