@@ -95,15 +95,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\Travel - Копировать %283%29.xaml">
+    <Page Include="Pages\Guard.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\Travel - Копировать %284%29.xaml">
+    <Page Include="Pages\Fireman.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\Travel - Копировать.xaml">
+    <Page Include="Pages\Complect.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -125,14 +125,14 @@
     <Compile Include="Pages\Act.xaml.cs">
       <DependentUpon>Act.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Travel - Копировать %283%29.xaml.cs">
-      <DependentUpon>Travel - Копировать %283%29.xaml</DependentUpon>
+    <Compile Include="Pages\Guard.xaml.cs">
+      <DependentUpon>Guard.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Travel - Копировать %284%29.xaml.cs">
-      <DependentUpon>Travel - Копировать %284%29.xaml</DependentUpon>
+    <Compile Include="Pages\Fireman.xaml.cs">
+      <DependentUpon>Fireman.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Travel - Копировать.xaml.cs">
-      <DependentUpon>Travel - Копировать.xaml</DependentUpon>
+    <Compile Include="Pages\Complect.xaml.cs">
+      <DependentUpon>Complect.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Travel.xaml.cs">
       <DependentUpon>Travel.xaml</DependentUpon>
