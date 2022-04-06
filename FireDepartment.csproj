@@ -111,6 +111,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Travel_Add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Act.cs" />
@@ -136,6 +140,9 @@
     </Compile>
     <Compile Include="Pages\Travel.xaml.cs">
       <DependentUpon>Travel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Travel_Add.xaml.cs">
+      <DependentUpon>Travel_Add.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
