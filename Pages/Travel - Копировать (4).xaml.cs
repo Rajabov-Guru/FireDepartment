@@ -16,13 +16,28 @@ using System.Windows.Shapes;
 namespace FireDepartment.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Act.xaml
+    /// Логика взаимодействия для Travel.xaml
     /// </summary>
-    public partial class Act : Page
+    public partial class Travel : Page
     {
-        public Act()
+        public Travel()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
