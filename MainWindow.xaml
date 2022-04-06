@@ -8,6 +8,19 @@
         Title="FireDepartmen" Height="554" Width="1186.8" Background="White" WindowState="Maximized">
     <Grid>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Content="" Margin="10"/>
-
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Справочники">
+                <MenuItem Header="Акт о пожаре" ></MenuItem>
+                <MenuItem Header="Путевка" ></MenuItem>
+                <MenuItem Header="Расчет" ></MenuItem>
+                <MenuItem Header="Боец пожарной части" ></MenuItem>
+                <MenuItem Header="Комплект" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Справка" >
+                <MenuItem Header="О программе" ></MenuItem>
+                <MenuItem Header="Помощь" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Выход" ></MenuItem>
+        </Menu>
     </Grid>
 </Window>
