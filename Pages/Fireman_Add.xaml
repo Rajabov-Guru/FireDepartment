@@ -1,0 +1,25 @@
+﻿<Page x:Class="FireDepartment.Pages.Fireman_Add"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FireDepartment.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Fireman_Add">
+
+    <Grid>
+        <Label Content="Добавление бойца" HorizontalAlignment="Left" Margin="258,20,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="Times New Roman" FontSize="32"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="105,101,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="85"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="253,105,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="253,374,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="470,374,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="105,146,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="85"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="105,200,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="85"/>
+        <Label Content="Дата рождения" HorizontalAlignment="Left" Margin="105,253,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="126"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="253,150,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="253,204,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
+        <DatePicker HorizontalAlignment="Left" Margin="258,257,0,0" VerticalAlignment="Top" Width="490"/>
+
+    </Grid>
+</Page>
