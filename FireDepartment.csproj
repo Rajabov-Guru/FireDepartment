@@ -91,6 +91,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Guard_Add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -129,6 +133,9 @@
     <Compile Include="Model\Travel.cs" />
     <Compile Include="Pages\Fireman_Add.xaml.cs">
       <DependentUpon>Fireman_Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Guard_Add.xaml.cs">
+      <DependentUpon>Guard_Add.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
