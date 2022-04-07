@@ -111,7 +111,7 @@ namespace FireDepartment.Classes
         {
             try
             {
-                // дату-время делим через сплит на 3 переменных и дальше удачи вам, господа
+                
                 Document wordDocument = wordApp.Documents.get_Item(nameDoc);
                 this.ReplaceWordStub("{Belonging}", a.Belonging, nameDoc);
                 this.ReplaceWordStub("{Situation}", a.Situation, nameDoc);
@@ -142,9 +142,15 @@ namespace FireDepartment.Classes
                 this.ReplaceWordStub("{RescuedTechnicks}", a.RescuedTechnicks.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedBeasts}", a.RescuedBeasts.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedMaterialValues}", a.RescuedMaterialValues.ToString(), nameDoc);
-                this.ReplaceWordStub("{Date}", DateTime.Now.ToString(), nameDoc);
-                this.ReplaceWordStub("{Time}", DateTime.Now.ToString(), nameDoc);
-                this.ReplaceWordStub("{Min}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{DetectionDate}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{DetectionTime}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{DetectionMin}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{LocDate}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{LocTime}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{LocMin}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{LiqDate}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{LiqTime}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{LiqMin}", DateTime.Now.ToString(), nameDoc);
 
                 wordDocument.Save();
             }
@@ -159,17 +165,17 @@ namespace FireDepartment.Classes
             {
 
                 Document wordDocument = wordApp.Documents.get_Item(nameDoc);
-                this.ReplaceWordStub("{}", a.Name_division, nameDoc);
-                this.ReplaceWordStub("{}", a.Obj_ignition, nameDoc); 
-                this.ReplaceWordStub("{}", a.Address, nameDoc);
-                this.ReplaceWordStub("{}", g.Senior, nameDoc);
-                this.ReplaceWordStub("{}", a.Telephone, nameDoc);
-                this.ReplaceWordStub("{}", a.FIO, nameDoc);
-                this.ReplaceWordStub("{Date}", DateTime.Now.ToString(), nameDoc);
-                this.ReplaceWordStub("{Time}", DateTime.Now.ToString(), nameDoc);
-                this.ReplaceWordStub("{Min}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{Name_division}", a.Name_division, nameDoc);
+                this.ReplaceWordStub("{Obj_ignition}", a.Obj_ignition, nameDoc); 
+                this.ReplaceWordStub("{Address}", a.Address, nameDoc);
+                this.ReplaceWordStub("{Senior}", g.Senior, nameDoc);
+                this.ReplaceWordStub("{Telephone}", a.Telephone, nameDoc);
+                this.ReplaceWordStub("{FIO}", a.FIO, nameDoc);
+                this.ReplaceWordStub("{InDate}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{InHour}", DateTime.Now.ToString(), nameDoc);
+                this.ReplaceWordStub("{InMinutes}", DateTime.Now.ToString(), nameDoc);
 
-                // дату-время делим через сплит на 3 переменных и дальше удачи вам, господа
+               
 
 
                 wordDocument.Save();
@@ -209,7 +215,7 @@ namespace FireDepartment.Classes
                 this.ReplaceWordStub("{RescuedTechnicks}", a.RescuedTechnicks.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedBeasts}", a.RescuedBeasts.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedMaterialValues}", a.RescuedMaterialValues.ToString(), nameDoc);
-                this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // отформатируйте нормально, чтобы прям круто
+                //this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // В отчетах автодата
 
                 wordDocument.Save();
             }
@@ -247,7 +253,7 @@ namespace FireDepartment.Classes
                 this.ReplaceWordStub("{RescuedTechnicks}", a.RescuedTechnicks.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedBeasts}", a.RescuedBeasts.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedMaterialValues}", a.RescuedMaterialValues.ToString(), nameDoc);
-                this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // отформатируйте нормально, чтобы прям круто
+                //this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // В отчетах автодата
                 wordDocument.Save();
             }
             catch (Exception ex)
@@ -284,7 +290,7 @@ namespace FireDepartment.Classes
                 this.ReplaceWordStub("{RescuedTechnicks}", a.RescuedTechnicks.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedBeasts}", a.RescuedBeasts.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedMaterialValues}", a.RescuedMaterialValues.ToString(), nameDoc);
-                this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // отформатируйте нормально, чтобы прям круто
+                //this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // В отчетах автодата
 
                 wordDocument.Save();
             }
@@ -322,7 +328,7 @@ namespace FireDepartment.Classes
                 this.ReplaceWordStub("{RescuedTechnicks}", a.RescuedTechnicks.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedBeasts}", a.RescuedBeasts.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedMaterialValues}", a.RescuedMaterialValues.ToString(), nameDoc);
-                this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // отформатируйте нормально, чтобы прям круто
+                //this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // В отчетах автодата
 
                 wordDocument.Save();
             }
@@ -360,7 +366,7 @@ namespace FireDepartment.Classes
                 this.ReplaceWordStub("{RescuedTechnicks}", a.RescuedTechnicks.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedBeasts}", a.RescuedBeasts.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedMaterialValues}", a.RescuedMaterialValues.ToString(), nameDoc);
-                this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // отформатируйте нормально, чтобы прям круто
+                //this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // В отчетах автодата
 
                 wordDocument.Save();
             }
@@ -397,8 +403,7 @@ namespace FireDepartment.Classes
                 this.ReplaceWordStub("{RescuedTechnicks}", a.RescuedTechnicks.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedBeasts}", a.RescuedBeasts.ToString(), nameDoc);
                 this.ReplaceWordStub("{RescuedMaterialValues}", a.RescuedMaterialValues.ToString(), nameDoc);
-                this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // отформатируйте нормально, чтобы прям круто
-
+                //this.ReplaceWordStub("{DateTime Indate}", DateTime.Now.ToString(), nameDoc); // В отчетах автодата
                 wordDocument.Save();
             }
             catch (Exception ex)
