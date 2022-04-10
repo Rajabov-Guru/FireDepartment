@@ -28,7 +28,7 @@
         <TextBox HorizontalAlignment="Left" Height="26" Margin="253,329,0,0" TextWrapping="Wrap" Text="{Binding Patronymic}" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18" IsEnabled="False"/>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="277,365,0,0" TextWrapping="Wrap" Text="{Binding Telephone}" VerticalAlignment="Top" Width="471" FontFamily="Times New Roman" FontSize="18" IsEnabled="False"/>
         <TextBox HorizontalAlignment="Left" Margin="358,216,0,0"  TextWrapping="Wrap" Text="{Binding InDate}" VerticalAlignment="Top" Width="390" Height="26" IsEnabled="False"/>
-        <Button Content="Ok" HorizontalAlignment="Left" Margin="253,415,0,0" VerticalAlignment="Top" Width="74" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Отмена" HorizontalAlignment="Left" Margin="470,415,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
+        <Button Content="Ok" Name="Ok_Tv" HorizontalAlignment="Left" Margin="253,415,0,0" VerticalAlignment="Top" Width="74" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Отмена" Name="Cancel_Tv" HorizontalAlignment="Left" Margin="470,415,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
     </Grid>
 </Page>

@@ -10,8 +10,8 @@
 
     <Grid>
         <Label Content="Добавление расчета" HorizontalAlignment="Left" Margin="273,0,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="Times New Roman" FontSize="32"/>
-        <Button Content="Ok" HorizontalAlignment="Left" Margin="241,218,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Отмена" HorizontalAlignment="Left" Margin="485,218,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
+        <Button Content="Ok" Name="Ok_Ga" HorizontalAlignment="Left" Margin="241,218,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Отмена" Name="Cancel_Ga" HorizontalAlignment="Left" Margin="485,218,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="79,69,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="85"/>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="225,73,0,0" TextWrapping="Wrap" Name="SurnameSenior" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="79,114,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="85"/>

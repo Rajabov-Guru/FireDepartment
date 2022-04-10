@@ -24,5 +24,10 @@ namespace FireDepartment.Pages
         {
             InitializeComponent();
         }
+
+        private void Add_Ta_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

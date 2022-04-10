@@ -26,10 +26,10 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="Список путевок" HorizontalAlignment="Left" Margin="341,35,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="32" Height="45" Width="225"/>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="126,320,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Удалить" HorizontalAlignment="Left" Margin="282,320,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click" Height="35" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Поиск" HorizontalAlignment="Left" Margin="443,320,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Распечатать" HorizontalAlignment="Left" Margin="443,382,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click_1" Height="35" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Добавить" Name="Add_Tl" HorizontalAlignment="Left" Margin="126,320,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18" Click="Add_Ta_Click"/>
+        <Button Content="Удалить" Name="Delete_Tl" HorizontalAlignment="Left" Margin="282,320,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click" Height="35" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Поиск" Name="Find_Tl" HorizontalAlignment="Left" Margin="443,320,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Распечатать" Name="Print_Tl" HorizontalAlignment="Left" Margin="443,382,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click_1" Height="35" FontFamily="Times New Roman" FontSize="18"/>
 
         <StackPanel HorizontalAlignment="Left" Height="100" Margin="622,317,0,0" VerticalAlignment="Top" Width="98">
             <GroupBox Header="Запросы" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">

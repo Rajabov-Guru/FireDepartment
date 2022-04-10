@@ -25,7 +25,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="СПИСОК&#xD;&#xA;актов о пожаре" HorizontalAlignment="Left" Margin="311,10,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="32" Height="97" Width="277"/>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="121,320,0,94.6" Width="105" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="121,320,0,94.6" Width="105" FontFamily="Times New Roman" FontSize="18" Click="Button_Click"/>
         <Button Content="Удалить" HorizontalAlignment="Left" Margin="245,320,0,94.6" Width="105" Click="Button_Click" FontFamily="Times New Roman" FontSize="18"/>
         <Button Content="Поиск" HorizontalAlignment="Left" Margin="363,320,0,94.6" Width="105" FontFamily="Times New Roman" FontSize="18"/>
         <Button Content="Распечатать" HorizontalAlignment="Left" Margin="363,382,0,32.6" Width="105" Click="Button_Click_1" FontFamily="Times New Roman" FontSize="18"/>
