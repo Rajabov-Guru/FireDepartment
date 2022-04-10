@@ -25,10 +25,10 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="СПИСОК&#xD;&#xA;актов о пожаре" HorizontalAlignment="Left" Margin="311,10,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="32" Height="97" Width="277"/>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="121,320,0,94.6" Width="105" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Удалить" HorizontalAlignment="Left" Margin="245,320,0,94.6" Width="105" Click="Button_Click" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Поиск" HorizontalAlignment="Left" Margin="363,320,0,94.6" Width="105" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Распечатать" HorizontalAlignment="Left" Margin="363,382,0,32.6" Width="105" Click="Button_Click_1" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Добавить" Name ="Add_Al" HorizontalAlignment="Left" Margin="121,320,0,94.6" Width="105" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Удалить" Name ="Delete_Al" HorizontalAlignment="Left" Margin="245,320,0,94.6" Width="105" Click="Button_Click" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Поиск" Name ="Find_Al" HorizontalAlignment="Left" Margin="363,320,0,94.6" Width="105" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Распечатать" Name ="Print_Al" HorizontalAlignment="Left" Margin="363,382,0,32.6" Width="105" Click="Button_Click_1" FontFamily="Times New Roman" FontSize="18"/>
         <RadioButton Content="Запрос 2" HorizontalAlignment="Left" Margin="502,348,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
         <RadioButton Content="Запрос 3" HorizontalAlignment="Left" Margin="502,386,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
         <RadioButton Content="Запрос 1" HorizontalAlignment="Left" Margin="502,310,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
@@ -41,8 +41,8 @@
             <TextBlock>За год</TextBlock>
         </ComboBox>
         <Label Content="Выберите отчетный период" HorizontalAlignment="Left" Margin="611,279,0,0" VerticalAlignment="Top"/>
-        <Button Content="Сформировать" HorizontalAlignment="Left" Margin="642,408,0,0" VerticalAlignment="Top" Width="104" Height="29" Click="Button_Click_2"/>
-        <Button Content="Просмотр" HorizontalAlignment="Left" Margin="245,382,0,32.6" Width="105" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Сформировать" Name ="Form_Al" HorizontalAlignment="Left" Margin="642,408,0,0" VerticalAlignment="Top" Width="104" Height="29" Click="Button_Click_2"/>
+        <Button Content="Просмотр" Name ="View_Al"  HorizontalAlignment="Left" Margin="245,382,0,32.6" Width="105" FontFamily="Times New Roman" FontSize="18"/>
         <GroupBox Header="Запросы" HorizontalAlignment="Left" Height="152" Margin="489,285,0,0" VerticalAlignment="Top" Width="124"/>
 
     </Grid>
