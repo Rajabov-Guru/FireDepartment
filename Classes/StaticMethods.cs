@@ -37,7 +37,7 @@ namespace FireDepartment.Classes
         {
             try
             {
-                string fioDisp; // лутаем диспетчера с формы 
+                string fioDisp; // диспетчер
                 Travel a = null;
                 Guard g = null;
                 using (FireDB db = new FireDB())

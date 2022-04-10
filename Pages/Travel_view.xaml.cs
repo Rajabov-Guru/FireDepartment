@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace FireDepartment.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Guard_Add.xaml
+    /// Логика взаимодействия для Travel_Add.xaml
     /// </summary>
-    public partial class Guard_Add : Page
+    public partial class Travel_Add : Page
     {
-        public Guard_Add()
+        public Travel_Add()
         {
             InitializeComponent();
         }
