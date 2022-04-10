@@ -26,8 +26,8 @@
         <TextBox HorizontalAlignment="Left" Height="26" Margin="242,311,0,0" TextWrapping="Wrap" Name="Patronymic" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="242,342,0,0" TextWrapping="Wrap" Name="Telephone" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
         <DatePicker HorizontalAlignment="Left" Margin="242,209,0,0" VerticalAlignment="Top" Width="495"/>
-        <Button Content="Ok" HorizontalAlignment="Left" Margin="253,415,0,0" VerticalAlignment="Top" Width="74" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Отмена" HorizontalAlignment="Left" Margin="470,415,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
+        <Button Content="Ok" Name="Ok_Ta" HorizontalAlignment="Left" Margin="253,415,0,0" VerticalAlignment="Top" Width="74" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Отмена" Name="Cancel_Ta" HorizontalAlignment="Left" Margin="470,415,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
         <ComboBox HorizontalAlignment="Left" Margin="242,109,0,0" VerticalAlignment="Top" Width="495"/>
         <ComboBox HorizontalAlignment="Left" Margin="242,136,0,0" VerticalAlignment="Top" Width="495"/>
     </Grid>
