@@ -24,5 +24,25 @@ namespace FireDepartment.Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Add_Gl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Find_Gl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
