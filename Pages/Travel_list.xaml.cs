@@ -29,5 +29,10 @@ namespace FireDepartment.Pages
         {
 
         }
+
+        private void Add_Tl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

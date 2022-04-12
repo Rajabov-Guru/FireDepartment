@@ -9,7 +9,7 @@
       Title="Complect_add">
 
     <Grid>
-        <Label Content="Добавление комплекта" HorizontalAlignment="Left" Margin="241,20,0,0" VerticalAlignment="Top" Height="49" Width="324" FontFamily="Times New Roman" FontSize="32"/>
+        <Label Content="Шаблон комплекта" HorizontalAlignment="Left" Margin="241,20,0,0" VerticalAlignment="Top" Height="49" Width="324" FontFamily="Times New Roman" FontSize="32"/>
         <Label Content="Оборудование" HorizontalAlignment="Left" Margin="60,101,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="156"/>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="216,105,0,0" TextWrapping="Wrap" Name="EquipmentList" VerticalAlignment="Top" Width="503" FontFamily="Times New Roman" FontSize="18"/>
         <Button Content="Ok" Name ="Ok_Ca" HorizontalAlignment="Left" Margin="241,212,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18"/>
