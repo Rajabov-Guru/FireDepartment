@@ -24,9 +24,9 @@
         </DataGrid>
         <Label Content="СПИСОК&#xD;&#xA;бойцов пожарной части" HorizontalAlignment="Left" Margin="279,10,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="32" Height="82" Width="347"/>
         <Button Content="Добавить"    Name ="Add_Fl" HorizontalAlignment="Left" Margin="244,320,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18" Click="Add_Fl_Click"/>
-        <Button Content="Удалить"     Name ="Delete_Fl" HorizontalAlignment="Left" Margin="244,382,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click" Height="35" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Удалить"     Name ="Delete_Fl" HorizontalAlignment="Left" Margin="244,382,0,0" VerticalAlignment="Top" Width="105"  Height="35" FontFamily="Times New Roman" FontSize="18"/>
         <Button Content="Поиск"       Name ="Fine_Fl" HorizontalAlignment="Left" Margin="443,320,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Распечатать" Name ="Print_Fl" HorizontalAlignment="Left" Margin="443,382,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click_1" Height="35" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Распечатать" Name ="Print_Fl" HorizontalAlignment="Left" Margin="443,382,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18"/>
         <RadioButton Content="Запрос 2" HorizontalAlignment="Left" Margin="619,365,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
         <RadioButton Content="Запрос 3" HorizontalAlignment="Left" Margin="619,390,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
         <RadioButton Content="Запрос 1" HorizontalAlignment="Left" Margin="619,340,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
