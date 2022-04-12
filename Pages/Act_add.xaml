@@ -42,8 +42,8 @@
         <Label Content="Спасено техники (ед.)&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,520,0,0" VerticalAlignment="Top" Height="32" FontSize="14"/>
         <Label Content="Спасено скота (гол.)&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,557,0,0" VerticalAlignment="Top" Height="29" FontSize="14"/>
         <Label Content="Спасено материальных ценностей (р.)&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,591,0,0" VerticalAlignment="Top" Height="29" FontSize="14"/>
-        <Button Content="ОК" HorizontalAlignment="Left" Margin="282,642,0,0" VerticalAlignment="Top" Width="107" Height="39" FontSize="18"/>
-        <Button Content="Отмена" HorizontalAlignment="Left" Margin="562,641,0,0" VerticalAlignment="Top" Width="107" Height="39" FontSize="18"/>
+        <Button Content="ОК" Name="Ok_Ad" HorizontalAlignment="Left" Margin="282,642,0,0" VerticalAlignment="Top" Width="107" Height="39" FontSize="18"/>
+        <Button Content="Отмена" Name="Cancel_Ad" HorizontalAlignment="Left" Margin="562,641,0,0" VerticalAlignment="Top" Width="107" Height="39" FontSize="18"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="260,78,0,0" TextWrapping="Wrap" Name="Obj_ignition" VerticalAlignment="Top" Width="264"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="260,106,0,0" TextWrapping="Wrap" Name="Belonging" VerticalAlignment="Top" Width="264"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="282,147,0,0" TextWrapping="Wrap" Name="Locslization" VerticalAlignment="Top" Width="242"/>
