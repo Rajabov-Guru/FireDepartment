@@ -9,7 +9,7 @@
       Title="Fireman_add">
 
     <Grid>
-        <Label Content="Добавление бойца" HorizontalAlignment="Left" Margin="258,20,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="Times New Roman" FontSize="32"/>
+        <Label Content="Шаблон бойца ПЧ" HorizontalAlignment="Left" Margin="258,20,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="Times New Roman" FontSize="32"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="105,101,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="85"/>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="253,105,0,0" TextWrapping="Wrap" Name="SurnameFireman" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
         <Button Content="Ok" Name ="Ok_Fa" HorizontalAlignment="Left" Margin="270,356,0,0" VerticalAlignment="Top" Width="94" FontFamily="Times New Roman" FontSize="18" Height="42"/>

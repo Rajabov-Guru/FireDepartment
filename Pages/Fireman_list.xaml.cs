@@ -29,5 +29,10 @@ namespace FireDepartment.Pages
         {
 
         }
+
+        private void Add_Fl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

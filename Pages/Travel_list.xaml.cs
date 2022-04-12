@@ -30,17 +30,7 @@ namespace FireDepartment.Pages
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Find_Tl_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Add_Tl_Click(object sender, RoutedEventArgs e)
         {
 
         }
