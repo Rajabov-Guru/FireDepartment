@@ -87,7 +87,55 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\Act_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Act_list.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Act_view.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Complect_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Complect_list.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Fireman_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Fireman_list.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Guard_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Guard_list.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Traval_view.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Travel_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Travel_list.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -99,8 +147,44 @@
     <Compile Include="Model\Fireman.cs" />
     <Compile Include="Model\Guard.cs" />
     <Compile Include="Model\Travel.cs" />
+    <Compile Include="Pages\Act_add.xaml.cs">
+      <DependentUpon>Act_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Act_list.xaml.cs">
+      <DependentUpon>Act_list.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Act_view.xaml.cs">
+      <DependentUpon>Act_view.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Complect_add.xaml.cs">
+      <DependentUpon>Complect_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Complect_list.xaml.cs">
+      <DependentUpon>Complect_list.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Fireman_add.xaml.cs">
+      <DependentUpon>Fireman_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Fireman_list.xaml.cs">
+      <DependentUpon>Fireman_list.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Guard_add.xaml.cs">
+      <DependentUpon>Guard_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Guard_list.xaml.cs">
+      <DependentUpon>Guard_list.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Traval_view.xaml.cs">
+      <DependentUpon>Traval_view.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Travel_add.xaml.cs">
+      <DependentUpon>Travel_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Travel_list.xaml.cs">
+      <DependentUpon>Travel_list.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -133,6 +217,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Windows\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pages\Фон.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
