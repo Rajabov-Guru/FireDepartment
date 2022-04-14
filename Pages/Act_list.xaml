@@ -1,0 +1,49 @@
+﻿<Page x:Class="FireDepartment.Pages.Act_list"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FireDepartment.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Act_list">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Фон.png"/>
+        </Grid.Background>
+        <DataGrid HorizontalAlignment="Left" Height="166" Margin="61,107,0,0" VerticalAlignment="Top" Width="661">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Наименование объекта" 
+                                    Binding="{Binding Path=Obj_ignition}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Принадлежность объекта"
+                                    Binding="{Binding Path=Belonging}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Адрес объекта" 
+                                    Binding="{Binding Path=Address}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата обнаружения пожара"
+                                    Binding="{Binding Path=DetectionDate}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Фамилия заявителя"
+                                    Binding="{Binding Path=Surname}"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="     СПИСОК&#xA;актов о пожаре" Margin="289,0,234,346.6" VerticalAlignment="Bottom" FontFamily="Times New Roman" FontSize="32" Height="97" Foreground="#FF323232" FontWeight="Bold"/>
+        <Button Content="Поиск" HorizontalAlignment="Left" Margin="339,324,0,0" Width="105" FontFamily="Times New Roman" FontSize="18" Height="35" VerticalAlignment="Top"/>
+        <Button Content="Распечатать" HorizontalAlignment="Left" Margin="87,324,0,0" Width="105"  FontFamily="Times New Roman" FontSize="18" Height="35" VerticalAlignment="Top"/>
+        <RadioButton Content="Запрос 2" HorizontalAlignment="Left" Margin="502,348,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <RadioButton Content="Запрос 3" HorizontalAlignment="Left" Margin="502,386,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <RadioButton Content="Запрос 1" HorizontalAlignment="Left" Margin="502,310,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <ComboBox HorizontalAlignment="Left" Margin="632,308,0,0" VerticalAlignment="Top" Width="120" >
+            <TextBlock>За день</TextBlock>
+            <TextBlock>За неделю</TextBlock>
+            <TextBlock>За месяц</TextBlock>
+            <TextBlock>За квартал</TextBlock>
+            <TextBlock>За полугодие</TextBlock>
+            <TextBlock>За год</TextBlock>
+        </ComboBox>
+        <Label Content="Выберите отчетный период" HorizontalAlignment="Left" Margin="611,279,0,0" VerticalAlignment="Top" Foreground="#FFFCFBFB"/>
+        <Button Content="Сформировать" Name ="Form_Al" HorizontalAlignment="Left" Margin="642,408,0,12.6" Width="104" />
+        <GroupBox Header="Запросы" HorizontalAlignment="Left" Height="152" Margin="489,285,0,0" VerticalAlignment="Top" Width="124" Foreground="#FFE44013"/>
+
+    </Grid>
+</Page>
