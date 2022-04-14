@@ -34,5 +34,10 @@ namespace FireDepartment.Pages
         {
 
         }
+
+        private void Find_Tl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

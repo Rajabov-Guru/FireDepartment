@@ -86,10 +86,8 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="Список путевок" HorizontalAlignment="Left" Margin="282,10,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="32" Height="45" Width="244" Foreground="#FF323232" FontWeight="Bold"/>
-        <Button Content="Добавить" Name="Add_Tl" HorizontalAlignment="Left" Margin="126,320,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18" Click="Add_Ta_Click"/>
-        <Button Content="Удалить" Name="Delete_Tl" HorizontalAlignment="Left" Margin="282,320,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Поиск" Name="Find_Tl" HorizontalAlignment="Left" Margin="443,320,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Распечатать" Name="Print_Tl" HorizontalAlignment="Left" Margin="443,382,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18" Foreground="#FF323232" BorderBrush="#FFED823A" Style="{DynamicResource RoundedButtonStyle}">
+        <Button Content="Поиск" Name="Find_Tl" HorizontalAlignment="Left" Margin="466,347,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18" Style="{DynamicResource RoundedButtonStyle}" Click="Find_Tl_Click"/>
+        <Button Content="Распечатать" Name="Print_Tl" HorizontalAlignment="Left" Margin="137,347,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18" Foreground="#FF323232" BorderBrush="#FFED823A" Style="{DynamicResource RoundedButtonStyle}">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFED823A" Offset="0"/>
@@ -99,10 +97,9 @@
         </Button>
 
         <StackPanel HorizontalAlignment="Left" Height="100" Margin="622,317,0,0" VerticalAlignment="Top" Width="98">
-            <GroupBox Header="Запросы" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Foreground="#FFED823A">
+            <GroupBox Header="Запросы" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Foreground="#FFED823A" Margin="-6,0,0,0">
                 <RadioButton Content="Запрос 1" HorizontalAlignment="Left" Margin="-6,7,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFD3D3D1"></RadioButton>
             </GroupBox>
         </StackPanel>
-        <Button Content="Просмотр" Name="View_Tl" HorizontalAlignment="Left" Margin="284,382,0,0" VerticalAlignment="Top" Width="105" Height="35" FontFamily="Times New Roman" FontSize="18"/>
     </Grid>
 </Page>

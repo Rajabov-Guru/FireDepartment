@@ -9,6 +9,9 @@
       Title="Traval_view">
 
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Фон.png"/>
+        </Grid.Background>
         <Label Content="Путевка" HorizontalAlignment="Left" Margin="374,20,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="Times New Roman" FontSize="32"/>
         <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="57,69,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="191"/>
         <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="57,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="Times New Roman" FontSize="18"/>
