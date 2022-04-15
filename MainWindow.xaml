@@ -10,11 +10,11 @@
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Content="" Margin="10"/>
         <Menu Height="25" VerticalAlignment="Top">
             <MenuItem Header="Справочники">
-                <MenuItem Header="Акт о пожаре" ></MenuItem>
-                <MenuItem Header="Путевка" ></MenuItem>
-                <MenuItem Header="Расчет" ></MenuItem>
-                <MenuItem Header="Боец пожарной части" ></MenuItem>
-                <MenuItem Header="Комплект" ></MenuItem>
+                <MenuItem Header="Акт о пожаре" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Путевка" Click="Travel_Click" ></MenuItem>
+                <MenuItem Header="Расчет" Click="Guard_Click" ></MenuItem>
+                <MenuItem Header="Боец пожарной части" Click="Fireman_Click" ></MenuItem>
+                <MenuItem Header="Комплект" Click="Complect_Click" ></MenuItem>
             </MenuItem>
             <MenuItem Header="Справка" >
                 <MenuItem Header="О программе" ></MenuItem>

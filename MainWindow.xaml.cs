@@ -1,5 +1,6 @@
 ﻿using FireDepartment.Pages;
 using System.Windows;
+using System.Windows.Navigation;
 
 namespace FireDepartment
 {
@@ -12,6 +13,31 @@ namespace FireDepartment
         {
             InitializeComponent();
             MainFrame.Content = new MainPage();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Act_list());
+        }
+
+        private void Travel_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Travel_list());
+        }
+
+        private void Guard_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Guard_list());
+        }
+
+        private void Fireman_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Fireman_list());
+        }
+
+        private void Complect_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Complect_list());
         }
     }
 }
