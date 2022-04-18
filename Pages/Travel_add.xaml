@@ -7,31 +7,46 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Travel_add">
+    <Viewbox>
+        <Grid Background="#FF333333" Width="772">
 
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="Фон.png"/>
-        </Grid.Background>
-        <Label Content="Шаблон путевки" HorizontalAlignment="Left" Margin="258,10,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="Times New Roman" FontSize="32" Foreground="#FF323232" FontWeight="Bold"/>
-        <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="34,84,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="191" Foreground="#FFFFFDFD"/>
-        <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="34,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
-        <Label Content="Объект возгорания" HorizontalAlignment="Left" Margin="34,146,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,0.218" Foreground="#FFFFFDFD"/>
-        <Label Content="Тип возгорания" HorizontalAlignment="Left" Margin="34,177,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
-        <Label Content="Время и дата получения &#xD;&#xA;сообщения" HorizontalAlignment="Left" Margin="34,208,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
-        <Label Content="Фамилия заявителя" HorizontalAlignment="Left" Margin="34,259,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
-        <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="34,290,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
-        <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="34,318,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
-        <Label Content="Номер телефона &#xD;&#xA;заявителя" HorizontalAlignment="Left" Margin="34,349,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="242,89,0,0" TextWrapping="Wrap" Name="Name_division" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="242,182,0,0" TextWrapping="Wrap" Name="Type_ignition" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="242,264,0,0" TextWrapping="Wrap" Name="Surname" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="242,295,0,0" TextWrapping="Wrap" Name="Name" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="242,326,0,0" TextWrapping="Wrap" Name="Patronymic" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="242,357,0,0" TextWrapping="Wrap" Name="Telephone" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
-        <DatePicker HorizontalAlignment="Left" Margin="242,224,0,0" VerticalAlignment="Top" Width="495"/>
-        <Button Content="Ok" Name="Ok_Ta" HorizontalAlignment="Left" Margin="253,415,0,0" VerticalAlignment="Top" Width="74" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Отмена" Name="Cancel_Ta" HorizontalAlignment="Left" Margin="470,415,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
-        <ComboBox HorizontalAlignment="Left" Margin="242,124,0,0" VerticalAlignment="Top" Width="495"/>
-        <ComboBox HorizontalAlignment="Left" Margin="242,151,0,0" VerticalAlignment="Top" Width="495"/>
-    </Grid>
+            <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="34,84,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="191" Foreground="#FFFFFDFD"/>
+            <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="34,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
+            <Label Content="Объект возгорания" HorizontalAlignment="Left" Margin="34,146,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,0.218" Foreground="#FFFFFDFD"/>
+            <Label Content="Тип возгорания" HorizontalAlignment="Left" Margin="34,177,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
+            <Label Content="Время и дата получения &#xD;&#xA;сообщения" HorizontalAlignment="Left" Margin="34,213,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
+            <Label Content="Фамилия заявителя" HorizontalAlignment="Left" Margin="34,259,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
+            <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="34,290,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
+            <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="34,318,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
+            <Label Content="Номер телефона &#xD;&#xA;заявителя" HorizontalAlignment="Left" Margin="34,349,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="Times New Roman" FontSize="18" Foreground="#FFFFFDFD"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="242,89,0,0" TextWrapping="Wrap" Name="Name_division" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="242,184,0,0" TextWrapping="Wrap" Name="Type_ignition" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="242,264,0,0" TextWrapping="Wrap" Name="Surname" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="242,295,0,0" TextWrapping="Wrap" Name="Name" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="242,326,0,0" TextWrapping="Wrap" Name="Patronymic" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="242,357,0,0" TextWrapping="Wrap" Name="Telephone" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
+            <DatePicker HorizontalAlignment="Left" Margin="242,224,0,0" VerticalAlignment="Top" Width="495" Height="25"/>
+            <Button Content="Ok" Name="Ok_Ta" HorizontalAlignment="Left" Margin="231,404,0,-0.2" VerticalAlignment="Top" Width="96" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
+            <Button Content="Отмена" Name="Cancel_Ta" HorizontalAlignment="Left" Margin="470,404,0,-0.4" VerticalAlignment="Top" Width="93" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
+            <ComboBox HorizontalAlignment="Left" Margin="242,124,0,0" VerticalAlignment="Top" Width="495"/>
+            <ComboBox HorizontalAlignment="Left" Margin="242,151,0,0" VerticalAlignment="Top" Width="495"/>
+            <Label Content="Шаблон путевки" HorizontalAlignment="Left" Margin="360,28,0,0" VerticalAlignment="Top"/>
+
+            <Grid.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="38
+                            "/>
+                    <Setter Property="FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"/>
+                    <Setter Property="Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                    <Setter Property="Margin" Value="10,10,10,6"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                </Style>
+                <Style x:Key="MyLabelStyle">
+                    <Setter Property="Control.FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"></Setter>
+                    <Setter Property="Control.FontSize" Value="12"></Setter>
+                    <Setter Property="Control.Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                </Style>
+            </Grid.Resources>
+        </Grid>
+    </Viewbox>
 </Page>

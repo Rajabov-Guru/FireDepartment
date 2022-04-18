@@ -8,23 +8,21 @@
       d:DesignHeight="850" d:DesignWidth="1000"
       Title="Act_view">
 
-    <Grid Margin="0,2,0,-2">
-        <Grid.Background>
-            <ImageBrush ImageSource="Фон.png" Stretch="UniformToFill"/>
-        </Grid.Background>
-        <Label Content="Акт о пожаре" Margin="404,0,391,753.6" VerticalAlignment="Bottom" FontFamily="Times New Roman" FontSize="32" Foreground="#FF323232" FontWeight="Bold"/>
-        <Label Content="Наименование объекта" HorizontalAlignment="Left" Margin="31,432,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFFFFCFC"/>
-        <Label Content="Принадлежность объекта&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,458,0,0" VerticalAlignment="Top" FontSize="14" Height="29" Foreground="#FFFFFCFC"/>
-        <Label Content="Дата и время локализации пожара&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,485,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Foreground="#FFFFFCFC"/>
-        <Label Content="Дата и время ликвидации пожара&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,519,0,0" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="#FFFFFCFC"/>
-        <Label Content="Обстановка к моменту прибытия расчетов ПО&#xA;&#xA;" HorizontalAlignment="Left" Margin="31,546,0,0" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="#FFFFFCFC"/>
-        <Label Content="Огнетушащие средства, применявшиеся при тушении&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,570,0,0" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="#FFFFFCFC"/>
-        <Label Content="Водоснабжение на пожаре&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,600,0,0" VerticalAlignment="Top" FontSize="14" Height="37" Foreground="#FFFFFCFC"/>
-        <Label Content="Наличие пожарной автоматики&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,631,0,0" VerticalAlignment="Top" Height="31" FontSize="14" Foreground="#FFFFFCFC"/>
-        <Label Content="Погибло людей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,660,0,0" VerticalAlignment="Top" FontSize="14" Height="31" Foreground="#FFFFFCFC"/>
-        <Label Content="Погибло детей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,690,0,0" VerticalAlignment="Top" FontSize="14" Height="30" Foreground="#FFFFFCFC"/>
-        <Label Content="Погибло работников ПО&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,719,0,0" VerticalAlignment="Top" FontSize="14" Height="31" Foreground="#FFFFFCFC"/>
-        <Label Content="Полученные травмы людей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,747,0,0" VerticalAlignment="Top" FontSize="14" Height="28" Foreground="#FFFFFCFC"/>
+    <Grid Margin="0,2,0,-2" Background="#333">
+
+
+        <Label Content="Наименование объекта" HorizontalAlignment="Left" Margin="31,432,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Принадлежность объекта&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,458,0,0" VerticalAlignment="Top" FontSize="14" Height="29" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Дата и время локализации пожара&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,485,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Дата и время ликвидации пожара&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,519,0,0" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Обстановка к моменту прибытия расчетов ПО&#xA;&#xA;" HorizontalAlignment="Left" Margin="31,546,0,0" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Огнетушащие средства, применявшиеся при тушении&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,570,0,0" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Водоснабжение на пожаре&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,600,0,0" VerticalAlignment="Top" FontSize="14" Height="37" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Наличие пожарной автоматики&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,631,0,0" VerticalAlignment="Top" Height="31" FontSize="14" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Погибло людей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,660,0,0" VerticalAlignment="Top" FontSize="14" Height="31" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Погибло детей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,690,0,0" VerticalAlignment="Top" FontSize="14" Height="30" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Погибло работников ПО&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,719,0,0" VerticalAlignment="Top" FontSize="14" Height="31" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+        <Label Content="Полученные травмы людей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,747,0,0" VerticalAlignment="Top" FontSize="14" Height="28" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
         <Label Content="Полученные травмы детей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="540,156,0,0" VerticalAlignment="Top" FontSize="14" Height="29" Foreground="#FFF3EAEA"/>
         <Label Content="Уничтожено  поэтажной площади&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,266,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
         <Label Content="Уничтожено  техники&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,292,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
@@ -79,15 +77,15 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="804,185,0,0" TextWrapping="Wrap" Text="{Binding InjuredEmployees}" VerticalAlignment="Top" Width="158" IsEnabled="False"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="796,214,0,0" TextWrapping="Wrap" Text="{Binding DestoyedBuildings}" VerticalAlignment="Top" Width="166" IsEnabled="False"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="796,242,0,0" TextWrapping="Wrap" Text="{Binding DestoyedFlats}" VerticalAlignment="Top" Width="166" IsEnabled="False"/>
-        <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="34,159,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" Height="34" Width="208" FontSize="14" Foreground="#FFFFFCFC"/>
-        <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="34,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="Times New Roman" FontSize="14" Width="145" Height="24" Foreground="#FFFFFCFC"/>
-        <Label Content="Объект возгорания" HorizontalAlignment="Left" Margin="34,216,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="134" Height="24" Foreground="#FFFFFCFC"/>
-        <Label Content="Тип возгорания" HorizontalAlignment="Left" Margin="34,246,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="112" Height="24" Foreground="#FFFFFCFC"/>
-        <Label Content="Время и дата получения сообщения" HorizontalAlignment="Left" Margin="34,277,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="245" Height="26" Foreground="#FFFFFCFC"/>
-        <Label Content="Фамилия заявителя" HorizontalAlignment="Left" Margin="34,309,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="138" Height="27" Foreground="#FFFFFCFC"/>
-        <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="34,340,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="106" Height="27" Foreground="#FFFFFCFC"/>
-        <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="34,368,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="139" Height="26" Foreground="#FFFFFCFC"/>
-        <Label Content="Номер телефона заявителя" HorizontalAlignment="Left" Margin="34,401,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="Times New Roman" FontSize="14" Width="185" Height="24" Foreground="#FFFFFCFC"/>
+        <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="34,159,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Height="34" Width="208" FontSize="14" Foreground="#FFFFFCFC"/>
+        <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="34,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="145" Height="24" Foreground="#FFFFFCFC"/>
+        <Label Content="Объект возгорания" HorizontalAlignment="Left" Margin="34,216,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="134" Height="24" Foreground="#FFFFFCFC"/>
+        <Label Content="Тип возгорания" HorizontalAlignment="Left" Margin="34,246,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="112" Height="24" Foreground="#FFFFFCFC"/>
+        <Label Content="Время и дата получения сообщения" HorizontalAlignment="Left" Margin="34,277,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="245" Height="26" Foreground="#FFFFFCFC"/>
+        <Label Content="Фамилия заявителя" HorizontalAlignment="Left" Margin="34,309,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="138" Height="27" Foreground="#FFFFFCFC"/>
+        <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="34,340,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="106" Height="27" Foreground="#FFFFFCFC"/>
+        <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="34,368,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="139" Height="26" Foreground="#FFFFFCFC"/>
+        <Label Content="Номер телефона заявителя" HorizontalAlignment="Left" Margin="34,401,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="185" Height="24" Foreground="#FFFFFCFC"/>
         <TextBox HorizontalAlignment="Left" Height="24" Margin="248,157,0,0" TextWrapping="Wrap"  Text="{Binding Name_division}" VerticalAlignment="Top" Width="170" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
         <TextBox HorizontalAlignment="Left" Height="27" Margin="248,185,0,0" TextWrapping="Wrap" Text="{Binding Address}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
         <TextBox HorizontalAlignment="Left" Height="25" Margin="248,217,0,0" TextWrapping="Wrap" Text="{Binding Obj_ignition}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
@@ -97,6 +95,23 @@
         <TextBox HorizontalAlignment="Left" Height="27" Margin="248,370,0,0" TextWrapping="Wrap" Text="{Binding Patronymic}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
         <TextBox HorizontalAlignment="Left" Height="25" Margin="255,403,0,0" TextWrapping="Wrap" Text="{Binding Telephone}" VerticalAlignment="Top" Width="163" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
         <TextBox HorizontalAlignment="Left" Margin="284,277,0,0" TextWrapping="Wrap" Text="{Binding InDate}" VerticalAlignment="Top" Width="134" FontSize="14" FontFamily="Times New Roman" Height="29" IsEnabled="False"/>
+        <Label Content="Шаблон акта о пожаре" HorizontalAlignment="Left" Margin="312,79,0,0" VerticalAlignment="Top"/>
+
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="38
+                            "/>
+                <Setter Property="FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"/>
+                <Setter Property="Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                <Setter Property="Margin" Value="10,10,10,6"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="MyLabelStyle">
+                <Setter Property="Control.FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"></Setter>
+                <Setter Property="Control.FontSize" Value="12"></Setter>
+                <Setter Property="Control.Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+            </Style>
+        </Grid.Resources>
 
     </Grid>
 </Page>

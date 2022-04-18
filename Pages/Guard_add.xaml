@@ -7,16 +7,32 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="800"
       Title="Guard_add">
-
-    <Grid>
-        <Label Content="Шаблон расчета" HorizontalAlignment="Left" Margin="273,0,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="Times New Roman" FontSize="32"/>
-        <Button Content="Ok" Name="Ok_Ga" HorizontalAlignment="Left" Margin="241,218,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Отмена" Name="Cancel_Ga" HorizontalAlignment="Left" Margin="485,218,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
-        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="79,69,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="85"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="225,73,0,0" TextWrapping="Wrap" Name="SurnameSenior" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
-        <Label Content="Имя" HorizontalAlignment="Left" Margin="79,114,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="85"/>
-        <Label Content="Отчество" HorizontalAlignment="Left" Margin="79,168,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="85"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="225,119,0,0" TextWrapping="Wrap" Name="NameSenior" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="225,172,0,0" TextWrapping="Wrap" Name="PatronymicSenior" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
-    </Grid>
+    <Viewbox>
+        <Grid Background="#FF333333" Height="268">
+            <Label Content="Шаблон расчета" HorizontalAlignment="Left" Margin="273,0,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="32"/>
+            <Button Content="Ok" Name="Ok_Ga" HorizontalAlignment="Left" Margin="183,222,0,0" VerticalAlignment="Top" Width="97" FontFamily="Times New Roman" FontSize="18" Height="36"/>
+            <Button Content="Отмена" Name="Cancel_Ga" HorizontalAlignment="Left" Margin="453,222,0,0" VerticalAlignment="Top" Width="107" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171" Height="36"/>
+            <Label Content="Фамилия" HorizontalAlignment="Left" Margin="6,69,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" Width="93"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="132,73,0,0" TextWrapping="Wrap" Name="SurnameSenior" VerticalAlignment="Top" Width="580" FontFamily="Times New Roman" FontSize="18"/>
+            <Label Content="Имя" HorizontalAlignment="Left" Margin="6,114,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" Width="93"/>
+            <Label Content="Отчество" HorizontalAlignment="Left" Margin="6,168,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" Width="93"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="132,119,0,0" TextWrapping="Wrap" Name="NameSenior" VerticalAlignment="Top" Width="580" FontFamily="Times New Roman" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="132,172,0,0" TextWrapping="Wrap" Name="PatronymicSenior" VerticalAlignment="Top" Width="580" FontFamily="Times New Roman" FontSize="18"/>
+            <Grid.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="38
+                            "/>
+                    <Setter Property="FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"/>
+                    <Setter Property="Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                    <Setter Property="Margin" Value="10,10,10,6"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                </Style>
+                <Style x:Key="MyLabelStyle">
+                    <Setter Property="Control.FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"></Setter>
+                    <Setter Property="Control.FontSize" Value="12"></Setter>
+                    <Setter Property="Control.Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                </Style>
+            </Grid.Resources>
+        </Grid>
+    </Viewbox>
 </Page>

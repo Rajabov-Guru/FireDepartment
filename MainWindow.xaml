@@ -5,9 +5,77 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FireDepartment"
         mc:Ignorable="d"
-        Title="FireDepartmen" Height="554" Width="1186.8" Background="White" WindowState="Maximized">
-    <Grid>
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Content="" Margin="10"/>
+        Title="FireDepartmen" Height="450" Width="800" WindowState="Normal">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Window.Resources>
+        <XmlDataProvider x:Key="DG_data" XPath="Categoryes">
+            <x:XData>
+                <Categoryes xmlns="">
+                    <Category ID="1"  Public="True" Level="1">
+                        <Title>Основы C#</Title>
+                        <Short>Классы, циклы, массивы и условные операторы</Short>
+                        <Description>Описание базовых синтаксических конструкций языка C#, таких как типы данных, переменные, арифметические и условные операторы, циклы, операторы перехода.</Description>
+                    </Category>
+                    <Category ID="2"  Public="True" Level="4">
+                        <Title>Ядро C#</Title>
+                        <Short>Интерфейсы, структуры, делегаты и обобщения</Short>
+                        <Description>Описание основ обработки и перехвата исключений, в качестве практической составляющей приводится несколько защищенных конструкций. Описываются обобщения - один из самых сложных и эффективных средств C#.</Description>
+                    </Category>
+                    <Category ID="3"  Public="False" Level="9">
+                        <Title>LINQ to XML</Title>
+                        <Short>Запросы данных в XML</Short>
+                        <Description>LINQ to XML — название, назначенное API-интерфейсу LINQ, который ориентирован на работу с XML. В Microsoft не только добавили необходимые библиотеки XML для работы с LINQ, но также восполнили недостатки стандартной модели XML DOM, существенно облегчив работу с XML.</Description>
+                    </Category>
+                    <Category ID="4"  Public="True" Level="11">
+                        <Title>Expression Blend 4</Title>
+                        <Short>Создание графических интерфейсов</Short>
+                        <Description>Expression Blend представляет собой мощнейшую IDE-среду для создания приложений, использующих интерфейсы WPF API, Silverlight API и платформу Windows Phone 7.</Description>
+                    </Category>
+                    <Category ID="5"  Public="False" Level="3">
+                        <Title>Parallel LINQ</Title>
+                        <Short>Выполнение параллельных LINQ-запросов</Short>
+                        <Description>Формально отдельного продукта LINQ, который нужно было бы получать отдельно, не существует. LINQ полностью интегрирован в .NET Framework, начиная с версии 3.5 и Visual Studio 2008. В NET 4.0 и Visual Studio 2010 добавлена поддержка средств Parallel LINQ, которые рассматриваются в данном разделе.</Description>
+                    </Category>
+                    <Category ID="6"  Public="False" Level="8">
+                        <Title>ADO.NET</Title>
+                        <Short>Работа с базами данных</Short>
+                        <Description>ADO.NET является библиотекой базовых классов для взаимодействия с локальными и удаленными реляционными базами данных. Библиотеки ADO.NET применяются трея различными способами: в подключенном режиме, в автономном режиме и с помощью технологии Entity Framework.</Description>
+                    </Category>
+                    <Category ID="7"  Public="True" Level="10">
+                        <Title>Потоки и файлы</Title>
+                        <Short>Создание многопоточных приложений</Short>
+                        <Description>Платформа .NET предоставляет большое количество средств для создания многопоточных приложений, который позволяют резко увеличить производительность работы программы.</Description>
+                    </Category>
+                    <Category ID="8"  Public="True" Level="9">
+                        <Title>Основа WPF</Title>
+                        <Short>Описание Windows Presentation Foundation</Short>
+                        <Description>Основная цель WPF состоит в интеграции и унификации множества ранее разрозненных настольных технологий (двух- и трехмерная графика, разработка окон и элементов управления и т.п.) в единую унифицированную программную модель.</Description>
+                    </Category>
+                    <Category ID="9"  Public="True" Level="9">
+                        <Title>Элементы управления WPF</Title>
+                        <Short>Описание стандартных элементов управления</Short>
+                        <Description>Безусловно, элементы управления являются самой важной концепцией платформы WPF. При этом в данной теме описываются не только стандартные элементы управления, но и класс Application, являющийся основой приложений WPF.</Description>
+                    </Category>
+                    <Category ID="10"  Public="True" Level="9">
+                        <Title>Графика и анимация WPF</Title>
+                        <Short>Создание графики и анимации в WPF</Short>
+                        <Description>Наверняка создание мощнейших графических эффектов и анимаций, используемых в больших коммерческих приложениях, может показаться недостижимой вершиной для начинающих разработчиков. Однако WPF упрощает разработку тахих сложных эффектов, за счет огромного количества пространств имен и классов, связанных с графикой и анимацией. Именно данным темам и посвящен этот раздел.</Description>
+                    </Category>
+                </Categoryes>
+            </x:XData>
+        </XmlDataProvider>
+    </Window.Resources>
+    
+    <Grid Background="#FF333333">
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Content="" Margin="10,40,9.6,10" Foreground="#FF333333">
+            
+        </Frame>
         <Menu Height="25" VerticalAlignment="Top">
             <MenuItem Header="Справочники">
                 <MenuItem Header="Акт о пожаре" Click="MenuItem_Click"></MenuItem>
@@ -23,4 +91,5 @@
             <MenuItem Header="Выход" ></MenuItem>
         </Menu>
     </Grid>
+
 </Window>
