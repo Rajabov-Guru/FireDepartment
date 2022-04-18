@@ -24,5 +24,10 @@ namespace FireDepartment.Pages
         {
             InitializeComponent();
         }
+
+        private void AddComplectClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Complect_add());
+        }
     }
 }

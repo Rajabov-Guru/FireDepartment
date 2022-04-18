@@ -44,5 +44,10 @@ namespace FireDepartment.Pages
         {
 
         }
+
+        private void AddGuardClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Guard_add());
+        }
     }
 }

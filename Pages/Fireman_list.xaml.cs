@@ -34,5 +34,10 @@ namespace FireDepartment.Pages
         {
 
         }
+
+        private void AddFiremanClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Fireman_add());
+        }
     }
 }

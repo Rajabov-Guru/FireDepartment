@@ -39,5 +39,10 @@ namespace FireDepartment.Pages
         {
 
         }
+
+        private void AddTravelClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Travel_add());
+        }
     }
 }

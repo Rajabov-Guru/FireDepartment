@@ -22,7 +22,7 @@
         <DataGrid HorizontalAlignment="Left" Height="166" Margin="80,107,0,0" VerticalAlignment="Top" Width="640" FontFamily="/FireDepartment;component/Pages/#Roboto Light">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
-                        <MenuItem Header="Добавить"></MenuItem>
+                        <MenuItem Header="Добавить" Click="AddComplectClick"></MenuItem>
                         <MenuItem Header="Изменить"></MenuItem>
                         <MenuItem Header="Удалить"></MenuItem>
                     </ContextMenu>
