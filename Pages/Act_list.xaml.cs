@@ -29,5 +29,10 @@ namespace FireDepartment.Pages
         {
 
         }
+
+        private void AddActClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Act_add());
+        }
     }
 }

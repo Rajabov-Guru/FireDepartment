@@ -9,7 +9,20 @@
       Title="MainPage">
 
     <Grid>
-        <Label Content="Главная страница" HorizontalAlignment="Left" Margin="251,184,0,0" VerticalAlignment="Top" Height="54" Width="321" FontSize="36"/>
-
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="38
+                            "/>
+                <Setter Property="FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"/>
+                <Setter Property="Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                <Setter Property="Margin" Value="10,10,10,6"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="MyLabelStyle">
+                <Setter Property="Control.FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"></Setter>
+                <Setter Property="Control.FontSize" Value="12"></Setter>
+                <Setter Property="Control.Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+            </Style>
+        </Grid.Resources>
     </Grid>
 </Page>

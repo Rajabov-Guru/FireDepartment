@@ -7,96 +7,115 @@
       mc:Ignorable="d" 
       d:DesignHeight="850" d:DesignWidth="1000"
       Title="Act_view">
+    <Viewbox>
+        <ScrollViewer Name="scroll" CanContentScroll="True" Height="650" Width="Auto" HorizontalScrollBarVisibility="Visible">
+        
+        <Grid  Margin="0,2,0,-2" Background="#333" MinWidth="1">
 
-    <Grid Margin="0,2,0,-2">
-        <Grid.Background>
-            <ImageBrush ImageSource="Фон.png" Stretch="UniformToFill"/>
-        </Grid.Background>
-        <Label Content="Акт о пожаре" Margin="404,0,391,753.6" VerticalAlignment="Bottom" FontFamily="Times New Roman" FontSize="32" Foreground="#FF323232" FontWeight="Bold"/>
-        <Label Content="Наименование объекта" HorizontalAlignment="Left" Margin="31,432,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFFFFCFC"/>
-        <Label Content="Принадлежность объекта&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,458,0,0" VerticalAlignment="Top" FontSize="14" Height="29" Foreground="#FFFFFCFC"/>
-        <Label Content="Дата и время локализации пожара&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,485,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Foreground="#FFFFFCFC"/>
-        <Label Content="Дата и время ликвидации пожара&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,519,0,0" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="#FFFFFCFC"/>
-        <Label Content="Обстановка к моменту прибытия расчетов ПО&#xA;&#xA;" HorizontalAlignment="Left" Margin="31,546,0,0" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="#FFFFFCFC"/>
-        <Label Content="Огнетушащие средства, применявшиеся при тушении&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,570,0,0" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="#FFFFFCFC"/>
-        <Label Content="Водоснабжение на пожаре&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,600,0,0" VerticalAlignment="Top" FontSize="14" Height="37" Foreground="#FFFFFCFC"/>
-        <Label Content="Наличие пожарной автоматики&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,631,0,0" VerticalAlignment="Top" Height="31" FontSize="14" Foreground="#FFFFFCFC"/>
-        <Label Content="Погибло людей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,660,0,0" VerticalAlignment="Top" FontSize="14" Height="31" Foreground="#FFFFFCFC"/>
-        <Label Content="Погибло детей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,690,0,0" VerticalAlignment="Top" FontSize="14" Height="30" Foreground="#FFFFFCFC"/>
-        <Label Content="Погибло работников ПО&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,719,0,0" VerticalAlignment="Top" FontSize="14" Height="31" Foreground="#FFFFFCFC"/>
-        <Label Content="Полученные травмы людей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,747,0,0" VerticalAlignment="Top" FontSize="14" Height="28" Foreground="#FFFFFCFC"/>
-        <Label Content="Полученные травмы детей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="540,156,0,0" VerticalAlignment="Top" FontSize="14" Height="29" Foreground="#FFF3EAEA"/>
-        <Label Content="Уничтожено  поэтажной площади&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,266,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Уничтожено  техники&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,292,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Уничтожено с/х культур&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,317,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Уничтожено скота&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,349,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Повреждено зданий, сооружений&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,378,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Повреждено жилых квартир&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,412,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Повреждено поэтажной площади&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,441,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Повреждено техники&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,467,0,0" VerticalAlignment="Top" Height="27" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Повреждено с/х культур&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,496,0,0" VerticalAlignment="Top" Height="29" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Повреждено скота&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,530,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Условия, способствующие развитию пожара&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,561,0,0" VerticalAlignment="Top" Height="34" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Причина пожара" HorizontalAlignment="Left" Margin="541,589,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Спасено людей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,622,0,0" VerticalAlignment="Top" Height="34" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Спасено техники (ед.)&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,656,0,0" VerticalAlignment="Top" Height="32" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Спасено скота (гол.)&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,693,0,0" VerticalAlignment="Top" Height="29" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Спасено материальных ценностей (р.)&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="541,721,0,0" VerticalAlignment="Top" Height="29" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Button Content="ОК" Name ="Ok_Av" HorizontalAlignment="Left" Margin="282,784,0,0" Width="107" FontSize="18" Height="39" VerticalAlignment="Top"/>
-        <Button Content="Отмена" Name ="Cancel_Av" HorizontalAlignment="Left" Margin="562,783,0,0" VerticalAlignment="Top" Width="107" Height="39" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="260,434,0,0" TextWrapping="Wrap"  Text="{Binding Obj_ignition}" VerticalAlignment="Top" Width="158" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="260,460,0,0" TextWrapping="Wrap" Text="{Binding Belonging}" VerticalAlignment="Top" Width="158" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="282,491,0,0" TextWrapping="Wrap" Text="{Binding Locslization}" VerticalAlignment="Top" Width="136" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="282,523,0,0" TextWrapping="Wrap" Text="{Binding Licvidation}" VerticalAlignment="Top" Width="136" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="368,550,0,0" TextWrapping="Wrap" Text="{Binding Situation}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="404,576,0,0" TextWrapping="Wrap" Text="{Binding FireEquipment}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="244,603,0,0" TextWrapping="Wrap" Text="{Binding WaterSupply}" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="269,636,0,0" TextWrapping="Wrap" Text="{Binding AvailabilityOfFireAutomatic}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="222,664,0,0" TextWrapping="Wrap" Text="{Binding Parished}" VerticalAlignment="Top" Width="167" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="222,692,0,0" TextWrapping="Wrap" Text="{Binding ParishedChildren}" VerticalAlignment="Top" Width="167" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="244,721,0,0" TextWrapping="Wrap" Text="{Binding ParishedEmployees}" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="244,749,0,0" TextWrapping="Wrap" Text="{Binding Injured}" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="804,160,0,0" TextWrapping="Wrap" Text="{Binding InjuredChildren}" VerticalAlignment="Top" Width="158" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="794,269,0,0" TextWrapping="Wrap"  Text="{Binding DestoyedFloorArea}" VerticalAlignment="Top" Width="168" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="794,298,0,0" TextWrapping="Wrap" Text="{Binding DestoyedTechnicks}" VerticalAlignment="Top" Width="168" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="816,324,0,0" TextWrapping="Wrap" Text="{Binding DestoyedAgricultural}" VerticalAlignment="Top" Width="146" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="816,352,0,0" TextWrapping="Wrap" Text="{Binding DestoyedBeasts}" VerticalAlignment="Top" Width="146" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="820,384,0,0" TextWrapping="Wrap" Text="{Binding DamagedBuildings}" VerticalAlignment="Top" Width="142" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="820,414,0,0" TextWrapping="Wrap" Text="{Binding DamagedFlats}" VerticalAlignment="Top" Width="142" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="842,445,0,0" TextWrapping="Wrap" Text="{Binding DamagedFloorArea}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="842,473,0,0" TextWrapping="Wrap" Text="{Binding DamagedTechnicks}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="820,502,0,0" TextWrapping="Wrap" Text="{Binding DamagedAgricultural}" VerticalAlignment="Top" Width="142" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="820,535,0,0" TextWrapping="Wrap" Text="{Binding DamagedBeasts}" VerticalAlignment="Top" Width="142" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="842,565,0,0" TextWrapping="Wrap" Text="{Binding Terms}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="686,593,0,0" TextWrapping="Wrap" Text="{Binding Cause}" VerticalAlignment="Top" Width="276" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="700,626,0,0" TextWrapping="Wrap" Text="{Binding RescuedHumans}" VerticalAlignment="Top" Width="262" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="718,661,0,0" TextWrapping="Wrap" Text="{Binding RescuedTechnicks}" VerticalAlignment="Top" Width="244" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="720,697,0,0" TextWrapping="Wrap" Text="{Binding RescuedBeasts}" VerticalAlignment="Top" Width="242" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="814,727,0,0" TextWrapping="Wrap" Text="{Binding RescuedMaterialValues}" VerticalAlignment="Top" Width="148" IsEnabled="False"/>
-        <Label Content="Полученные травмы работников ПО&#xA;&#xA;" HorizontalAlignment="Left" Margin="540,183,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA"/>
-        <Label Content="Уничтожено зданий, сооружений&#xA;&#xA;" HorizontalAlignment="Left" Margin="540,214,0,0" VerticalAlignment="Top" FontSize="14" Height="29" Foreground="#FFF3EAEA"/>
-        <Label Content="Уничтожено  жилых квартир&#xA;&#xA;" HorizontalAlignment="Left" Margin="540,242,0,0" VerticalAlignment="Top" Height="32" FontSize="14" Foreground="#FFF3EAEA"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="804,185,0,0" TextWrapping="Wrap" Text="{Binding InjuredEmployees}" VerticalAlignment="Top" Width="158" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="796,214,0,0" TextWrapping="Wrap" Text="{Binding DestoyedBuildings}" VerticalAlignment="Top" Width="166" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="796,242,0,0" TextWrapping="Wrap" Text="{Binding DestoyedFlats}" VerticalAlignment="Top" Width="166" IsEnabled="False"/>
-        <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="34,159,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" Height="34" Width="208" FontSize="14" Foreground="#FFFFFCFC"/>
-        <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="34,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="Times New Roman" FontSize="14" Width="145" Height="24" Foreground="#FFFFFCFC"/>
-        <Label Content="Объект возгорания" HorizontalAlignment="Left" Margin="34,216,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="134" Height="24" Foreground="#FFFFFCFC"/>
-        <Label Content="Тип возгорания" HorizontalAlignment="Left" Margin="34,246,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="112" Height="24" Foreground="#FFFFFCFC"/>
-        <Label Content="Время и дата получения сообщения" HorizontalAlignment="Left" Margin="34,277,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="245" Height="26" Foreground="#FFFFFCFC"/>
-        <Label Content="Фамилия заявителя" HorizontalAlignment="Left" Margin="34,309,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="138" Height="27" Foreground="#FFFFFCFC"/>
-        <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="34,340,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="106" Height="27" Foreground="#FFFFFCFC"/>
-        <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="34,368,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="139" Height="26" Foreground="#FFFFFCFC"/>
-        <Label Content="Номер телефона заявителя" HorizontalAlignment="Left" Margin="34,401,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="Times New Roman" FontSize="14" Width="185" Height="24" Foreground="#FFFFFCFC"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="248,157,0,0" TextWrapping="Wrap"  Text="{Binding Name_division}" VerticalAlignment="Top" Width="170" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="248,185,0,0" TextWrapping="Wrap" Text="{Binding Address}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="248,217,0,0" TextWrapping="Wrap" Text="{Binding Obj_ignition}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="248,246,0,0" TextWrapping="Wrap" Text="{Binding Type_ignition}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="248,308,0,0" TextWrapping="Wrap" Text="{Binding Surname}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="248,341,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="248,370,0,0" TextWrapping="Wrap" Text="{Binding Patronymic}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="255,403,0,0" TextWrapping="Wrap" Text="{Binding Telephone}" VerticalAlignment="Top" Width="163" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Margin="284,277,0,0" TextWrapping="Wrap" Text="{Binding InDate}" VerticalAlignment="Top" Width="134" FontSize="14" FontFamily="Times New Roman" Height="29" IsEnabled="False"/>
 
-    </Grid>
+            <Label Content="Наименование объекта" HorizontalAlignment="Left" Margin="39,374,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Height="24"/>
+            <Label Content="Принадлежность объекта&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="39,400,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Дата и время локализации пожара&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="39,427,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Дата и время ликвидации пожара&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="39,461,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Обстановка к моменту прибытия расчетов ПО&#xA;&#xA;" HorizontalAlignment="Left" Margin="39,488,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Огнетушащие средства, применявшиеся при тушении&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="39,512,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Водоснабжение на пожаре&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="39,542,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Наличие пожарной автоматики&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="39,573,0,0" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Погибло людей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="42,602,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Погибло детей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="42,632,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Погибло работников ПО&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="42,661,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Полученные травмы людей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="42,689,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFFFFCFC" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Полученные травмы детей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="548,98,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFF3EAEA"/>
+            <Label Content="Уничтожено  поэтажной площади&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,208,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA" Height="24"/>
+            <Label Content="Уничтожено  техники&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,234,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA" Height="24"/>
+            <Label Content="Уничтожено с/х культур&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,259,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA" Height="24"/>
+            <Label Content="Уничтожено скота&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,291,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA" Height="24"/>
+            <Label Content="Повреждено зданий, сооружений&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,320,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA" Height="24"/>
+            <Label Content="Повреждено жилых квартир&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,354,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA" Height="24"/>
+            <Label Content="Повреждено поэтажной площади&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,383,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA" Height="24"/>
+            <Label Content="Повреждено техники&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,409,0,0" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#FFF3EAEA"/>
+            <Label Content="Повреждено с/х культур&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,438,0,0" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#FFF3EAEA"/>
+            <Label Content="Повреждено скота&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,472,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA" Height="24"/>
+            <Label Content="Условия, способствующие развитию пожара&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,503,0,0" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#FFF3EAEA"/>
+            <Label Content="Причина пожара" HorizontalAlignment="Left" Margin="549,531,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA" Height="24"/>
+            <Label Content="Спасено людей&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,564,0,0" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#FFF3EAEA"/>
+            <Label Content="Спасено техники (ед.)&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,598,0,0" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#FFF3EAEA"/>
+            <Label Content="Спасено скота (гол.)&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,635,0,0" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#FFF3EAEA"/>
+            <Label Content="Спасено материальных ценностей (р.)&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="549,663,0,0" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#FFF3EAEA"/>
+            <Button Content="ОК" Name ="Ok_Av" HorizontalAlignment="Left" Margin="290,750,0,0" Width="112" FontSize="18" Height="36" VerticalAlignment="Top"/>
+            <Button Content="Отмена" Name ="Cancel_Av" HorizontalAlignment="Left" Margin="625,750,0,0" VerticalAlignment="Top" Width="112" Height="36" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="268,376,0,0" TextWrapping="Wrap"  Text="{Binding Obj_ignition}" VerticalAlignment="Top" Width="158" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="268,402,0,0" TextWrapping="Wrap" Text="{Binding Belonging}" VerticalAlignment="Top" Width="158" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="290,433,0,0" TextWrapping="Wrap" Text="{Binding Locslization}" VerticalAlignment="Top" Width="136" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="290,465,0,0" TextWrapping="Wrap" Text="{Binding Licvidation}" VerticalAlignment="Top" Width="136" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="376,492,0,0" TextWrapping="Wrap" Text="{Binding Situation}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="412,518,0,0" TextWrapping="Wrap" Text="{Binding FireEquipment}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="252,545,0,0" TextWrapping="Wrap" Text="{Binding WaterSupply}" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="277,578,0,0" TextWrapping="Wrap" Text="{Binding AvailabilityOfFireAutomatic}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="230,606,0,0" TextWrapping="Wrap" Text="{Binding Parished}" VerticalAlignment="Top" Width="167" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="230,634,0,0" TextWrapping="Wrap" Text="{Binding ParishedChildren}" VerticalAlignment="Top" Width="167" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="252,663,0,0" TextWrapping="Wrap" Text="{Binding ParishedEmployees}" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="252,691,0,0" TextWrapping="Wrap" Text="{Binding Injured}" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="812,102,0,0" TextWrapping="Wrap" Text="{Binding InjuredChildren}" VerticalAlignment="Top" Width="158" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="802,211,0,0" TextWrapping="Wrap"  Text="{Binding DestoyedFloorArea}" VerticalAlignment="Top" Width="168" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="802,240,0,0" TextWrapping="Wrap" Text="{Binding DestoyedTechnicks}" VerticalAlignment="Top" Width="168" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="824,266,0,0" TextWrapping="Wrap" Text="{Binding DestoyedAgricultural}" VerticalAlignment="Top" Width="146" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="824,294,0,0" TextWrapping="Wrap" Text="{Binding DestoyedBeasts}" VerticalAlignment="Top" Width="146" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="828,326,0,0" TextWrapping="Wrap" Text="{Binding DamagedBuildings}" VerticalAlignment="Top" Width="142" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="828,356,0,0" TextWrapping="Wrap" Text="{Binding DamagedFlats}" VerticalAlignment="Top" Width="142" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="850,387,0,0" TextWrapping="Wrap" Text="{Binding DamagedFloorArea}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="850,415,0,0" TextWrapping="Wrap" Text="{Binding DamagedTechnicks}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="828,444,0,0" TextWrapping="Wrap" Text="{Binding DamagedAgricultural}" VerticalAlignment="Top" Width="142" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="828,477,0,0" TextWrapping="Wrap" Text="{Binding DamagedBeasts}" VerticalAlignment="Top" Width="142" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="850,507,0,0" TextWrapping="Wrap" Text="{Binding Terms}" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="694,535,0,0" TextWrapping="Wrap" Text="{Binding Cause}" VerticalAlignment="Top" Width="276" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="708,568,0,0" TextWrapping="Wrap" Text="{Binding RescuedHumans}" VerticalAlignment="Top" Width="262" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="726,603,0,0" TextWrapping="Wrap" Text="{Binding RescuedTechnicks}" VerticalAlignment="Top" Width="244" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="728,639,0,0" TextWrapping="Wrap" Text="{Binding RescuedBeasts}" VerticalAlignment="Top" Width="242" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="822,669,0,0" TextWrapping="Wrap" Text="{Binding RescuedMaterialValues}" VerticalAlignment="Top" Width="148" IsEnabled="False"/>
+            <Label Content="Полученные травмы работников ПО&#xA;&#xA;" HorizontalAlignment="Left" Margin="548,125,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF3EAEA" Height="24"/>
+            <Label Content="Уничтожено зданий, сооружений&#xA;&#xA;" HorizontalAlignment="Left" Margin="548,156,0,0" VerticalAlignment="Top" FontSize="14" Height="24" Foreground="#FFF3EAEA"/>
+            <Label Content="Уничтожено  жилых квартир&#xA;&#xA;" HorizontalAlignment="Left" Margin="548,184,0,0" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#FFF3EAEA"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="812,127,0,0" TextWrapping="Wrap" Text="{Binding InjuredEmployees}" VerticalAlignment="Top" Width="158" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="804,156,0,0" TextWrapping="Wrap" Text="{Binding DestoyedBuildings}" VerticalAlignment="Top" Width="166" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="804,184,0,0" TextWrapping="Wrap" Text="{Binding DestoyedFlats}" VerticalAlignment="Top" Width="166" IsEnabled="False"/>
+            <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="42,101,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Height="24" Width="208" FontSize="14" Foreground="#FFFFFCFC"/>
+            <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="42,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="145" Height="24" Foreground="#FFFFFCFC"/>
+            <Label Content="Объект возгорания" HorizontalAlignment="Left" Margin="42,158,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="134" Height="24" Foreground="#FFFFFCFC"/>
+            <Label Content="Тип возгорания" HorizontalAlignment="Left" Margin="42,188,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="112" Height="24" Foreground="#FFFFFCFC"/>
+            <Label Content="Время и дата получения сообщения" HorizontalAlignment="Left" Margin="42,219,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="245" Height="24" Foreground="#FFFFFCFC"/>
+            <Label Content="Фамилия заявителя" HorizontalAlignment="Left" Margin="42,251,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="138" Height="24" Foreground="#FFFFFCFC"/>
+            <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="42,282,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="106" Height="24" Foreground="#FFFFFCFC"/>
+            <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="42,310,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="139" Height="24" Foreground="#FFFFFCFC"/>
+            <Label Content="Номер телефона заявителя" HorizontalAlignment="Left" Margin="42,343,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="14" Width="185" Height="24" Foreground="#FFFFFCFC"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="256,99,0,0" TextWrapping="Wrap"  Text="{Binding Name_division}" VerticalAlignment="Top" Width="170" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="256,127,0,0" TextWrapping="Wrap" Text="{Binding Address}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="256,159,0,0" TextWrapping="Wrap" Text="{Binding Obj_ignition}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="256,188,0,0" TextWrapping="Wrap" Text="{Binding Type_ignition}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="256,250,0,0" TextWrapping="Wrap" Text="{Binding Surname}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="256,283,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="256,312,0,0" TextWrapping="Wrap" Text="{Binding Patronymic}" VerticalAlignment="Top" Width="171" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="263,345,0,0" TextWrapping="Wrap" Text="{Binding Telephone}" VerticalAlignment="Top" Width="163" FontFamily="Times New Roman" FontSize="14" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Margin="292,219,0,0" TextWrapping="Wrap" Text="{Binding InDate}" VerticalAlignment="Top" Width="134" FontSize="14" FontFamily="Times New Roman" Height="24" IsEnabled="False"/>
+            <Label Content="Акт о пожаре" HorizontalAlignment="Left" Margin="396,22,0,0" VerticalAlignment="Top" Height="71"/>
+
+            <Grid.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="38
+                            "/>
+                    <Setter Property="FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"/>
+                    <Setter Property="Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                    <Setter Property="Margin" Value="10,10,10,6"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                </Style>
+                <Style x:Key="MyLabelStyle">
+                    <Setter Property="Control.FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"></Setter>
+                    <Setter Property="Control.FontSize" Value="12"></Setter>
+                    <Setter Property="Control.Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                </Style>
+            </Grid.Resources>
+
+        </Grid>
+    </ScrollViewer>
+    </Viewbox>
 </Page>

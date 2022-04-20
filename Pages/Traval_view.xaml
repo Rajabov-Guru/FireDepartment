@@ -8,30 +8,44 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Traval_view">
 
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="Фон.png"/>
-        </Grid.Background>
-        <Label Content="Путевка" HorizontalAlignment="Left" Margin="374,20,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="Times New Roman" FontSize="32"/>
-        <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="57,69,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Height="35" Width="191"/>
-        <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="57,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="Times New Roman" FontSize="18"/>
-        <Label Content="Объект возгорания" HorizontalAlignment="Left" Margin="57,145,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
-        <Label Content="Тип возгорания" HorizontalAlignment="Left" Margin="57,181,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
-        <Label Content="Время и дата получения сообщения" HorizontalAlignment="Left" Margin="57,217,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
-        <Label Content="Фамилия заявителя" HorizontalAlignment="Left" Margin="57,253,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
-        <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="57,289,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
-        <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="57,325,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
-        <Label Content="Номер телефона заявителя" HorizontalAlignment="Left" Margin="57,361,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="253,69,0,0" TextWrapping="Wrap" Text="{Binding Name_division}" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="253,113,0,0" TextWrapping="Wrap" Text="{Binding Address}" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="253,149,0,0" TextWrapping="Wrap" Text="{Binding Obj_ignition}" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="253,185,0,0" TextWrapping="Wrap" Text="{Binding Type_ignition}" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="253,257,0,0" TextWrapping="Wrap" Text="{Binding Surname}" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="253,293,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="253,329,0,0" TextWrapping="Wrap" Text="{Binding Patronymic}" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="277,365,0,0" TextWrapping="Wrap" Text="{Binding Telephone}" VerticalAlignment="Top" Width="471" FontFamily="Times New Roman" FontSize="18" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Margin="358,216,0,0"  TextWrapping="Wrap" Text="{Binding InDate}" VerticalAlignment="Top" Width="390" Height="26" IsEnabled="False"/>
-        <Button Content="Ok" Name="Ok_Tv" HorizontalAlignment="Left" Margin="253,415,0,0" VerticalAlignment="Top" Width="74" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Отмена" Name="Cancel_Tv" HorizontalAlignment="Left" Margin="470,415,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
-    </Grid>
+    <Viewbox>
+        <Grid Height="450" Width="800" Background="#FF333333">
+            <Label Content="Путевка" HorizontalAlignment="Left" Margin="374,20,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="32"/>
+            <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="23,75,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" Width="205"/>
+            <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="23,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
+            <Label Content="Объект возгорания" HorizontalAlignment="Left" Margin="23,145,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
+            <Label Content="Тип возгорания" HorizontalAlignment="Left" Margin="23,181,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
+            <Label Content="Время и дата получения сообщения" HorizontalAlignment="Left" Margin="23,217,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
+            <Label Content="Фамилия заявителя" HorizontalAlignment="Left" Margin="23,253,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
+            <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="23,289,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
+            <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="23,325,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
+            <Label Content="Номер телефона заявителя" HorizontalAlignment="Left" Margin="23,361,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,75,0,0" TextWrapping="Wrap" Text="{Binding Name_division}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,113,0,0" TextWrapping="Wrap" Text="{Binding Address}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,149,0,0" TextWrapping="Wrap" Text="{Binding Obj_ignition}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,185,0,0" TextWrapping="Wrap" Text="{Binding Type_ignition}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,257,0,0" TextWrapping="Wrap" Text="{Binding Surname}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,293,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,329,0,0" TextWrapping="Wrap" Text="{Binding Patronymic}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="277,365,0,0" TextWrapping="Wrap" Text="{Binding Telephone}" VerticalAlignment="Top" Width="471" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Margin="358,220,0,0"  TextWrapping="Wrap" Text="{Binding InDate}" VerticalAlignment="Top" Width="390" Height="26" IsEnabled="False" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Button Content="Ok" Height="36" Name="Ok_Tv" HorizontalAlignment="Left" Margin="253,405,0,0" VerticalAlignment="Top" Width="97" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
+            <Button Content="Отмена" Height="36" Name="Cancel_Tv" HorizontalAlignment="Left" Margin="470,405,0,0" VerticalAlignment="Top" Width="107" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
+            <Grid.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="38
+                            "/>
+                    <Setter Property="FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"/>
+                    <Setter Property="Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                    <Setter Property="Margin" Value="10,10,10,6"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                </Style>
+                <Style x:Key="MyLabelStyle">
+                    <Setter Property="Control.FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"></Setter>
+                    <Setter Property="Control.FontSize" Value="12"></Setter>
+                    <Setter Property="Control.Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                </Style>
+            </Grid.Resources>
+        </Grid>
+    </Viewbox>
 </Page>

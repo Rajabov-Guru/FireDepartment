@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace FireDepartment.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Complect_list.xaml
+    /// Логика взаимодействия для Guard_change.xaml
     /// </summary>
-    public partial class Complect_list : Page
+    public partial class Guard_change : Page
     {
-        public Complect_list()
+        public Guard_change()
         {
             InitializeComponent();
-        }
-
-        private void AddComplectClick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Complect_add());
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<Page x:Class="FireDepartment.Pages.Travel_add"
+﻿<Page x:Class="FireDepartment.Pages.Travel_change"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,19 +6,19 @@
       xmlns:local="clr-namespace:FireDepartment.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Travel_add">
+      Title="Travel_change">
     <Viewbox>
         <Grid Background="#FF333333" Height="450" Width="800">
 
-            <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="34,74,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" Width="203" Foreground="{DynamicResource ControlBackgroundOver}"/>
-            <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="34,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
-            <Label Content="Объект возгорания" HorizontalAlignment="Left" Margin="34,136,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,0.218" Foreground="{DynamicResource ControlBackgroundOver}"/>
-            <Label Content="Тип возгорания" HorizontalAlignment="Left" Margin="34,167,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
-            <Label Content="Время и дата получения &#xD;&#xA;сообщения" HorizontalAlignment="Left" Margin="34,203,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
-            <Label Content="Фамилия заявителя" HorizontalAlignment="Left" Margin="34,249,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
-            <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="34,280,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
-            <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="34,308,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
-            <Label Content="Номер телефона &#xD;&#xA;заявителя" HorizontalAlignment="Left" Margin="34,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" />
+            <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="28,82,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" Width="203" Foreground="{DynamicResource ControlBackgroundOver}"/>
+            <Label Content="Место выезда, адрес" HorizontalAlignment="Left" Margin="28,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.579" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
+            <Label Content="Объект возгорания" HorizontalAlignment="Left" Margin="28,144,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,0.218" Foreground="{DynamicResource ControlBackgroundOver}"/>
+            <Label Content="Тип возгорания" HorizontalAlignment="Left" Margin="28,175,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
+            <Label Content="Время и дата получения &#xD;&#xA;сообщения" HorizontalAlignment="Left" Margin="28,211,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
+            <Label Content="Фамилия заявителя" HorizontalAlignment="Left" Margin="28,257,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
+            <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="28,288,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
+            <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="28,316,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="{DynamicResource ControlBackgroundOver}"/>
+            <Label Content="Номер телефона &#xD;&#xA;заявителя" HorizontalAlignment="Left" Margin="28,347,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" />
             <Button Content="Ok" Name="Ok_Ta" HorizontalAlignment="Left" Margin="231,400,0,0" VerticalAlignment="Top" Width="96" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="32"/>
             <Button Content="Отмена" Name="Cancel_Ta" HorizontalAlignment="Left" Margin="602,400,0,0" VerticalAlignment="Top" Width="93" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171" Height="32"/>
             <StackPanel Margin="242,79,63,60"  Orientation="Vertical" >
@@ -33,7 +33,7 @@
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Patronymic" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Telephone" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
             </StackPanel>
-            <Label Content="Шаблон путевки" HorizontalAlignment="Left" Margin="271,18,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Label Content="Изменение данных о путевки" HorizontalAlignment="Left" Margin="187,12,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
 
             <Grid.Resources>
                 <Style TargetType="Label">

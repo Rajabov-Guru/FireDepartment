@@ -91,6 +91,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Act_change.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Act_list.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -99,7 +103,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Brushes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Complect_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Complect_change.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,11 +123,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Fireman_change.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Fireman_list.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Guard_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Guard_change.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -127,11 +147,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ResurceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Traval_view.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Travel_add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Travel_change.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -150,6 +178,9 @@
     <Compile Include="Pages\Act_add.xaml.cs">
       <DependentUpon>Act_add.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Act_change.xaml.cs">
+      <DependentUpon>Act_change.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Act_list.xaml.cs">
       <DependentUpon>Act_list.xaml</DependentUpon>
     </Compile>
@@ -159,17 +190,26 @@
     <Compile Include="Pages\Complect_add.xaml.cs">
       <DependentUpon>Complect_add.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Complect_change.xaml.cs">
+      <DependentUpon>Complect_change.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Complect_list.xaml.cs">
       <DependentUpon>Complect_list.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Fireman_add.xaml.cs">
       <DependentUpon>Fireman_add.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Fireman_change.xaml.cs">
+      <DependentUpon>Fireman_change.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Fireman_list.xaml.cs">
       <DependentUpon>Fireman_list.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Guard_add.xaml.cs">
       <DependentUpon>Guard_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Guard_change.xaml.cs">
+      <DependentUpon>Guard_change.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Guard_list.xaml.cs">
       <DependentUpon>Guard_list.xaml</DependentUpon>
@@ -182,6 +222,9 @@
     </Compile>
     <Compile Include="Pages\Travel_add.xaml.cs">
       <DependentUpon>Travel_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Travel_change.xaml.cs">
+      <DependentUpon>Travel_change.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Travel_list.xaml.cs">
       <DependentUpon>Travel_list.xaml</DependentUpon>
@@ -204,6 +247,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <Resource Include="Pages\Roboto-Light.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

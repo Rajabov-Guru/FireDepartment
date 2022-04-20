@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:FireDepartment"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                    Source="Pages\ResurceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style x:Key="LabelStyle" TargetType="{x:Type Control}"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
