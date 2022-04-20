@@ -78,6 +78,7 @@
                         <MenuItem Header="Добавить" Click="AddTravelClick"></MenuItem>
                         <MenuItem Header="Изменить"></MenuItem>
                         <MenuItem Header="Удалить"></MenuItem>
+                        <MenuItem Header="Просмотр"></MenuItem>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>
@@ -95,7 +96,7 @@
                                     Binding="{Binding Path=Belonging}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="Список путевок" HorizontalAlignment="Left" Margin="275,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="СПИСОК&#xD;&#xA; путевок" HorizontalAlignment="Left" Margin="331,0,0,0" VerticalAlignment="Top"/>
         <Button Content="Поиск"  HorizontalAlignment="Left" Margin="94,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
         <ComboBox HorizontalAlignment="Left" Margin="85,312,0,0" VerticalAlignment="Top" Width="163"/>
         <Label Content="Выберите запрос из списка" HorizontalAlignment="Left" Margin="85,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>

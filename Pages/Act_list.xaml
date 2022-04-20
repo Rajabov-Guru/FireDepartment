@@ -27,6 +27,7 @@
                         <MenuItem Header="Добавить" Click="AddActClick"></MenuItem>
                         <MenuItem Header="Изменить"></MenuItem>
                         <MenuItem Header="Удалить"></MenuItem>
+                        <MenuItem Header="Просмотр"></MenuItem>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
 

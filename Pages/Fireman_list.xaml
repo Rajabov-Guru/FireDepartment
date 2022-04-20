@@ -24,6 +24,7 @@
                         <MenuItem Header="Добавить" Click="AddFiremanClick"></MenuItem>
                         <MenuItem Header="Изменить"></MenuItem>
                         <MenuItem Header="Удалить"></MenuItem>
+                        <MenuItem Header="Просмотр"></MenuItem>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>

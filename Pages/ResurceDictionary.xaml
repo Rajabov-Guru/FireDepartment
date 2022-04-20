@@ -957,6 +957,7 @@
             <Setter.Value>
                 <ItemsPanelTemplate>
                     <VirtualizingStackPanel IsVirtualizing="True"/>
+                    
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
