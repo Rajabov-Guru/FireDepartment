@@ -21,7 +21,7 @@
 
     <Viewbox>
         <Grid Height="450" Width="800" Background="#333">
-            <DataGrid HorizontalAlignment="Left" Height="166" Margin="61,107,0,0" VerticalAlignment="Top" Width="685" FontFamily="/FireDepartment;component/Pages/#Roboto Light">
+            <DataGrid x:Name="actGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="61,107,0,0" VerticalAlignment="Top" Width="685" FontFamily="/FireDepartment;component/Pages/#Roboto Light">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Добавить" Click="AddActClick"></MenuItem>
@@ -33,15 +33,15 @@
 
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Наименование объекта" 
-                                    Binding="{Binding Path=Obj_ignition}"></DataGridTextColumn>
+                                    Binding="{Binding Obj_ignition}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Принадлежность объекта"
-                                    Binding="{Binding Path=Belonging}"></DataGridTextColumn>
+                                    Binding="{Binding Belonging}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Адрес объекта" 
-                                    Binding="{Binding Path=Address}"></DataGridTextColumn>
+                                    Binding="{Binding Address}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Дата обнаружения пожара"
-                                    Binding="{Binding Path=DetectionDate}"></DataGridTextColumn>
+                                    Binding="{Binding DetectionDate}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Фамилия заявителя"
-                                    Binding="{Binding Path=Surname}"></DataGridTextColumn>
+                                    Binding="{Binding Surname}"></DataGridTextColumn>
 
                 </DataGrid.Columns>
             </DataGrid>

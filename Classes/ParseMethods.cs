@@ -185,8 +185,8 @@ namespace FireDepartment.Classes
                     Travel t = new Travel();
                     t.GuardId = dopId;
                     t.ActId = dopId;
-                    t.Name = props[0];
-                    t.Surname = props[1];
+                    t.Surname = props[0];
+                    t.Name = props[1];
                     t.Patronymic = props[2];
                     t.Address = props[3];
                     t.Telephone = props[4];
