@@ -96,7 +96,7 @@
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="34,0,0,10" TextWrapping="Wrap" x:Name="RescuedBeasts" VerticalAlignment="Top" Width="242"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="128,0,0,10" TextWrapping="Wrap" x:Name="RescuedMaterialValues" VerticalAlignment="Top" Width="148"/>
                 </StackPanel>
-                <Label Content="Правка акта о пожаре" HorizontalAlignment="Left" Margin="316,51,0,0" VerticalAlignment="Top"/>
+                <Label Content="Изменение данных об акте" HorizontalAlignment="Left" Margin="316,51,0,0" VerticalAlignment="Top"/>
                 <Grid.Resources>
                     <Style TargetType="Label">
                         <Setter Property="FontSize" Value="38
