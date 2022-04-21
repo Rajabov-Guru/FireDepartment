@@ -28,8 +28,14 @@
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="№ Комплекта"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Список обородования входящего в комплект"></DataGridTextColumn>
+                    <DataGridTextColumn Header="№ комплекта" 
+                                    Binding="{Binding ID}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Фамилия начальника"
+                                    Binding="{Binding SurnameSenior}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Имя начальника"
+                                    Binding="{Binding NameSenior}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Отчество начальника"
+                                    Binding="{Binding PatronymicSenior}"></DataGridTextColumn>
 
                 </DataGrid.Columns>
             </DataGrid>

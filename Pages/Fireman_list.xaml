@@ -29,14 +29,14 @@
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Фамилия" 
-                                    ></DataGridTextColumn>
+                                    Binding="{Binding SurnameFireman}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Имя" 
-                                    ></DataGridTextColumn>
+                                    Binding="{Binding NameFireman}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Отчество"
-                                    ></DataGridTextColumn>
+                                    Binding="{Binding PatronymicFireman}"></DataGridTextColumn>
 
                     <DataGridTextColumn Header="Дата рождения"
-                                    ></DataGridTextColumn>
+                                    Binding="{Binding Datebirth}"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
             <Label Content="            СПИСОК&#xA;бойцов пожарной части" HorizontalAlignment="Left" Margin="279,2,0,0" VerticalAlignment="Top"  FontSize="32" Height="82" Width="375" Foreground="Black"/>

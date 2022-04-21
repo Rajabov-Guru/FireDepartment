@@ -83,17 +83,21 @@
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>
                 <DataGridTextColumn Header="№ путевки" 
-                                    Binding="{Binding Path=ID}"></DataGridTextColumn>
+                                    Binding="{Binding ID}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Наименование объекта" 
-                                    Binding="{Binding Path=Obj_ignition}"></DataGridTextColumn>
+                                    Binding="{Binding Obj_ignition}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Адрес объекта" 
-                                    Binding="{Binding Path=Address}"></DataGridTextColumn>
+                                    Binding="{Binding Address}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Дата обнаружения пожара"
-                                    Binding="{Binding Path=DetectionDate}"></DataGridTextColumn>
+                                    Binding="{Binding InDateTime}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Фамилия заявителя"
-                                    Binding="{Binding Path=Surname}"></DataGridTextColumn>
+                                    Binding="{Binding Surname}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Имя заявителя"
-                                    Binding="{Binding Path=Belonging}"></DataGridTextColumn>
+                                    Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество заявителя"
+                                    Binding="{Binding Patronymic}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер телефона заявителя"
+                                    Binding="{Binding Telephone}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="СПИСОК&#xD;&#xA; путевок" HorizontalAlignment="Left" Margin="331,0,0,0" VerticalAlignment="Top">

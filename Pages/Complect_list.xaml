@@ -29,8 +29,10 @@
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="№ Комплекта"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Список обородования входящего в комплект"></DataGridTextColumn>
+                    <DataGridTextColumn Header="№ Комплекта"
+                                       Binding="{Binding ID}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Список обородования входящего в комплект"
+                                        Binding="{Binding EquipmentList}"></DataGridTextColumn>
 
                 </DataGrid.Columns>
             </DataGrid>
