@@ -20,8 +20,14 @@
 
 
     <Viewbox>
-        <Grid Height="450" Width="800" Background="#333">
-            <DataGrid x:Name="actGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="61,107,0,0" VerticalAlignment="Top" Width="685" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FF5F5C5C" Foreground="#FFDDDFF3">
+        <Grid Height="450" Width="800" Background="#FFFFFF">
+            <DataGrid x:Name="actGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="61,107,0,0" VerticalAlignment="Top" Width="685" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0" Foreground="Black">
+                <DataGrid.BorderBrush>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#FF686868" Offset="0.204"/>
+                        <GradientStop Color="#FFE0E0E0" Offset="0.864"/>
+                    </LinearGradientBrush>
+                </DataGrid.BorderBrush>
                 <DataGrid.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Добавить" Click="AddActClick"></MenuItem>
@@ -48,12 +54,12 @@
             <Button Content="Поиск"  HorizontalAlignment="Left" Margin="70,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"></Button>
             <Button Content="Распечатать" HorizontalAlignment="Left" Margin="600.8,315.41,0,0" Width="120" FontSize="18" Height="36" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" UseLayoutRounding="False"/>
             <ComboBox HorizontalAlignment="Left" Margin="270,312,0,0" VerticalAlignment="Top" Width="146" >
-                <TextBlock>За день</TextBlock>
-                <TextBlock>За неделю</TextBlock>
-                <TextBlock>За месяц</TextBlock>
-                <TextBlock>За квартал</TextBlock>
-                <TextBlock>За полугодие</TextBlock>
-                <TextBlock>За год</TextBlock>
+                <TextBlock Foreground="White">За день</TextBlock>
+                <TextBlock Foreground="White">За неделю</TextBlock>
+                <TextBlock Foreground="White">За месяц</TextBlock>
+                <TextBlock Foreground="White">За квартал</TextBlock>
+                <TextBlock Foreground="White">За полугодие</TextBlock>
+                <TextBlock Foreground="White">За год</TextBlock>
             </ComboBox>
 
 
@@ -68,14 +74,14 @@
                 <Style TargetType="Label">
                     <Setter Property="FontSize" Value="38"/>
                     <Setter Property="FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"/>
-                    <Setter Property="Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                    <Setter Property="Foreground" Value="#000000"/>
                     <Setter Property="Margin" Value="10,10,10,6"/>
                     <Setter Property="HorizontalAlignment" Value="Center"/>
                 </Style>
                 <Style x:Key="MyLabelStyle">
                     <Setter Property="Control.FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"></Setter>
                     <Setter Property="Control.FontSize" Value="12"></Setter>
-                    <Setter Property="Control.Foreground" Value="#FFFFFF"/>
+                    <Setter Property="Control.Foreground" Value="#000000"/>
                 </Style>
                 
                 

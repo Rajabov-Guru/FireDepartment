@@ -9,13 +9,13 @@
       Title="Traval_view">
 
     <Viewbox>
-        <Grid Height="450" Width="800" Background="#FF333333">
-            <Label Content="Путевка" HorizontalAlignment="Left" Margin="374,20,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="32"/>
+        <Grid Height="450" Width="800" Background="White">
+            <Label Content="Путевка" HorizontalAlignment="Left" Margin="374,20,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="32" Foreground="Black"/>
             <Label Content="Наименование расчета" HorizontalAlignment="Left" Margin="23,75,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" Width="205">
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFEFCF38" Offset="0"/>
-                        <GradientStop Color="#FFF9F8F7"/>
+                        <GradientStop Color="#000000"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
@@ -23,7 +23,7 @@
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFEFCF38" Offset="0"/>
-                        <GradientStop Color="#FFF9F8F7"/>
+                        <GradientStop Color="#000000"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
@@ -31,7 +31,7 @@
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFEFCF38" Offset="0"/>
-                        <GradientStop Color="#FFF9F8F7"/>
+                        <GradientStop Color="#000000"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
@@ -39,7 +39,7 @@
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFEFCF38" Offset="0"/>
-                        <GradientStop Color="#FFF9F8F7"/>
+                        <GradientStop Color="#000000"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
@@ -47,7 +47,7 @@
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFEFCF38" Offset="0"/>
-                        <GradientStop Color="#FFF9F8F7"/>
+                        <GradientStop Color="#000000"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
@@ -55,7 +55,7 @@
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFEFCF38" Offset="0"/>
-                        <GradientStop Color="#FFF9F8F7"/>
+                        <GradientStop Color="#000000"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
@@ -63,7 +63,7 @@
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFEFCF38" Offset="0"/>
-                        <GradientStop Color="#FFF9F8F7"/>
+                        <GradientStop Color="#000000"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
@@ -71,7 +71,7 @@
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFEFCF38" Offset="0"/>
-                        <GradientStop Color="#FFF9F8F7"/>
+                        <GradientStop Color="#000000"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
@@ -79,7 +79,7 @@
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFEFCF38" Offset="0"/>
-                        <GradientStop Color="#FFF9F8F7"/>
+                        <GradientStop Color="#000000"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>

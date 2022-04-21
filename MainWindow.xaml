@@ -16,7 +16,7 @@
     
     <Grid Background="#FF333333">
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Content="" Margin="0,30,-0.4,0" Foreground="#FF333333"/>
-        <Menu Height="25" VerticalAlignment="Top">
+        <Menu Height="25" VerticalAlignment="Top" Background="#FF767676">
             <MenuItem Header="Справочники">
                 <MenuItem Header="Акт о пожаре" Click="MenuItem_Click"></MenuItem>
                 <MenuItem Header="Путевка" Click="Travel_Click" ></MenuItem>

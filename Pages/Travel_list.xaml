@@ -70,9 +70,9 @@
         </Style>
     </Page.Resources>
 <Viewbox>
-    <Grid Height="450" Width="800" Background="#FF333333" >
+    <Grid Height="450" Width="800" Background="White" >
 
-        <DataGrid HorizontalAlignment="Left" Height="166" Margin="80,107,0,0" VerticalAlignment="Top" Width="640" FontFamily="/FireDepartment;component/Pages/#Roboto Light">
+        <DataGrid HorizontalAlignment="Left" Height="166" Margin="80,107,0,0" VerticalAlignment="Top" Width="640" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Добавить" Click="AddTravelClick"></MenuItem>
@@ -96,11 +96,25 @@
                                     Binding="{Binding Path=Belonging}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="СПИСОК&#xD;&#xA; путевок" HorizontalAlignment="Left" Margin="331,0,0,0" VerticalAlignment="Top"/>
-        <Button Content="Поиск"  HorizontalAlignment="Left" Margin="94,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
+        <Label Content="СПИСОК&#xD;&#xA; путевок" HorizontalAlignment="Left" Margin="331,0,0,0" VerticalAlignment="Top">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#000000" Offset="0"/>
+                        <GradientStop Color="Black"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+            <Button Content="Поиск"  HorizontalAlignment="Left" Margin="94,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
         <ComboBox HorizontalAlignment="Left" Margin="85,312,0,0" VerticalAlignment="Top" Width="163"/>
-        <Label Content="Выберите запрос из списка" HorizontalAlignment="Left" Margin="85,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
-        <Button Content="Распечатать"  HorizontalAlignment="Left" Margin="586,305,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
+        <Label Content="Выберите запрос из списка" HorizontalAlignment="Left" Margin="85,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFEFCF38" Offset="0"/>
+                        <GradientStop Color="Black"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+            <Button Content="Распечатать"  HorizontalAlignment="Left" Margin="586,305,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
         <Grid.Resources>
             <Style TargetType="Label">
                 <Setter Property="FontSize" Value="38
