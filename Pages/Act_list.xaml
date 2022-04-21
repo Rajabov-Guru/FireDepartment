@@ -21,7 +21,7 @@
 
     <Viewbox>
         <Grid Height="450" Width="800" Background="#333">
-            <DataGrid x:Name="actGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="61,107,0,0" VerticalAlignment="Top" Width="685" FontFamily="/FireDepartment;component/Pages/#Roboto Light">
+            <DataGrid x:Name="actGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="61,107,0,0" VerticalAlignment="Top" Width="685" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FF5F5C5C" Foreground="#FFDDDFF3">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Добавить" Click="AddActClick"></MenuItem>
@@ -66,8 +66,7 @@
 
             <Grid.Resources>
                 <Style TargetType="Label">
-                    <Setter Property="FontSize" Value="38
-                            "/>
+                    <Setter Property="FontSize" Value="38"/>
                     <Setter Property="FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"/>
                     <Setter Property="Foreground" Value="{StaticResource ControlBackgroundOver}"/>
                     <Setter Property="Margin" Value="10,10,10,6"/>
@@ -76,8 +75,10 @@
                 <Style x:Key="MyLabelStyle">
                     <Setter Property="Control.FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"></Setter>
                     <Setter Property="Control.FontSize" Value="12"></Setter>
-                    <Setter Property="Control.Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                    <Setter Property="Control.Foreground" Value="#FFFFFF"/>
                 </Style>
+                
+                
             </Grid.Resources>
 
         </Grid>
