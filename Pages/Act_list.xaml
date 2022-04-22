@@ -20,8 +20,14 @@
 
 
     <Viewbox>
-        <Grid Height="450" Width="800" Background="#333">
-            <DataGrid x:Name="actGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="61,107,0,0" VerticalAlignment="Top" Width="685" FontFamily="/FireDepartment;component/Pages/#Roboto Light">
+        <Grid Height="450" Width="800" Background="#FFFFFF">
+            <DataGrid x:Name="actGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="61,107,0,0" VerticalAlignment="Top" Width="685" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0" Foreground="Black">
+                <DataGrid.BorderBrush>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#FF686868" Offset="0.204"/>
+                        <GradientStop Color="#FFE0E0E0" Offset="0.864"/>
+                    </LinearGradientBrush>
+                </DataGrid.BorderBrush>
                 <DataGrid.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Добавить" Click="AddActClick"></MenuItem>
@@ -42,18 +48,98 @@
                                     Binding="{Binding DetectionDate}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Фамилия заявителя"
                                     Binding="{Binding Surname}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Имя заявителя"
+                                    Binding="{Binding Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Отчество заявителя"
+                                    Binding="{Binding Patronymic}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Номер телефона"
+                                    Binding="{Binding Telephone}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Дата получения сообщения в пожарную часть"
+                                    Binding="{Binding InDate}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Час получения сообщения в пожарную часть"
+                                    Binding="{Binding InHour}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Минуты получения сообщения в пожарную часть"
+                                    Binding="{Binding InMinutes}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Дата локализации пожара"
+                                    Binding="{Binding LocDate}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Час локализации пожара"
+                                    Binding="{Binding LocHour}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Минуты локализации пожара"
+                                    Binding="{Binding LocMinutes}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Дата ликвидации пожара"
+                                    Binding="{Binding LiqDate}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Час  ликвидации пожара"
+                                    Binding="{Binding LiqHour}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Минуты ликвидации пожара"
+                                    Binding="{Binding LiqMinutes}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Обстановка к моменту прибытия расчетов пожарной охраны"
+                                    Binding="{Binding Situation}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Огнетушащие средства, применявшиеся при тушении"
+                                    Binding="{Binding FireEquipment}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Водоснабжение на пожаре"
+                                    Binding="{Binding WaterSupply}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Наличие пожарной автоматики"
+                                    Binding="{Binding AvailabilityOfFireAutomatic}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Погибло людей"
+                                    Binding="{Binding Parished}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Погибло детей"
+                                    Binding="{Binding ParishedChildren}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Погибло работников ПО"
+                                    Binding="{Binding ParishedEmployees}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Полученные травмы людей"
+                                    Binding="{Binding Injured}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Полученные травмы детей"
+                                    Binding="{Binding InjuredChildren}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Полученные травмы работников ПО"
+                                    Binding="{Binding InjuredEmployees}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Уничтожено зданий, сооружений"
+                                    Binding="{Binding DestoyedBuildings}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Уничтожено  жилых квартир"
+                                    Binding="{Binding DestoyedFlats}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Уничтожено  поэтажной площади"
+                                    Binding="{Binding DestoyedFloorArea}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Уничтожено  техники"
+                                    Binding="{Binding DestoyedTechnicks}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Уничтожено с/х культур"
+                                    Binding="{Binding DestoyedAgricultural}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Уничтожено скота"
+                                    Binding="{Binding DestoyedBeasts}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Повреждено зданий, сооружений"
+                                    Binding="{Binding DamagedBuildings}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Повреждено жилых квартир"
+                                    Binding="{Binding DamagedFlats}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Повреждено поэтажной площади"
+                                    Binding="{Binding DamagedFloorArea}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Повреждено техники"
+                                    Binding="{Binding DamagedTechnicks}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Повреждено с/х культур"
+                                    Binding="{Binding DamagedAgricultural}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Повреждено скота"
+                                    Binding="{Binding DamagedBeasts}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Условия, способствующие развитию пожара"
+                                    Binding="{Binding Terms}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Причина пожара(установленная или предполагаемая"
+                                    Binding="{Binding Cause}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Спасено людей"
+                                    Binding="{Binding RescuedHumans}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Спасено техники (ед.)"
+                                    Binding="{Binding RescuedTechnicks}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Спасено скота (гол.)"
+                                    Binding="{Binding RescuedBeasts}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Спасено материальных ценностей (р.)"
+                                    Binding="{Binding RescuedMaterialValues}"></DataGridTextColumn>
 
                 </DataGrid.Columns>
             </DataGrid>
             <Button Content="Поиск"  HorizontalAlignment="Left" Margin="70,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"></Button>
             <Button Content="Распечатать" HorizontalAlignment="Left" Margin="600.8,315.41,0,0" Width="120" FontSize="18" Height="36" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" UseLayoutRounding="False"/>
             <ComboBox HorizontalAlignment="Left" Margin="270,312,0,0" VerticalAlignment="Top" Width="146" >
-                <TextBlock>За день</TextBlock>
-                <TextBlock>За неделю</TextBlock>
-                <TextBlock>За месяц</TextBlock>
-                <TextBlock>За квартал</TextBlock>
-                <TextBlock>За полугодие</TextBlock>
-                <TextBlock>За год</TextBlock>
+                <TextBlock Foreground="White">За день</TextBlock>
+                <TextBlock Foreground="White">За неделю</TextBlock>
+                <TextBlock Foreground="White">За месяц</TextBlock>
+                <TextBlock Foreground="White">За квартал</TextBlock>
+                <TextBlock Foreground="White">За полугодие</TextBlock>
+                <TextBlock Foreground="White">За год</TextBlock>
             </ComboBox>
 
 
@@ -66,18 +152,19 @@
 
             <Grid.Resources>
                 <Style TargetType="Label">
-                    <Setter Property="FontSize" Value="38
-                            "/>
+                    <Setter Property="FontSize" Value="38"/>
                     <Setter Property="FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"/>
-                    <Setter Property="Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                    <Setter Property="Foreground" Value="#000000"/>
                     <Setter Property="Margin" Value="10,10,10,6"/>
                     <Setter Property="HorizontalAlignment" Value="Center"/>
                 </Style>
                 <Style x:Key="MyLabelStyle">
                     <Setter Property="Control.FontFamily" Value="/FireDepartment;component/Pages/#Roboto Light"></Setter>
                     <Setter Property="Control.FontSize" Value="12"></Setter>
-                    <Setter Property="Control.Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                    <Setter Property="Control.Foreground" Value="#000000"/>
                 </Style>
+                
+                
             </Grid.Resources>
 
         </Grid>
