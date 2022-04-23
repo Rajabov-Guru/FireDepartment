@@ -63,7 +63,7 @@
                 <StackPanel Margin="220,140,450.6,113" Orientation="Vertical">
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="38,0,0,11" TextWrapping="Wrap" x:Name="Obj_ignition" VerticalAlignment="Top" Width="264" Padding="5,5,5,8"/>
                     <ComboBox x:Name="belongings" HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8" SelectionChanged="Sel_change"/>
-                    <DatePicker x:Name="Localization" HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="24" Padding="2,2,2,8"/>
+                    <DatePicker x:Name="localization" HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="24" Padding="2,2,2,8"/>
                     <DatePicker x:Name="Liquidation" HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="27" Padding="2,2,2,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="146,0,0,11" TextWrapping="Wrap" x:Name="Situation" VerticalAlignment="Top" Width="156" Padding="5,5,5,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="182,0,0,11" TextWrapping="Wrap" x:Name="FireEquipment" VerticalAlignment="Top" Width="120" Padding="5,5,5,8"/>

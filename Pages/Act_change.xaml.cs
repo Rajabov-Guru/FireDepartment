@@ -37,7 +37,7 @@ namespace FireDepartment.Pages
             waterShit.SelectedIndex = a.WaterSupply ? 0 : 1;
             FireAutomatization.ItemsSource = TrueFalse;
             FireAutomatization.SelectedIndex = a.AvailabilityOfFireAutomatic ? 0 : 1;
-            Localization.SelectedDate = a.Localization;
+            localization.SelectedDate = a.Localization;
             Liquidation.SelectedDate = a.Liquidation;
             Situation.Text = a.Situation;
             FireEquipment.Text = a.FireEquipment;
