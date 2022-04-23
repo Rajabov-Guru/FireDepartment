@@ -36,5 +36,20 @@ namespace FireDepartment.Pages
         {
             NavigationService.Navigate(new Complect_add());
         }
+
+        private void ChangeComplectClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Complect_change());
+        }
+
+        private void ComplectDelClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ViewClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
