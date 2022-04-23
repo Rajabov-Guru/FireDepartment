@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,31 @@ namespace FireDepartment.Pages
     /// </summary>
     public partial class Act_view : Page
     {
-        public Act_view()
+        Act a;
+        public Act_view(Act act,Travel travel)
         {
             InitializeComponent();
+            this.a= act;
+            //--
+            guardName.Text = $"Расчет №{travel.GuardId}";
+            Address.Text = travel.Address;
+            Obj_ignition.Text = travel.Obj_ignition;
+            typeOfIgnition.Text = travel.Type_ignition;
+            MessaggeDate.Text = travel.Indate.ToString();
+            SurnameOf.Text= travel.Surname;
+            NameOf.Text = travel.Name;
+            PatrOf.Text = travel.Patronymic;
+            TelephoneOf.Text = travel.Telephone;
+            /*
+            belonging.Text= a.Belonging;
+            ...
+            */
+
+        }
+
+        private void Cancel_Av_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Act_list());
         }
     }
 }

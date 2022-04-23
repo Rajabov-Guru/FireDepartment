@@ -79,9 +79,16 @@ namespace FireDepartment.Pages
         {
             if (actGrid.SelectedItem != null)
             {
+                Act a = (Act)actGrid.SelectedItem;
+                Travel t;
+                using (FireDB db = new FireDB()) 
+                {
+                    Act act = db.Acts.Where(x => x.Id == a.Id).First();
+                    t = act.Travels.First();
+                   
+                }
+                NavigationService.Navigate(new Act_view(a, t));
 
-               
-                MessageBox.Show("Акт удален из базы данных");
             }
             else
             {
