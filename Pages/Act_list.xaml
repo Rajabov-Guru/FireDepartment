@@ -132,7 +132,7 @@
 
                 </DataGrid.Columns>
             </DataGrid>
-            <Button Content="Поиск"  HorizontalAlignment="Left" Margin="70,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"></Button>
+            <Button Content="Поиск"  HorizontalAlignment="Left" Margin="70,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top" Click="Button_Click_1"></Button>
             <Button Content="Распечатать" HorizontalAlignment="Left" Margin="600.8,315.41,0,0" Width="120" FontSize="18" Height="36" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" UseLayoutRounding="False"/>
             <ComboBox HorizontalAlignment="Left" Margin="270,312,0,0" VerticalAlignment="Top" Width="146" >
                 <TextBlock Foreground="#000000">За день</TextBlock>
@@ -147,15 +147,15 @@
 
             <Label Content="Выберите отчетный период" HorizontalAlignment="Left" Margin="258,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
             <Button Content="Сформировать" Name ="Form_Al" HorizontalAlignment="Left" Margin="277,388,0,27" Width="135" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" />
-            <ComboBox HorizontalAlignment="Left" Margin="61,312,0,0" VerticalAlignment="Top" Width="163">
-                <TextBlock Foreground="#000000">1</TextBlock>
-                <TextBlock Foreground="#000000">2</TextBlock>
-                <TextBlock Foreground="#000000">3</TextBlock>
-                <TextBlock Foreground="#000000">4</TextBlock>
-                <TextBlock Foreground="#000000">5</TextBlock>
-                <TextBlock Foreground="#000000">6</TextBlock>
+            <ComboBox x:Name="queries" HorizontalAlignment="Left" Margin="61,312,0,0" VerticalAlignment="Top" Width="163">
+                <TextBlock Foreground="#000000">1-По принадлежности</TextBlock>
+                <TextBlock Foreground="#000000">2-По дате обнаружения</TextBlock>
+                <TextBlock Foreground="#000000">3-По количеству погибших</TextBlock>
+                <TextBlock Foreground="#000000">4-По поэтажной площади</TextBlock>
+                <TextBlock Foreground="#000000">5-По количество погибших детей</TextBlock>
+                <TextBlock Foreground="#000000">6-По количеству спасенных</TextBlock>
             </ComboBox>
-            <Label Content="Выберите запрос из списка" HorizontalAlignment="Left" Margin="61,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
+            <Label Content="Фильтр" HorizontalAlignment="Left" Margin="61,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
             <Label Content="      СПИСОК&#xD;&#xA;актов о пожаре" HorizontalAlignment="Left" Margin="277,8,0,0" VerticalAlignment="Top"/>
 
             <Grid.Resources>

@@ -95,5 +95,43 @@ namespace FireDepartment.Pages
                 MessageBox.Show("Выберите акт");
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (queries.SelectedItem != null)
+            {
+                int number = int.Parse(queries.Text.Split('-')[0]);
+                switch (number)
+                {
+                    case 1:
+                        source=source.OrderBy(x => x.Belonging).ToList();
+                        actGrid.ItemsSource = null;
+                        actGrid.ItemsSource = source;
+                        break;
+                    case 2:
+                        //...
+                        break;
+                    case 3:
+                        //...
+                        break;
+                    case 4:
+                        //...
+                        break;
+                    case 5:
+                        //...
+                        break;
+                    case 6:
+                        //...
+                        break;
+                    default:
+                        Console.WriteLine("Что-то оченб странное произошло");
+                        break;
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Выберите зварос из списка!");
+            }
+        }
     }
 }
