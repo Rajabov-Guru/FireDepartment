@@ -19,7 +19,15 @@
         </Style>
     </Page.Resources>
     <Viewbox>
-        <ScrollViewer Name="scroll" CanContentScroll="True" Width="1055"  Height="650" HorizontalScrollBarVisibility ="Visible" Margin="0">
+        <ScrollViewer Name="scroll" CanContentScroll="True" Width="1055"  Height="804" HorizontalScrollBarVisibility ="Visible" Margin="0" RenderTransformOrigin="0.5,0.5">
+            <ScrollViewer.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.556"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-3.155"/>
+                </TransformGroup>
+            </ScrollViewer.RenderTransform>
             <Grid Margin="0" Background="White" Height="785" Width="Auto">
                 <StackPanel Margin="31,140,583.6,0" Orientation="Vertical" Height="574" VerticalAlignment="Top">
                     <Label Content="Наименование объекта" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
