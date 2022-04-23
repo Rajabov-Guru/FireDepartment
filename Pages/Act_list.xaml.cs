@@ -109,27 +109,27 @@ namespace FireDepartment.Pages
                         actGrid.ItemsSource = source;
                         break;
                     case 2:
-                        //...
+                        source = source.OrderBy(x => x.Detection).ToList();
                         actGrid.ItemsSource = null;
                         actGrid.ItemsSource = source;
                         break;
                     case 3:
-                        //...
+                        source = source.OrderBy(x => x.Parished).ToList();
                         actGrid.ItemsSource = null;
                         actGrid.ItemsSource = source;
                         break;
                     case 4:
-                        //...
+                        source = source.OrderBy(x => x.DamagedFloorArea).ToList();
                         actGrid.ItemsSource = null;
                         actGrid.ItemsSource = source;
                         break;
                     case 5:
-                        //...
+                        source = source.OrderBy(x => x.ParishedChildren).ToList();
                         actGrid.ItemsSource = null;
                         actGrid.ItemsSource = source;
                         break;
                     case 6:
-                        //...
+                        source = source.OrderBy(x => x.RescuedHumans).ToList();
                         actGrid.ItemsSource = null;
                         actGrid.ItemsSource = source;
                         break;
