@@ -24,5 +24,6 @@ namespace FireDepartment.Pages
         {
             InitializeComponent();
         }
+
     }
 }
