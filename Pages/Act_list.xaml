@@ -145,7 +145,14 @@
 
             <Label Content="Выберите отчетный период" HorizontalAlignment="Left" Margin="258,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
             <Button Content="Сформировать" Name ="Form_Al" HorizontalAlignment="Left" Margin="277,388,0,27" Width="135" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" />
-            <ComboBox HorizontalAlignment="Left" Margin="61,312,0,0" VerticalAlignment="Top" Width="163"/>
+            <ComboBox HorizontalAlignment="Left" Margin="61,312,0,0" VerticalAlignment="Top" Width="163">
+                <TextBlock Foreground="#000000">1</TextBlock>
+                <TextBlock Foreground="#000000">2</TextBlock>
+                <TextBlock Foreground="#000000">3</TextBlock>
+                <TextBlock Foreground="#000000">4</TextBlock>
+                <TextBlock Foreground="#000000">5</TextBlock>
+                <TextBlock Foreground="#000000">6</TextBlock>
+            </ComboBox>
             <Label Content="Выберите запрос из списка" HorizontalAlignment="Left" Margin="61,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
             <Label Content="      СПИСОК&#xD;&#xA;актов о пожаре" HorizontalAlignment="Left" Margin="277,8,0,0" VerticalAlignment="Top"/>
 
