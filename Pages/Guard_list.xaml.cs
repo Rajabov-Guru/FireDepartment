@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,15 @@ namespace FireDepartment.Pages
     /// </summary>
     public partial class Guard_list : Page
     {
+        List<Guard> source;
         public Guard_list()
         {
             InitializeComponent();
+            using (FireDB db = new FireDB())
+            {
+                this.source = db.Guards.ToList();
+            }
+            guardGrid.ItemsSource = source;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

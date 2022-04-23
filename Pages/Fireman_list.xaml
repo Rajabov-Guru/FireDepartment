@@ -18,7 +18,7 @@
     <Viewbox>
         <Grid Height="450" Width="800" Background="White">
 
-            <DataGrid HorizontalAlignment="Left" Height="166" Margin="80,107,0,0" VerticalAlignment="Top" Width="640" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0">
+            <DataGrid x:Name="firemanGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="80,107,0,0" VerticalAlignment="Top" Width="640" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Добавить" Click="AddFiremanClick"></MenuItem>
@@ -29,14 +29,14 @@
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Фамилия" 
-                                    Binding="{Binding SurnameFireman}"></DataGridTextColumn>
+                                    Binding="{Binding Surname}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Имя" 
-                                    Binding="{Binding NameFireman}"></DataGridTextColumn>
+                                    Binding="{Binding Name}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Отчество"
-                                    Binding="{Binding PatronymicFireman}"></DataGridTextColumn>
+                                    Binding="{Binding Patronymic}"></DataGridTextColumn>
 
                     <DataGridTextColumn Header="Дата рождения"
-                                    Binding="{Binding Datebirth}"></DataGridTextColumn>
+                                    Binding="{Binding Date_birth}"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
             <Label Content="            СПИСОК&#xA;бойцов пожарной части" HorizontalAlignment="Left" Margin="279,2,0,0" VerticalAlignment="Top"  FontSize="32" Height="82" Width="375" Foreground="Black"/>
