@@ -29,8 +29,8 @@ namespace FireDepartment.Pages
         private void Ok_Ta_Click(object sender, RoutedEventArgs e)
         {
             if (Name_division.Text != "" &&
-              Address.SelectedItem != null &&
-         Obj_ignition.SelectedItem != null &&
+             Address.SelectedItem != null &&
+                Obj_ignition.SelectedItem != null &&
                 Type_ignition.Text != "" &&
             Indate.SelectedDate.HasValue &&
                       Surname.Text != "" &&
@@ -60,6 +60,7 @@ namespace FireDepartment.Pages
                             travel.ActId = db.Acts.Count() - 1;
                             db.Travels.Add(travel);
                             db.SaveChanges();
+                            Console.WriteLine("Работает");
                             NavigationService.Navigate(new Travel_list());
                         }
                     }

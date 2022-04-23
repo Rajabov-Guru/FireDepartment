@@ -19,11 +19,11 @@
         </Style>
     </Page.Resources>
     <Viewbox>
-        <ScrollViewer Name="scroll" CanContentScroll="True" Width="1055"  Height="650" HorizontalScrollBarVisibility ="Visible" Margin="0">
+        <ScrollViewer Name="scroll" CanContentScroll="True" Width="1055"  Height="802" HorizontalScrollBarVisibility ="Visible" Margin="0">
             <Grid Margin="0" Background="White" Height="785" Width="Auto">
                 <StackPanel Margin="31,140,583.6,0" Orientation="Vertical" Height="574" VerticalAlignment="Top">
-                    <Label Content="Наименование объекта" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
-                    <Label Content="Принадлежность объекта&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="#000000"/>
+                    <Label Content="Наименование объекта" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="Red" Height="26" Background="White"/>
+                    <Label Content="Принадлежность объекта&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Height="27" Foreground="Black" Background="White"/>
                     <Label Content="Дата и время локализации пожара&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
                     <Label Content="Дата и время ликвидации пожара&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="27"/>
                     <Label Content="Обстановка к моменту прибытия расчетов ПО&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
@@ -57,17 +57,17 @@
                     <Label Content="Спасено скота (гол.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
                     <Label Content="Спасено материальных ценностей (р.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
                 </StackPanel>
-                <Button Content="ОК" x:Name="Ok_Ad" HorizontalAlignment="Left" Margin="316,719,0,0" VerticalAlignment="Top" Width="107" Height="39" FontSize="18"/>
-                <Button Content="Отмена" x:Name="Cancel_Ad" HorizontalAlignment="Left" Margin="596,718,0,0" VerticalAlignment="Top" Width="107" Height="39" FontSize="18"/>
+                <Button Content="ОК" x:Name="Ok_Ad" HorizontalAlignment="Left" Margin="316,719,0,0" VerticalAlignment="Top" Width="107" Height="39" FontSize="18" Click="Ok_Ad_Click"/>
+                <Button Content="Отмена" x:Name="Cancel_Ad" HorizontalAlignment="Left" Margin="596,718,0,0" VerticalAlignment="Top" Width="107" Height="39" FontSize="18" Click="Cancel_Ad_Click"/>
                 <StackPanel Margin="220,140,450.2,66" Orientation="Vertical">
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="38,0,0,11" TextWrapping="Wrap" x:Name="Obj_ignition" VerticalAlignment="Top" Width="264" Padding="5,5,5,8"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
+                    <ComboBox x:Name="belongings" HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
                     <DatePicker HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="30" Padding="2,2,2,8"/>
                     <DatePicker HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="30" Padding="2,2,2,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="146,0,0,11" TextWrapping="Wrap" x:Name="Situation" VerticalAlignment="Top" Width="156" Padding="5,5,5,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="182,0,0,11" TextWrapping="Wrap" x:Name="FireEquipment" VerticalAlignment="Top" Width="120" Padding="5,5,5,8"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
+                    <ComboBox x:Name="waterShit" HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
+                    <ComboBox x:Name="FireAutomatization" HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" x:Name="Parished" VerticalAlignment="Top" Width="302" Padding="5,5,5,8" Margin="0,0,0,11"/>
                     <TextBox HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" x:Name="ParishedChildren" VerticalAlignment="Top" Width="302" Padding="5,5,5,8" Margin="0,0,0,11"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="22,0,0,11" TextWrapping="Wrap" x:Name="ParishedEmployees" VerticalAlignment="Top" Width="280" Padding="5,5,5,8"/>
