@@ -61,13 +61,13 @@
                 <Button Content="Отмена" x:Name="Cancel_Ad" HorizontalAlignment="Left" Margin="596,718,0,0" VerticalAlignment="Top" Width="107" Height="39" FontSize="18" Click="Cancel_Ad_Click"/>
                 <StackPanel Margin="220,140,450.2,66" Orientation="Vertical">
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="38,0,0,11" TextWrapping="Wrap" x:Name="Obj_ignition" VerticalAlignment="Top" Width="264" Padding="5,5,5,8"/>
-                    <ComboBox x:Name="belongings" HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="30" Padding="2,2,2,8"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="30" Padding="2,2,2,8"/>
+                    <ComboBox x:Name="Belonging" HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
+                    <DatePicker x:Name="Localization" HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="30" Padding="2,2,2,8"/>
+                    <DatePicker x:Name="Liquidation" HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="30" Padding="2,2,2,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="146,0,0,11" TextWrapping="Wrap" x:Name="Situation" VerticalAlignment="Top" Width="156" Padding="5,5,5,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="182,0,0,11" TextWrapping="Wrap" x:Name="FireEquipment" VerticalAlignment="Top" Width="120" Padding="5,5,5,8"/>
-                    <ComboBox x:Name="waterShit" HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
-                    <ComboBox x:Name="FireAutomatization" HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
+                    <ComboBox x:Name="WaterSupply" HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
+                    <ComboBox x:Name="AvailabilityOfFireAutomatic" HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" x:Name="Parished" VerticalAlignment="Top" Width="302" Padding="5,5,5,8" Margin="0,0,0,11"/>
                     <TextBox HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" x:Name="ParishedChildren" VerticalAlignment="Top" Width="302" Padding="5,5,5,8" Margin="0,0,0,11"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="22,0,0,11" TextWrapping="Wrap" x:Name="ParishedEmployees" VerticalAlignment="Top" Width="280" Padding="5,5,5,8"/>
