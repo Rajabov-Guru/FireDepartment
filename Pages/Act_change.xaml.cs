@@ -24,5 +24,10 @@ namespace FireDepartment.Pages
         {
             InitializeComponent();
         }
+
+        private void Ok_Ad_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

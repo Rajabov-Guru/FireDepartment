@@ -59,13 +59,13 @@
                                     Binding="{Binding InHour}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Минуты получения сообщения в пожарную часть"
                                     Binding="{Binding InMinutes}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Дата локализации пожара"
+                    <DataGridTextColumn Header="Дата и время локализации пожара"
                                     Binding="{Binding Localization}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Час локализации пожара"
                                     Binding="{Binding LocHour}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Минуты локализации пожара"
                                     Binding="{Binding LocMinutes}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Дата ликвидации пожара"
+                    <DataGridTextColumn Header="Дата и время ликвидации пожара"
                                     Binding="{Binding Liquidation}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Час  ликвидации пожара"
                                     Binding="{Binding LiqHour}"></DataGridTextColumn>
