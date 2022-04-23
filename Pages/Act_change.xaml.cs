@@ -37,12 +37,34 @@ namespace FireDepartment.Pages
             waterShit.SelectedIndex = a.WaterSupply ? 0 : 1;
             FireAutomatization.ItemsSource = TrueFalse;
             FireAutomatization.SelectedIndex = a.AvailabilityOfFireAutomatic ? 0 : 1;
-            //-------
+            Localization.SelectedDate = a.Localization;
+            Liquidation.SelectedDate = a.Liquidation;
             Situation.Text = a.Situation;
-            /*
-             ....
-
-             */
+            FireEquipment.Text = a.FireEquipment;
+            Parished.Text = a.Parished.ToString();
+            ParishedChildren.Text = a.ParishedChildren.ToString();
+            ParishedEmployees.Text = a.ParishedEmployees.ToString();
+            Injured.Text = a.Injured.ToString();
+            InjuredChildren.Text = a.InjuredChildren.ToString();
+            InjuredEmployees.Text = a.InjuredEmployees.ToString();
+            DestoyedBuildings.Text = a.DestoyedBuildings.ToString();
+            DestoyedFlats.Text = a.DestoyedFlats.ToString();
+            DestoyedFloorArea.Text = a.DestoyedFloorArea.ToString();
+            DestoyedTechnicks.Text = a.DestoyedTechnicks.ToString();
+            DestoyedAgricultural.Text = a.DestoyedAgricultural.ToString();
+            DestoyedBeasts.Text = a.DestoyedBeasts.ToString();
+            DamagedBuildings.Text = a.DamagedBuildings.ToString();
+            DamagedFlats.Text = a.DamagedFlats.ToString();
+            DamagedFloorArea.Text = a.DamagedFloorArea.ToString();
+            DamagedTechnicks.Text = a.DamagedTechnicks.ToString();
+            DamagedAgricultural.Text = a.DamagedAgricultural.ToString();
+            DamagedBeasts.Text = a.DamagedBeasts.ToString();
+            Terms.Text = a.Terms.ToString();
+            Cause.Text = a.Cause.ToString();
+            RescuedHumans.Text = a.RescuedHumans.ToString();
+            RescuedTechnicks.Text = a.RescuedTechnicks.ToString();
+            RescuedBeasts.Text = a.RescuedBeasts.ToString();
+            RescuedMaterialValues.Text = a.RescuedMaterialValues.ToString();
 
 
         }
