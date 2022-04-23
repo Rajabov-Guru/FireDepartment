@@ -19,15 +19,15 @@
             <Label Content="Имя заявителя" HorizontalAlignment="Left" Margin="34,280,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="#000000"/>
             <Label Content="Отчество заявителя" HorizontalAlignment="Left" Margin="34,308,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="#000000"/>
             <Label Content="Номер телефона &#xD;&#xA;заявителя" HorizontalAlignment="Left" Margin="34,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,-0.06" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Foreground="Black" />
-            <Button Content="Ok" Name="Ok_Ta" HorizontalAlignment="Left" Margin="231,400,0,0" VerticalAlignment="Top" Width="96" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="32"/>
-            <Button Content="Отмена" Name="Cancel_Ta" HorizontalAlignment="Left" Margin="602,400,0,0" VerticalAlignment="Top" Width="93" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171" Height="32"/>
+            <Button Content="Ok" Name="Ok_Ta" HorizontalAlignment="Left" Margin="231,400,0,0" VerticalAlignment="Top" Width="96" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="32" Click="Ok_Ta_Click"/>
+            <Button Content="Отмена" Name="Cancel_Ta" HorizontalAlignment="Left" Margin="602,400,0,0" VerticalAlignment="Top" Width="93" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171" Height="32" Click="Cancel_Ta_Click"/>
             <StackPanel Margin="242,79,63,60"  Orientation="Vertical" >
 
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Name_division" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
-                <ComboBox VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8" HorizontalAlignment="Left" Width="495"/>
-                <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
+                <ComboBox x:Name="Address" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8" HorizontalAlignment="Left" Width="495"/>
+                <ComboBox x:Name="Obj_ignition" HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Type_ignition" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
-                <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" Height="25" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
+                <DatePicker x:Name="Indate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" Height="25" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Surname" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Name" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Patronymic" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
