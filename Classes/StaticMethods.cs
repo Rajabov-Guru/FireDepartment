@@ -28,25 +28,17 @@ namespace FireDepartment.Classes
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void Travel() // путевка
+        public static void Travel(Travel t) // путевка
         {
             try
             {
-                string fioDisp; // диспетчер
-                Travel a = null;
-                Guard g = null;
-                using (FireDB db = new FireDB())
-                {
-                    a = db.Travels.First();//
-                    g = db.Guards.First();//что цеплять
-                }
                 WordDocument w = new WordDocument();
-                string name1 = AppDomain.CurrentDomain.BaseDirectory + "Shablons\\Travel.docx";
-                string newName1 = AppDomain.CurrentDomain.BaseDirectory + "docs\\Путевка (" + DateTime.Now.ToString("dd.MM.yyyy") + ").docx";
+                string name1 = AppDomain.CurrentDomain.BaseDirectory + "Shablons\\Travel2.docx";
+                string newName1 = AppDomain.CurrentDomain.BaseDirectory + "docs\\Путевка (" + DateTime.Now.ToString("dd.MM.yyyy_HH_mm") + ").docx";
 
                 w.AddDoc(name1, newName1);
                 w.OpenDoc(newName1);
-                w.FillTravel(newName1, a, g);
+                w.FillTravel(newName1, t);
                 w.CloseDoc();
             }
             catch (Exception ex)
@@ -59,8 +51,8 @@ namespace FireDepartment.Classes
             try
             {
                 WordDocument w = new WordDocument();
-                string name1 = AppDomain.CurrentDomain.BaseDirectory + "Shablons\\Report.docx";
-                string newName1 = AppDomain.CurrentDomain.BaseDirectory + "docs\\Отчет (" + DateTime.Now.ToString("dd.MM.yyyy") + ").docx";
+                string name1 = AppDomain.CurrentDomain.BaseDirectory + "Shablons\\ReportInPeriod.docx";
+                string newName1 = AppDomain.CurrentDomain.BaseDirectory + "docs\\" + NameOfReportFile(key); 
 
                 w.AddDoc(name1, newName1);
                 w.OpenDoc(newName1);
@@ -92,6 +84,33 @@ namespace FireDepartment.Classes
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        public static string NameOfReportFile(int key) 
+        {
+            switch (key)
+            {
+                case 1:
+                    return "Отчет за день(" + DateTime.Now.ToString("dd.MM.yyyy_HH_mm") + ").docx";
+                    break;
+                case 2:
+                    return "Отчет за неделю(" + DateTime.Now.ToString("dd.MM.yyyy_HH_mm") + ").docx";
+                    break;
+                case 3:
+                    return "Отчет за месяц(" + DateTime.Now.ToString("dd.MM.yyyy_HH_mm") + ").docx";
+                    break;
+                case 4:
+                    return "Отчет за квартал(" + DateTime.Now.ToString("dd.MM.yyyy_HH_mm") + ").docx";
+                    break;
+                case 5:
+                    return "Отчет за пол года(" + DateTime.Now.ToString("dd.MM.yyyy_HH_mm") + ").docx";
+                    break;
+                case 6:
+                    return "Отчет за год(" + DateTime.Now.ToString("dd.MM.yyyy_HH_mm") + ").docx";
+                    break;
+                default:
+                    return "Отчет за день(" + DateTime.Now.ToString("dd.MM.yyyy_HH_mm") + ").docx";
+                    break;
             }
         }
     }

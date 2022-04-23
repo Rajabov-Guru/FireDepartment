@@ -118,7 +118,7 @@
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
-            <Button Content="Распечатать"  HorizontalAlignment="Left" Margin="586,305,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
+            <Button Content="Распечатать"  HorizontalAlignment="Left" Margin="586,305,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top" Click="Button_Click"/>
         <Grid.Resources>
             <Style TargetType="Label">
                 <Setter Property="FontSize" Value="38

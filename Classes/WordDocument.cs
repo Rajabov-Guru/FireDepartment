@@ -12,6 +12,7 @@ namespace FireDepartment.Classes
 {
     class WordDocument
     {
+        Random rand = new Random();
         Microsoft.Office.Interop.Word.Application wordApp;
         public WordDocument()
         {
@@ -164,25 +165,24 @@ namespace FireDepartment.Classes
                 MessageBox.Show(ex.Message);
             }
         }
-        public void FillTravel(string nameDoc, Travel a, Guard g)//заполнение путевки
+        public void FillTravel(string nameDoc, Travel t)//заполнение путевки
         {
             try
             {
 
                 Document wordDocument = wordApp.Documents.get_Item(nameDoc);
-                this.ReplaceWordStub("{Name_division}", a.Name_division, nameDoc);
-                this.ReplaceWordStub("{Obj_ignition}", a.Obj_ignition, nameDoc); 
-                this.ReplaceWordStub("{Address}", a.Address, nameDoc);
-                this.ReplaceWordStub("{Senior}", g.Senior, nameDoc);
-                this.ReplaceWordStub("{Telephone}", a.Telephone, nameDoc);
-                this.ReplaceWordStub("{FIO}", a.FIO, nameDoc);
-                this.ReplaceWordStub("{InDate}", DateTime.Now.ToString(), nameDoc);
-                this.ReplaceWordStub("{InTime}", DateTime.Now.ToString(), nameDoc);
-                this.ReplaceWordStub("{InMin}", DateTime.Now.ToString(), nameDoc);
-
-                // дату-время делим через сплит на 3 переменных и дальше удачи вам, господа
-
-
+                this.ReplaceWordStub("{ID}", rand.Next(1, 20).ToString(), nameDoc);
+                this.ReplaceWordStub("{Name_division}", t.Name_division, nameDoc);
+                this.ReplaceWordStub("{Obj_ignition}", t.Obj_ignition, nameDoc); 
+                this.ReplaceWordStub("{Type_ignition}", t.Type_ignition, nameDoc); 
+                this.ReplaceWordStub("{Address}", t.Address, nameDoc);
+                this.ReplaceWordStub("{Telephone}", t.Telephone, nameDoc);
+                this.ReplaceWordStub("{Surname}", t.Surname, nameDoc);
+                this.ReplaceWordStub("{Name}", t.Name, nameDoc);
+                this.ReplaceWordStub("{Patronymic}", t.Patronymic, nameDoc);
+                this.ReplaceWordStub("{InDate}", t.Indate.ToString("dd.MM.yyyy"), nameDoc);
+                this.ReplaceWordStub("{InTime}", t.Indate.ToString("HH"), nameDoc);
+                this.ReplaceWordStub("{InMin}", t.Indate.ToString("mm"), nameDoc);
                 wordDocument.Save();
             }
             catch (Exception ex)
@@ -194,9 +194,10 @@ namespace FireDepartment.Classes
         {
             try
             {
-
+                
 
                 Document wordDocument = wordApp.Documents.get_Item(nameDoc);
+                this.ReplaceWordStub("{number}", rand.Next(1,20).ToString(), nameDoc);
                 this.ReplaceWordStub("{Period}", "день", nameDoc);
                 this.ReplaceWordStub("{Parished}", a.Parished.ToString(), nameDoc);
                 this.ReplaceWordStub("{ParishedChildren}", a.ParishedChildren.ToString(), nameDoc);
@@ -237,6 +238,7 @@ namespace FireDepartment.Classes
             {
 
                 Document wordDocument = wordApp.Documents.get_Item(nameDoc);
+                this.ReplaceWordStub("{number}", rand.Next(1, 20).ToString(), nameDoc);
                 this.ReplaceWordStub("{Period}", "неделю", nameDoc);
                 this.ReplaceWordStub("{Parished}", a.Parished.ToString(), nameDoc);
                 this.ReplaceWordStub("{ParishedChildren}", a.ParishedChildren.ToString(), nameDoc);
@@ -275,6 +277,7 @@ namespace FireDepartment.Classes
             {
 
                 Document wordDocument = wordApp.Documents.get_Item(nameDoc);
+                this.ReplaceWordStub("{number}", rand.Next(1, 20).ToString(), nameDoc);
                 this.ReplaceWordStub("{Period}", "месяц", nameDoc);
                 this.ReplaceWordStub("{Parished}", a.Parished.ToString(), nameDoc);
                 this.ReplaceWordStub("{ParishedChildren}", a.ParishedChildren.ToString(), nameDoc);
@@ -313,6 +316,7 @@ namespace FireDepartment.Classes
             {
 
                 Document wordDocument = wordApp.Documents.get_Item(nameDoc);
+                this.ReplaceWordStub("{number}", rand.Next(1, 20).ToString(), nameDoc);
                 this.ReplaceWordStub("{Period}", "квартал", nameDoc);
                 this.ReplaceWordStub("{Parished}", a.Parished.ToString(), nameDoc);
                 this.ReplaceWordStub("{ParishedChildren}", a.ParishedChildren.ToString(), nameDoc);
@@ -351,6 +355,7 @@ namespace FireDepartment.Classes
             {
 
                 Document wordDocument = wordApp.Documents.get_Item(nameDoc);
+                this.ReplaceWordStub("{number}", rand.Next(1, 20).ToString(), nameDoc);
                 this.ReplaceWordStub("{Period}", "полгода", nameDoc);
                 this.ReplaceWordStub("{Parished}", a.Parished.ToString(), nameDoc);
                 this.ReplaceWordStub("{ParishedChildren}", a.ParishedChildren.ToString(), nameDoc);
@@ -387,6 +392,7 @@ namespace FireDepartment.Classes
             try
             {
                 Document wordDocument = wordApp.Documents.get_Item(nameDoc);
+                this.ReplaceWordStub("{number}", rand.Next(1, 20).ToString(), nameDoc);
                 this.ReplaceWordStub("{Period}", "год", nameDoc);
                 this.ReplaceWordStub("{Parished}", a.Parished.ToString(), nameDoc);
                 this.ReplaceWordStub("{ParishedChildren}", a.ParishedChildren.ToString(), nameDoc);

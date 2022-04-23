@@ -1,4 +1,5 @@
-﻿using FireDepartment.Model;
+﻿using FireDepartment.Classes;
+using FireDepartment.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,6 +51,19 @@ namespace FireDepartment.Pages
         private void AddTravelClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Travel_add());
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (travelGrid.SelectedItem != null)
+            {
+                Travel t = (Travel)travelGrid.SelectedItem;
+                StaticMethods.Travel(t);
+            }
+            else 
+            {
+                MessageBox.Show("Выберите путевку");
+            }
         }
     }
 }
