@@ -12,8 +12,8 @@
         <Grid Background="White" Height="255" Width="800">
             <Label Content="Оборудование" HorizontalAlignment="Left" Margin="42,101,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" Width="156" Foreground="Black"/>
             <TextBox Height="26" Margin="192,105,23,0" TextWrapping="Wrap" Name="EquipmentList" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
-            <Button Content="Ok" Name ="Ok_Ca" HorizontalAlignment="Left" Margin="253,182,0,0" VerticalAlignment="Top" Width="100" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="36"/>
-            <Button Content="Отмена" Name ="Cancel_Ca" HorizontalAlignment="Left" Margin="508,182,0,0" VerticalAlignment="Top" Width="89" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171" Height="36"/>
+            <Button Content="Ok" Name ="Ok_Ca" HorizontalAlignment="Left" Margin="253,182,0,0" VerticalAlignment="Top" Width="100" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="36" Click="Ok_Ca_Click"/>
+            <Button Content="Отмена" Name ="Cancel_Ca" HorizontalAlignment="Left" Margin="508,182,0,0" VerticalAlignment="Top" Width="89" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171" Height="36" Click="Cancel_Ca_Click"/>
             <Label Content="Шаблон комплекта" HorizontalAlignment="Left" Margin="253,23,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light">
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">

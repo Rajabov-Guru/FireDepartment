@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,30 @@ namespace FireDepartment.Pages
         public Complect_add()
         {
             InitializeComponent();
+        }
+
+        private void Ok_Ca_Click(object sender, RoutedEventArgs e)
+        {
+            if (EquipmentList.Text != "")
+            {
+                using (FireDB db=new FireDB()) 
+                {
+                    Complect c = new Complect();
+                    c.EquipmentList = EquipmentList.Text;
+                    db.Complects.Add(c);
+                    db.SaveChanges();
+                    NavigationService.Navigate(new Complect_list());
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Введите данные");
+            }
+        }
+
+        private void Cancel_Ca_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Complect_list());
         }
     }
 }
