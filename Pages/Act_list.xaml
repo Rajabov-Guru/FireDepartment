@@ -133,20 +133,20 @@
                 </DataGrid.Columns>
             </DataGrid>
             <Button Content="Поиск"  HorizontalAlignment="Left" Margin="70,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top" Click="Button_Click_1"></Button>
-            <Button Content="Распечатать" HorizontalAlignment="Left" Margin="600.8,315.41,0,0" Width="120" FontSize="18" Height="36" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" UseLayoutRounding="False"/>
-            <ComboBox HorizontalAlignment="Left" Margin="270,312,0,0" VerticalAlignment="Top" Width="146" >
-                <TextBlock Foreground="#000000">За день</TextBlock>
-                <TextBlock Foreground="#000000">За неделю</TextBlock>
-                <TextBlock Foreground="#000000">За месяц</TextBlock>
-                <TextBlock Foreground="#000000">За квартал</TextBlock>
-                <TextBlock Foreground="#000000">За полугодие</TextBlock>
-                <TextBlock Foreground="#000000">За год</TextBlock>
+            <Button Content="Распечатать" HorizontalAlignment="Left" Margin="600.8,315.41,0,0" Width="120" FontSize="18" Height="36" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" UseLayoutRounding="False" Click="Button_Click_2"/>
+            <ComboBox x:Name="ReportBox" HorizontalAlignment="Left" Margin="270,312,0,0" VerticalAlignment="Top" Width="146" >
+                <TextBlock Foreground="#000000">1-За день</TextBlock>
+                <TextBlock Foreground="#000000">2-За неделю</TextBlock>
+                <TextBlock Foreground="#000000">3-За месяц</TextBlock>
+                <TextBlock Foreground="#000000">4-За квартал</TextBlock>
+                <TextBlock Foreground="#000000">5-За полугодие</TextBlock>
+                <TextBlock Foreground="#000000">6-За год</TextBlock>
             </ComboBox>
 
 
 
             <Label Content="Выберите отчетный период" HorizontalAlignment="Left" Margin="258,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
-            <Button Content="Сформировать" Name ="Form_Al" HorizontalAlignment="Left" Margin="277,388,0,27" Width="135" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" />
+            <Button Content="Сформировать" Name ="Form_Al" HorizontalAlignment="Left" Margin="277,388,0,27" Width="135" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Click="Form_Al_Click" />
             <ComboBox x:Name="queries" HorizontalAlignment="Left" Margin="61,312,0,0" VerticalAlignment="Top" Width="163">
                 <TextBlock Foreground="#000000">1-По принадлежности</TextBlock>
                 <TextBlock Foreground="#000000">2-По дате обнаружения</TextBlock>

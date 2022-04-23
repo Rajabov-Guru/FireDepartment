@@ -1,4 +1,5 @@
-﻿using FireDepartment.Model;
+﻿using FireDepartment.Classes;
+using FireDepartment.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -142,6 +143,35 @@ namespace FireDepartment.Pages
             {
                 MessageBox.Show("Выберите зварос из списка!");
             }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            if (actGrid.SelectedItem != null)
+            {
+                Act a = (Act)actGrid.SelectedItem;
+                Travel t;
+                using (FireDB db = new FireDB()) 
+                {
+                    Act act = db.Acts.Where(x => x.Id == a.Id).First();
+                    t=act.Travels.First();
+                }
+                StaticMethods.Act(a,t);
+
+            }
+            else
+            {
+                MessageBox.Show("Выберите акт");
+            }
+        }
+
+        private void Form_Al_Click(object sender, RoutedEventArgs e)
+        {
+            if (ReportBox.SelectedItem != null)
+            {
+                int key = int.Parse(ReportBox.Text.Split('-')[0]);
+            }
+            else MessageBox.Show("Выберите тип отчета");
         }
     }
 }

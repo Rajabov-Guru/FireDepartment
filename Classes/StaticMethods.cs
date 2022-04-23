@@ -10,22 +10,17 @@ namespace FireDepartment.Classes
 {
     static class StaticMethods
     {
-        public static void Act() // Акт о пожаре
+        public static void Act(Act a,Travel t) // Акт о пожаре
         {
             try
             {
-                Act a = null;
-                using (FireDB db = new FireDB())
-                {
-                    a = db.Acts.First();//что цеплять
-                }
                 WordDocument w = new WordDocument();
-                string name1 = AppDomain.CurrentDomain.BaseDirectory + "Shablons\\Akt.docx";
-                string newName1 = AppDomain.CurrentDomain.BaseDirectory + "docs\\Акт о пожаре (" + DateTime.Now.ToString("dd.MM.yyyy") + ").docx";
+                string name1 = AppDomain.CurrentDomain.BaseDirectory + "Shablons\\Act.docx";
+                string newName1 = AppDomain.CurrentDomain.BaseDirectory + "docs\\Акт о пожаре (" + DateTime.Now.ToString("dd.MM.yyyy_HH_mm") + ").docx";
 
                 w.AddDoc(name1, newName1);
                 w.OpenDoc(newName1);
-                w.FillAct(newName1, a);
+                w.FillAct(newName1, a,t);
                 w.CloseDoc();
             }
             catch (Exception ex)
@@ -59,23 +54,39 @@ namespace FireDepartment.Classes
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void Report()
+        public static void Report(Act a,int key)
         {
             try
             {
-                Act a = null;
-                using (FireDB db = new FireDB())
-                {
-                    a = db.Acts.First();// что цеплять
-
-                }
                 WordDocument w = new WordDocument();
                 string name1 = AppDomain.CurrentDomain.BaseDirectory + "Shablons\\Report.docx";
                 string newName1 = AppDomain.CurrentDomain.BaseDirectory + "docs\\Отчет (" + DateTime.Now.ToString("dd.MM.yyyy") + ").docx";
 
                 w.AddDoc(name1, newName1);
                 w.OpenDoc(newName1);
-                w.FillReportDay(newName1, a);
+                switch (key)
+                {
+                    case 1:
+                        w.FillReportDay(newName1,a);
+                        break;
+                    case 2:
+                        w.FillReportWeek(newName1, a);
+                        break;
+                    case 3:
+                        w.FillReportMonth(newName1, a);
+                        break;
+                    case 4:
+                        w.FillReportQuarter(newName1, a);
+                        break;
+                    case 5:
+                        w.FillReportHalfYear(newName1, a);
+                        break;
+                    case 6:
+                        w.FillReportYear(newName1, a);
+                        break;
+                    default:
+                        break;
+                }
                 w.CloseDoc();
             }
             catch (Exception ex)
