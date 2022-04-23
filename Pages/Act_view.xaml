@@ -49,8 +49,8 @@
                 <TextBox x:Name="liquidation" HorizontalAlignment="Left" Height="24" Margin="290,465,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" IsEnabled="False"/>
                 <TextBox x:Name="situation" HorizontalAlignment="Left" Height="24" Margin="376,492,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                 <TextBox x:Name="FireEquipment" HorizontalAlignment="Left" Height="24" Margin="412,518,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-                <TextBox x:Name="waterShit" HorizontalAlignment="Left" Height="24" Margin="252,545,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
-                <TextBox x:Name="FireAutomatization" HorizontalAlignment="Left" Height="24" Margin="277,578,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+                <TextBox x:Name="waterSupply" HorizontalAlignment="Left" Height="24" Margin="252,545,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
+                <TextBox x:Name="AvailabilityOfFireAutomatic" HorizontalAlignment="Left" Height="24" Margin="277,578,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                 <TextBox x:Name="Parished" HorizontalAlignment="Left" Height="24" Margin="230,606,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" IsEnabled="False"/>
                 <TextBox x:Name="ParishedChildren" HorizontalAlignment="Left" Height="24" Margin="230,634,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" IsEnabled="False"/>
                 <TextBox x:Name="ParishedEmployees" HorizontalAlignment="Left" Height="24" Margin="252,663,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
