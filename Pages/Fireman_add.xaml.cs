@@ -30,6 +30,7 @@ namespace FireDepartment.Pages
         {
             if (SurnameFireman.Text != ""&& NameFireman.Text != ""&& PatronymicFireman.Text != "")
             {
+                
                
                 if (DateBirth.SelectedDate.HasValue )
                 {
