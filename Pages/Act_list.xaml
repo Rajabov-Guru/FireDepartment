@@ -38,8 +38,7 @@
                 </DataGrid.ContextMenu>
 
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Наименование объекта" 
-                                    Binding="{Binding Obj_ignition}"></DataGridTextColumn>
+                    
                     <DataGridTextColumn Header="Принадлежность объекта"
                                     Binding="{Binding Belonging}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Адрес объекта" 
@@ -50,7 +49,7 @@
                                     Binding="{Binding Surname}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Имя заявителя"
                                     Binding="{Binding Name}"></DataGridTextColumn>
-                    <!--<DataGridTextColumn Header="Отчество заявителя"
+                    <DataGridTextColumn Header="Отчество заявителя"
                                     Binding="{Binding Patronymic}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Номер телефона"
                                     Binding="{Binding Telephone}"></DataGridTextColumn>
@@ -127,7 +126,7 @@
                     <DataGridTextColumn Header="Спасено скота (гол.)"
                                     Binding="{Binding RescuedBeasts}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Спасено материальных ценностей (р.)"
-                                    Binding="{Binding RescuedMaterialValues}"></DataGridTextColumn>-->
+                                    Binding="{Binding RescuedMaterialValues}"></DataGridTextColumn>
 
                 </DataGrid.Columns>
             </DataGrid>

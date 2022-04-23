@@ -18,7 +18,7 @@
 
     <Viewbox>
         <Grid  Height="450" Width="800" Background="White">
-            <DataGrid HorizontalAlignment="Left" Height="166" Margin="80,107,0,0" VerticalAlignment="Top" Width="640" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0">
+            <DataGrid x:Name="guardGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="80,107,0,0" VerticalAlignment="Top" Width="640" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Добавить" Click="AddGuardClick"></MenuItem>
@@ -29,13 +29,10 @@
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="№ комплекта" 
-                                    Binding="{Binding ID}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Фамилия начальника"
-                                    Binding="{Binding SurnameSenior}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Имя начальника"
-                                    Binding="{Binding NameSenior}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Отчество начальника"
-                                    Binding="{Binding PatronymicSenior}"></DataGridTextColumn>
+                                    Binding="{Binding Id}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="ФИО начальника"
+                                    Binding="{Binding Senior}"></DataGridTextColumn>
+                    
 
                 </DataGrid.Columns>
             </DataGrid>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,15 @@ namespace FireDepartment.Pages
     /// </summary>
     public partial class Fireman_list : Page
     {
+        List<Fireman> source;
         public Fireman_list()
         {
             InitializeComponent();
+            using (FireDB db = new FireDB())
+            {
+                this.source = db.Firemans.ToList();
+            }
+            firemanGrid.ItemsSource = source;
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

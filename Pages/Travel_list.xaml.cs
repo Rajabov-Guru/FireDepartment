@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,15 @@ namespace FireDepartment.Pages
     /// </summary>
     public partial class Travel_list : Page
     {
+        List<Travel> source;
         public Travel_list()
         {
             InitializeComponent();
+            using (FireDB db = new FireDB())
+            {
+                this.source = db.Travels.ToList();
+            }
+            travelGrid.ItemsSource = source;
         }
 
         private void Add_Ta_Click(object sender, RoutedEventArgs e)
