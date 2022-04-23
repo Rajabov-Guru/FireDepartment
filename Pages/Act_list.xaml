@@ -44,7 +44,7 @@
                     <DataGridTextColumn Header="Адрес объекта" 
                                     Binding="{Binding Address}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Дата обнаружения пожара"
-                                    Binding="{Binding DetectionDate}"></DataGridTextColumn>
+                                    Binding="{Binding Detection}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Фамилия заявителя"
                                     Binding="{Binding Surname}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Имя заявителя"
@@ -60,13 +60,13 @@
                     <DataGridTextColumn Header="Минуты получения сообщения в пожарную часть"
                                     Binding="{Binding InMinutes}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Дата локализации пожара"
-                                    Binding="{Binding LocDate}"></DataGridTextColumn>
+                                    Binding="{Binding Localization}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Час локализации пожара"
                                     Binding="{Binding LocHour}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Минуты локализации пожара"
                                     Binding="{Binding LocMinutes}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Дата ликвидации пожара"
-                                    Binding="{Binding LiqDate}"></DataGridTextColumn>
+                                    Binding="{Binding Liquidation}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Час  ликвидации пожара"
                                     Binding="{Binding LiqHour}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Минуты ликвидации пожара"
