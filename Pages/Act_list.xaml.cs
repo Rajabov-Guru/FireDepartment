@@ -41,5 +41,52 @@ namespace FireDepartment.Pages
         {
             NavigationService.Navigate(new Act_add());
         }
+
+        private void ActChangeClick(object sender, RoutedEventArgs e)
+        {
+            if (actGrid.SelectedItem != null)
+            {
+                Act a = (Act)actGrid.SelectedItem;
+                NavigationService.Navigate(new Act_change(a));
+            }
+            else 
+            {
+                MessageBox.Show("Выберите акт");
+            }
+
+        }
+
+        private void DeleteClick(object sender, RoutedEventArgs e)
+        {
+            if (actGrid.SelectedItem != null)
+            {
+
+                //Act a = (Act)actGrid.SelectedItem;
+                //using (FireDB db = new FireDB()) 
+                //{
+                //    db.Acts.Remove(a);
+                //    db.SaveChanges();
+                //}
+                MessageBox.Show("Акт удален из базы данных");
+            }
+            else
+            {
+                MessageBox.Show("Выберите акт");
+            }
+        }
+
+        private void ViewClick(object sender, RoutedEventArgs e)
+        {
+            if (actGrid.SelectedItem != null)
+            {
+
+               
+                MessageBox.Show("Акт удален из базы данных");
+            }
+            else
+            {
+                MessageBox.Show("Выберите акт");
+            }
+        }
     }
 }

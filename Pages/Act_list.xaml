@@ -31,9 +31,9 @@
                 <DataGrid.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Добавить" Click="AddActClick"></MenuItem>
-                        <MenuItem Header="Изменить"></MenuItem>
-                        <MenuItem Header="Удалить"></MenuItem>
-                        <MenuItem Header="Просмотр"></MenuItem>
+                        <MenuItem Header="Изменить" Click="ActChangeClick"></MenuItem>
+                        <MenuItem Header="Удалить" Click="DeleteClick"></MenuItem>
+                        <MenuItem Header="Выдача" Click="ViewClick"></MenuItem>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
 
