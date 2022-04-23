@@ -50,7 +50,7 @@
                                     Binding="{Binding Surname}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Имя заявителя"
                                     Binding="{Binding Name}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Отчество заявителя"
+                    <!--<DataGridTextColumn Header="Отчество заявителя"
                                     Binding="{Binding Patronymic}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Номер телефона"
                                     Binding="{Binding Telephone}"></DataGridTextColumn>
@@ -127,19 +127,19 @@
                     <DataGridTextColumn Header="Спасено скота (гол.)"
                                     Binding="{Binding RescuedBeasts}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Спасено материальных ценностей (р.)"
-                                    Binding="{Binding RescuedMaterialValues}"></DataGridTextColumn>
+                                    Binding="{Binding RescuedMaterialValues}"></DataGridTextColumn>-->
 
                 </DataGrid.Columns>
             </DataGrid>
             <Button Content="Поиск"  HorizontalAlignment="Left" Margin="70,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"></Button>
             <Button Content="Распечатать" HorizontalAlignment="Left" Margin="600.8,315.41,0,0" Width="120" FontSize="18" Height="36" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" UseLayoutRounding="False"/>
             <ComboBox HorizontalAlignment="Left" Margin="270,312,0,0" VerticalAlignment="Top" Width="146" >
-                <TextBlock Foreground="White">За день</TextBlock>
-                <TextBlock Foreground="White">За неделю</TextBlock>
-                <TextBlock Foreground="White">За месяц</TextBlock>
-                <TextBlock Foreground="White">За квартал</TextBlock>
-                <TextBlock Foreground="White">За полугодие</TextBlock>
-                <TextBlock Foreground="White">За год</TextBlock>
+                <TextBlock Foreground="#000000">За день</TextBlock>
+                <TextBlock Foreground="#000000">За неделю</TextBlock>
+                <TextBlock Foreground="#000000">За месяц</TextBlock>
+                <TextBlock Foreground="#000000">За квартал</TextBlock>
+                <TextBlock Foreground="#000000">За полугодие</TextBlock>
+                <TextBlock Foreground="#000000">За год</TextBlock>
             </ComboBox>
 
 

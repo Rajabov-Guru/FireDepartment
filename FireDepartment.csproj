@@ -260,6 +260,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Erorr\" />
     <Folder Include="Windows\" />
   </ItemGroup>
   <ItemGroup>
