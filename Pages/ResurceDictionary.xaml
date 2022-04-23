@@ -243,7 +243,7 @@
     </Style>
 
     <!-- CheckBox -->
-    <Style TargetType="{x:Type CheckBox}">
+    <!--<Style TargetType="{x:Type CheckBox}">
         <Setter Property="Background" Value="#FFFFFF" />
         <Setter Property="BorderBrush" Value="#FFFFFF" />
         <Setter Property="Foreground" Value="#000000" />
@@ -308,7 +308,7 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
+    </Style>-->
 
     <!-- RadioButton -->
     <Style TargetType="{x:Type RadioButton}">
@@ -829,7 +829,7 @@
     </Style>
 
     <!-- ComboBox -->
-    <Style TargetType="{x:Type ToggleButton}" x:Key="ComboBoxToggleButton">
+    <!--<Style TargetType="{x:Type ToggleButton}" x:Key="ComboBoxToggleButton">
         <Setter Property="BorderBrush" Value="#E0E0E0"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -1065,7 +1065,7 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
+    </Style>-->
 
     <!-- ProgressBar -->
     <Style TargetType="{x:Type ProgressBar}">

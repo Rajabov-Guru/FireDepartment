@@ -62,8 +62,8 @@
                 <StackPanel Margin="220,140,450.2,66" Orientation="Vertical">
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="38,0,0,11" TextWrapping="Wrap" x:Name="Obj_ignition" VerticalAlignment="Top" Width="264" Padding="5,5,5,8"/>
                     <ComboBox HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="24" Padding="2,2,2,8"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="24" Padding="2,2,2,8"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="30" Padding="2,2,2,8"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="60,0,0,11" VerticalAlignment="Top" Width="242" Height="30" Padding="2,2,2,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="146,0,0,11" TextWrapping="Wrap" x:Name="Situation" VerticalAlignment="Top" Width="156" Padding="5,5,5,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="182,0,0,11" TextWrapping="Wrap" x:Name="FireEquipment" VerticalAlignment="Top" Width="120" Padding="5,5,5,8"/>
                     <ComboBox HorizontalAlignment="Left" Margin="38,0,0,11" VerticalAlignment="Top" Width="264" Height="24" Padding="4,4,4,8"/>
@@ -95,7 +95,7 @@
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="34,0,0,10" TextWrapping="Wrap" x:Name="RescuedBeasts" VerticalAlignment="Top" Width="242"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="128,0,0,10" TextWrapping="Wrap" x:Name="RescuedMaterialValues" VerticalAlignment="Top" Width="148"/>
                 </StackPanel>
-                <Label Content="Шаблон акта о пожаре" HorizontalAlignment="Left" Margin="316,51,0,0" VerticalAlignment="Top" Foreground="Black"/>
+                <Label Content="     ШАБЛОН&#xD;&#xA; акта о пожаре" HorizontalAlignment="Left" Margin="398,26,0,0" VerticalAlignment="Top" Foreground="Black"/>
                 <Grid.Resources>
                     <Style TargetType="Label">
                         <Setter Property="FontSize" Value="38
