@@ -110,18 +110,28 @@ namespace FireDepartment.Pages
                         break;
                     case 2:
                         //...
+                        actGrid.ItemsSource = null;
+                        actGrid.ItemsSource = source;
                         break;
                     case 3:
                         //...
+                        actGrid.ItemsSource = null;
+                        actGrid.ItemsSource = source;
                         break;
                     case 4:
                         //...
+                        actGrid.ItemsSource = null;
+                        actGrid.ItemsSource = source;
                         break;
                     case 5:
                         //...
+                        actGrid.ItemsSource = null;
+                        actGrid.ItemsSource = source;
                         break;
                     case 6:
                         //...
+                        actGrid.ItemsSource = null;
+                        actGrid.ItemsSource = source;
                         break;
                     default:
                         Console.WriteLine("Что-то оченб странное произошло");
