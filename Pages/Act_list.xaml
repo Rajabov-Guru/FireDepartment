@@ -38,11 +38,11 @@
                 </DataGrid.ContextMenu>
 
                 <DataGrid.Columns>
-                    
+
+                    <DataGridTextColumn Header="Наименование объекта"
+                                    Binding="{Binding Obj_ignition}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Принадлежность объекта"
                                     Binding="{Binding Belonging}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Дата обнаружения пожара"
-                                    Binding="{Binding Detection}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Дата и время ликвидации пожара"
                                     Binding="{Binding Liquidation}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Дата и время локализации пожара"
