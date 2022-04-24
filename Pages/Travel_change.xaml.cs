@@ -28,7 +28,8 @@ namespace FireDepartment.Pages
             this.t = travel;
 
             Name_division.Text = t.Name_division;
-            //дописать
+            Type_ignition.Text = t.Type_ignition;
+            //...
         }
 
         private void Cancel_Ta_Click(object sender, RoutedEventArgs e)
