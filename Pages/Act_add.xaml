@@ -29,29 +29,29 @@
                     <Label Content="Огнетушащие средства, применявшиеся при тушении&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="27"/>
                     <Label Content="Водоснабжение на пожаре&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
                     <Label Content="Наличие пожарной автоматики&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="27" FontSize="14" Foreground="#000000"/>
-                    <Label Content="Погибло людей&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
-                    <Label Content="Погибло детей&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="27"/>
-                    <Label Content="Погибло работников ПО&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
-                    <Label Content="Полученные травмы людей&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="27"/>
-                    <Label Content="Полученные травмы детей&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
-                    <Label Content="Полученные травмы работников ПО&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="27"/>
-                    <Label Content="Уничтожено зданий, сооружений&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
-                    <Label Content="Уничтожено  жилых квартир&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" Height="26" FontSize="14" Foreground="#000000"/>
+                    <Label Content="Погибло людей(чел.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
+                    <Label Content="Погибло детей(чел.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="27"/>
+                    <Label Content="Погибло работников ПО(чел.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
+                    <Label Content="Полученные травмы людей(чел.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="27"/>
+                    <Label Content="Полученные травмы детей(чел.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
+                    <Label Content="Полученные травмы работников ПО(чел.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="27"/>
+                    <Label Content="Уничтожено зданий, сооружений(ед.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="26"/>
+                    <Label Content="Уничтожено  жилых квартир(ед.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,0,0,10" VerticalAlignment="Top" Height="26" FontSize="14" Foreground="#000000"/>
                 </StackPanel>
                 <StackPanel Margin="541,140,129.6,0" Orientation="Vertical" Height="558" VerticalAlignment="Top">
-                    <Label Content="Уничтожено  поэтажной площади&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
-                    <Label Content="Уничтожено  техники&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
-                    <Label Content="Уничтожено с/х культур&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
-                    <Label Content="Уничтожено скота&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
-                    <Label Content="Повреждено зданий, сооружений&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
-                    <Label Content="Повреждено жилых квартир&#xA;&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
-                    <Label Content="Повреждено поэтажной площади&#xA;&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
-                    <Label Content="Повреждено техники&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
-                    <Label Content="Повреждено с/х культур&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
-                    <Label Content="Повреждено скота&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
+                    <Label Content="Уничтожено  поэтажной площади(кв.м.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
+                    <Label Content="Уничтожено  техники(ед.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
+                    <Label Content="Уничтожено с/х культур(га.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
+                    <Label Content="Уничтожено скота(гол.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
+                    <Label Content="Повреждено зданий, сооружений(ед.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
+                    <Label Content="Повреждено жилых квартир(ед.)&#xA;&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
+                    <Label Content="Повреждено поэтажной площади(кв.м.)&#xA;&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
+                    <Label Content="Повреждено техники(ед.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
+                    <Label Content="Повреждено с/х культур(га.)&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
+                    <Label Content="Повреждено скота(гол.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
                     <Label Content="Условия, способствующие развитию пожара&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
                     <Label Content="Причина пожара" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" FontSize="14" Foreground="#000000" Height="24"/>
-                    <Label Content="Спасено людей&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
+                    <Label Content="Спасено людей(чел.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
                     <Label Content="Спасено техники (ед.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
                     <Label Content="Спасено скота (гол.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
                     <Label Content="Спасено материальных ценностей (р.)&#xA;&#xA;" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="24" FontSize="14" Foreground="#000000"/>
@@ -71,12 +71,12 @@
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="22,0,0,11" TextWrapping="Wrap" x:Name="ParishedEmployees" VerticalAlignment="Top" Width="280" Padding="5,5,5,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="38,0,0,11" TextWrapping="Wrap" x:Name="Injured" VerticalAlignment="Top" Width="264" Padding="5,5,5,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="76,0,0,11" TextWrapping="Wrap" x:Name="InjuredChildren" VerticalAlignment="Top" Width="226" Padding="5,5,5,8"/>
-                    <TextBox HorizontalAlignment="Left" Height="24" Margin="76,0,0,11" TextWrapping="Wrap" x:Name="InjuredEmployees" VerticalAlignment="Top" Width="226" Padding="5,5,5,8"/>
+                    <TextBox HorizontalAlignment="Left" Height="24" Margin="98,0,0,11" TextWrapping="Wrap" x:Name="InjuredEmployees" VerticalAlignment="Top" Width="204" Padding="5,5,5,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="68,0,0,11" TextWrapping="Wrap" x:Name="DestoyedBuildings" VerticalAlignment="Top" Width="234" Padding="5,5,5,8"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="68,0,0,11" TextWrapping="Wrap" x:Name="DestoyedFlats" VerticalAlignment="Top" Width="234" Padding="5,5,5,8"/>
                 </StackPanel>
                 <StackPanel Margin="686,145,10.6,113" Orientation="Vertical">
-                    <TextBox HorizontalAlignment="Left" Height="24" Margin="108,0,0,10" TextWrapping="Wrap"  x:Name="DestoyedFloorArea" VerticalAlignment="Top" Width="168"/>
+                    <TextBox HorizontalAlignment="Left" Height="24" Margin="128,0,0,10" TextWrapping="Wrap"  x:Name="DestoyedFloorArea" VerticalAlignment="Top" Width="148"/>
                     <TextBox HorizontalAlignment="Left" Height="24" Margin="108,0,0,10" TextWrapping="Wrap" x:Name="DestoyedTechnicks" VerticalAlignment="Top" Width="168"/>
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="130,0,0,10" TextWrapping="Wrap" x:Name="DestoyedAgricultural" VerticalAlignment="Top" Width="146"/>
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="130,0,0,10" TextWrapping="Wrap" x:Name="DestoyedBeasts" VerticalAlignment="Top" Width="146"/>
