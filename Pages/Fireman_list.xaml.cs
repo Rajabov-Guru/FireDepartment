@@ -32,6 +32,16 @@ namespace FireDepartment.Pages
             firemanGrid.ItemsSource = source;
         }
 
+        public void UpdatreGrid()
+        {
+            using (FireDB db = new FireDB())
+            {
+                this.source = db.Firemans.ToList();
+            }
+            firemanGrid.ItemsSource = null;
+            firemanGrid.ItemsSource = source;
+        }
+
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -45,6 +55,38 @@ namespace FireDepartment.Pages
         private void AddFiremanClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Fireman_add());
+        }
+
+        private void FiremanChange(object sender, RoutedEventArgs e)
+        {
+            if (firemanGrid.SelectedItem != null) 
+            {
+                Fireman f = (Fireman)firemanGrid.SelectedItem;
+                NavigationService.Navigate(new Fireman_change(f));
+            }
+            else 
+            {
+                MessageBox.Show("Выберите бойца");
+            }
+        }
+
+        private void FiremanDelete(object sender, RoutedEventArgs e)
+        {
+            if (firemanGrid.SelectedItem != null)
+            {
+                Fireman f = (Fireman)firemanGrid.SelectedItem;
+                using (FireDB db = new FireDB()) 
+                {
+                    Fireman fireman = db.Firemans.Find(f.Id);
+                    db.Firemans.Remove(fireman);
+                    db.SaveChanges();
+                    this.UpdatreGrid();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Выберите бойца");
+            }
         }
     }
 }

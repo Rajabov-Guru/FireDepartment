@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,28 @@ namespace FireDepartment.Pages
     /// </summary>
     public partial class Fireman_change : Page
     {
-        public Fireman_change()
+        Fireman f;
+        public Fireman_change(Fireman fireman)
         {
             InitializeComponent();
+            this.f = fireman;
+            SurnameFireman.Text = f.Surname;
+            //...
+        }
+
+        private void Cancel_Fa_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Fireman_list());
+        }
+
+        private void Ok_Fa_Click(object sender, RoutedEventArgs e)
+        {
+            using (FireDB db = new FireDB()) 
+            {
+                Fireman fireman = db.Firemans.Find(f.Id);
+                fireman.Surname = SurnameFireman.Text;
+                //...
+            }
         }
     }
 }
