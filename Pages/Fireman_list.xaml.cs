@@ -102,17 +102,17 @@ namespace FireDepartment.Pages
                         firemanGrid.ItemsSource = source;
                         break;
                     case 2:
-                        //
+                        source = source.OrderByDescending(x => x.Surname).ToList();
                         firemanGrid.ItemsSource = null;
                         firemanGrid.ItemsSource = source;
                         break;
                     case 3:
-                        //
+                        source = source.OrderByDescending(x => x.Name).ToList();
                         firemanGrid.ItemsSource = null;
                         firemanGrid.ItemsSource = source;
                         break;
                     case 4:
-                        //
+                        source = source.OrderByDescending(x => x.Patronymic).ToList();
                         firemanGrid.ItemsSource = null;
                         firemanGrid.ItemsSource = source;
                         break;
