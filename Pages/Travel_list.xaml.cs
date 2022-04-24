@@ -118,5 +118,43 @@ namespace FireDepartment.Pages
                 MessageBox.Show("Выберите комплект");
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (queries.SelectedItem != null)
+            {
+                int number = int.Parse(queries.Text.Split('-')[0]);
+                switch (number)
+                {
+                    case 1:
+                        source = source.OrderByDescending(x => x.Indate).ToList();
+                        travelGrid.ItemsSource = null;
+                        travelGrid.ItemsSource = source;
+                        break;
+                    case 2:
+                        source = source.OrderByDescending(x => x.Surname).ToList();
+                        travelGrid.ItemsSource = null;
+                        travelGrid.ItemsSource = source;
+                        break;
+                    case 3:
+                        source = source.OrderByDescending(x => x.Obj_ignition).ToList();
+                        travelGrid.ItemsSource = null;
+                        travelGrid.ItemsSource = source;
+                        break;
+                    case 4:
+                        source = source.OrderByDescending(x => x.Address).ToList();
+                        travelGrid.ItemsSource = null;
+                        travelGrid.ItemsSource = source;
+                        break;
+                    default:
+                        Console.WriteLine("Что-то оченб странное произошло");
+                        break;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Выберите зварос из списка!");
+            }
+        }
     }
 }

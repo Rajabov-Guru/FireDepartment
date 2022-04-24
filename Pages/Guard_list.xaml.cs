@@ -97,5 +97,10 @@ namespace FireDepartment.Pages
                 MessageBox.Show("Выберите расчет");
             }
         }
+
+        private void guardGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

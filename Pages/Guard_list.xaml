@@ -18,7 +18,7 @@
 
     <Viewbox>
         <Grid  Height="450" Width="800" Background="White">
-            <DataGrid x:Name="guardGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="80,107,0,0" VerticalAlignment="Top" Width="640" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0">
+            <DataGrid x:Name="guardGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="80,107,0,0" VerticalAlignment="Top" Width="640" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0" SelectionChanged="guardGrid_SelectionChanged">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Добавить" Click="AddGuardClick"></MenuItem>
@@ -36,10 +36,6 @@
                 </DataGrid.Columns>
             </DataGrid>
             <Label Content="Список расчетов" HorizontalAlignment="Left" Margin="280,44,0,0" VerticalAlignment="Top" Foreground="Black"/>
-            <Button Content="Поиск"  HorizontalAlignment="Left" Margin="94,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
-            <ComboBox HorizontalAlignment="Left" Margin="85,312,0,0" VerticalAlignment="Top" Width="163"/>
-            <Label Content="Выберите запрос из списка" HorizontalAlignment="Left" Margin="85,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}" Foreground="Black"/>
-            <Button Content="Распечатать"  HorizontalAlignment="Left" Margin="586,305,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
             <Grid.Resources>
                 <Style TargetType="Label">
                     <Setter Property="FontSize" Value="38
