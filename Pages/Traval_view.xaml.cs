@@ -27,9 +27,15 @@ namespace FireDepartment.Pages
             InitializeComponent();
             this.t = travel;
             guardName.Text = $"Расчет №{t.GuardId}";
-
             Address.Text = t.Address;
-            //..
+            Obj_ignition.Text = t.Obj_ignition;
+            type_ignition.Text = t.Type_ignition;
+            MessageDate.Text = Convert.ToString(t.Indate);
+
+            surname.Text = t.Surname;
+            name.Text = t.Name;
+            patronimyc.Text = t.Patronymic;
+            telephone.Text = t.Telephone;
 
         }
 

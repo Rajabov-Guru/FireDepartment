@@ -24,8 +24,8 @@
             <StackPanel Margin="242,79,63,60"  Orientation="Vertical" >
 
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Name_division" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
-                <ComboBox x:Name="Address" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8" HorizontalAlignment="Left" Width="495"/>
-                <ComboBox x:Name="Obj_ignition" HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
+                <TextBox x:Name="Address" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8" HorizontalAlignment="Left" Width="495" Height="20"/>
+                <TextBox x:Name="Obj_ignition" HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8" Height="20"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Type_ignition" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <DatePicker x:Name="Indate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" Height="25" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Surname" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>

@@ -29,8 +29,8 @@ namespace FireDepartment.Pages
         private void Ok_Ta_Click(object sender, RoutedEventArgs e)
         {
             if (Name_division.Text != "" &&
-             Address.SelectedItem != null &&
-                Obj_ignition.SelectedItem != null &&
+             Address.Text != null &&
+                Obj_ignition.Text != null &&
                 Type_ignition.Text != "" &&
             Indate.SelectedDate.HasValue &&
                       Surname.Text != "" &&
