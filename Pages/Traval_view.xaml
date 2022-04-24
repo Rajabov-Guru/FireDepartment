@@ -43,7 +43,7 @@
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
-            <Label Content="Время и дата получения сообщения" HorizontalAlignment="Left" Margin="23,217,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18">
+            <Label Content="Дата и время получения сообщения" HorizontalAlignment="Left" Margin="23,217,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18">
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFEFCF38" Offset="0"/>
