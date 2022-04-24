@@ -11,7 +11,7 @@
         <Grid Background="White" Height="300" Width="750">
             <Label Content="Шаблон расчета" HorizontalAlignment="Left" Margin="289,0,0,0" VerticalAlignment="Top" Height="49" Width="287" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="32" Foreground="Black"/>
             <Button Content="Ok" Name="Ok_Ga" HorizontalAlignment="Left" Margin="199,240,0,0" VerticalAlignment="Top" Width="97" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="36" Click="Ok_Ga_Click"/>
-            <Button Content="Отмена" Name="Cancel_Ga" HorizontalAlignment="Left" Margin="469,240,0,0" VerticalAlignment="Top" Width="107" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171" Height="36"/>
+            <Button Content="Отмена" Name="Cancel_Ga" HorizontalAlignment="Left" Margin="469,240,0,0" VerticalAlignment="Top" Width="107" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171" Height="36" Click="Cancel_Ga_Click"/>
             <Label Content="Фамилия" HorizontalAlignment="Left" Margin="22,89,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" Width="93" Foreground="Black"/>
             <TextBox HorizontalAlignment="Left" Height="26" Margin="148,93,0,0" TextWrapping="Wrap" Name="SurnameSenior" VerticalAlignment="Top" Width="495" FontFamily="Times New Roman" FontSize="18"/>
             <Label Content="Имя" HorizontalAlignment="Left" Margin="22,134,0,0" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" Width="93" Foreground="Black"/>

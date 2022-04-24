@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,33 @@ namespace FireDepartment.Pages
     /// </summary>
     public partial class Guard_change : Page
     {
-        public Guard_change()
+        Guard g;
+        public Guard_change(Guard guard)
         {
             InitializeComponent();
+            this.g = guard;
+            string[] senior = g.Senior.Split(' ');
+            SurnameSenior.Text = senior[0];
+            NameSenior.Text = senior[1];
+            PatronymicSenior.Text = senior[2];
+        }
+
+        private void Cancel_Ga_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Guard_list());
+        }
+
+        private void Ok_Ga_Click(object sender, RoutedEventArgs e)
+        {
+            string FIO = $"{SurnameSenior.Text} {NameSenior.Text} {PatronymicSenior.Text}";
+            using (FireDB db = new FireDB()) 
+            {
+                Guard guard = db.Guards.Find(g.Id);
+                guard.Senior = FIO;
+                db.SaveChanges();
+                NavigationService.Navigate(new Guard_list());
+
+            }
         }
     }
 }

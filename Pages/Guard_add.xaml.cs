@@ -64,5 +64,10 @@ namespace FireDepartment.Pages
 
 
         }
+
+        private void Cancel_Ga_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Guard_list());
+        }
     }
 }

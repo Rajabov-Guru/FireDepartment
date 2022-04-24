@@ -32,6 +32,15 @@ namespace FireDepartment.Pages
             guardGrid.ItemsSource = source;
         }
 
+        public void UpdatreGrid()
+        {
+            using (FireDB db = new FireDB())
+            {
+                this.source = db.Guards.ToList();
+            }
+            guardGrid.ItemsSource = null;
+            guardGrid.ItemsSource = source;
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -55,6 +64,38 @@ namespace FireDepartment.Pages
         private void AddGuardClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Guard_add());
+        }
+
+        private void GuardChange(object sender, RoutedEventArgs e)
+        {
+            if (guardGrid.SelectedItem != null)
+            {
+                Guard g= (Guard)guardGrid.SelectedItem;
+                NavigationService.Navigate(new Guard_change(g));
+            }
+            else 
+            {
+                MessageBox.Show("Выберите расчет");
+            }
+        }
+
+        private void GuardDelete(object sender, RoutedEventArgs e)
+        {
+            if (guardGrid.SelectedItem != null)
+            {
+                Guard g = (Guard)guardGrid.SelectedItem;
+                using (FireDB db = new FireDB()) 
+                {
+                    Guard guard = db.Guards.Find(g.Id);
+                    db.Guards.Remove(guard);
+                    db.SaveChanges();
+                    this.UpdatreGrid();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Выберите расчет");
+            }
         }
     }
 }
