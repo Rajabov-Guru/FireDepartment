@@ -29,7 +29,14 @@ namespace FireDepartment.Pages
 
             Name_division.Text = t.Name_division;
             Type_ignition.Text = t.Type_ignition;
-            //...
+            Surname.Text=t.Surname;
+            Name.Text=t.Name;
+            Patronymic.Text=t.Patronymic;   
+            Telephone.Text=t.Telephone;
+            DatePicker_Indate.Text = t.Indate.ToString();
+            Obj_ign.Text= t.Obj_ignition;
+            Adress.Text = t.Address;
+            
         }
 
         private void Cancel_Ta_Click(object sender, RoutedEventArgs e)
@@ -39,13 +46,37 @@ namespace FireDepartment.Pages
 
         private void Ok_Ta_Click(object sender, RoutedEventArgs e)
         {
-            using (FireDB db = new FireDB()) 
+            if (Name_division.Text != "" &&
+            Adress.Text != null &&
+               Obj_ign.Text != null &&
+               Type_ignition.Text != "" &&
+           DatePicker_Indate.SelectedDate.HasValue &&
+                     Surname.Text != "" &&
+                        Name.Text != "" &&
+                  Patronymic.Text != "" &&
+                   Telephone.Text != "") // Проверка на введенность данных
             {
-                Travel travel = db.Travels.Find(t.Id);
-                travel.Name_division = Name_division.Text;
-                //дописать
-                db.SaveChanges();
-                NavigationService.Navigate(new Travel_list());
+                using (FireDB db = new FireDB())
+                {
+                    Travel travel = db.Travels.Find(t.Id);
+                    travel.Name_division = Name_division.Text;
+                    travel.Name_division = Name_division.Text;
+                    travel.Type_ignition = Type_ignition.Text;
+                    travel.Surname = Surname.Text;
+                    travel.Name = Name.Text;
+                    travel.Patronymic = Patronymic.Text;
+                    travel.Telephone = Telephone.Text;
+                    travel.Indate = DateTime.Parse(DatePicker_Indate.SelectedDate.Value.ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture)); ;
+                    travel.Obj_ignition = Obj_ign.Text;
+                    travel.Address = Adress.Text;
+                    //дописать
+                    db.SaveChanges();
+                    NavigationService.Navigate(new Travel_list());
+                }
+            }
+            else
+            {
+                MessageBox.Show("Введите данные");
             }
         }
     }

@@ -24,10 +24,10 @@
             <StackPanel Margin="242,79,63,60"  Orientation="Vertical" >
 
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Name_division" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
-                <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
-                <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
+                <TextBox x:Name="Adress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
+                <TextBox x:Name="Obj_ign" HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Type_ignition" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
-                <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" Height="25" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
+                <DatePicker x:Name="DatePicker_Indate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" Height="25" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Surname" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Name" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
                 <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" x:Name="Patronymic" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Margin="0,0,0,8"/>
