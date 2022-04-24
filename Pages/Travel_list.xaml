@@ -78,7 +78,7 @@
                         <MenuItem Header="Добавить" Click="AddTravelClick"></MenuItem>
                         <MenuItem Header="Изменить" Click="ChangeTravel"></MenuItem>
                         <MenuItem Header="Удалить" Click="TravelDelete"></MenuItem>
-                        <MenuItem x:Name="travelview" Header="Просмотр" Click="view"></MenuItem>
+                        <MenuItem x:Name="travelview" Header="Выдача" Click="view"></MenuItem>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>
