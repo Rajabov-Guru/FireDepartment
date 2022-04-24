@@ -88,5 +88,43 @@ namespace FireDepartment.Pages
                 MessageBox.Show("Выберите бойца");
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (queries.SelectedItem != null)
+            {
+                int number = int.Parse(queries.Text.Split('-')[0]);
+                switch (number)
+                {
+                    case 1:
+                        source = source.OrderByDescending(x => x.Date_birth).ToList();
+                        firemanGrid.ItemsSource = null;
+                        firemanGrid.ItemsSource = source;
+                        break;
+                    case 2:
+                        //
+                        firemanGrid.ItemsSource = null;
+                        firemanGrid.ItemsSource = source;
+                        break;
+                    case 3:
+                        //
+                        firemanGrid.ItemsSource = null;
+                        firemanGrid.ItemsSource = source;
+                        break;
+                    case 4:
+                        //
+                        firemanGrid.ItemsSource = null;
+                        firemanGrid.ItemsSource = source;
+                        break;
+                    default:
+                        Console.WriteLine("Что-то оченб странное произошло");
+                        break;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Выберите зварос из списка!");
+            }
+        }
     }
 }

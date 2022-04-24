@@ -39,14 +39,14 @@
                 </DataGrid.Columns>
             </DataGrid>
             <Label Content="            СПИСОК&#xA;бойцов пожарной части" HorizontalAlignment="Left" Margin="279,2,0,0" VerticalAlignment="Top"  FontSize="32" Height="82" Width="375" Foreground="Black"/>
-            <Button Content="Поиск"  HorizontalAlignment="Left" Margin="94,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
-            <ComboBox HorizontalAlignment="Left" Margin="85,312,0,0" VerticalAlignment="Top" Width="163">
+            <Button Content="Поиск"  HorizontalAlignment="Left" Margin="94,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top" Click="Button_Click"/>
+            <ComboBox x:Name="queries" HorizontalAlignment="Left" Margin="85,312,0,0" VerticalAlignment="Top" Width="163">
                 <TextBlock Foreground="#000000">1-По дате рождения</TextBlock>
                 <TextBlock Foreground="#000000">2-По фамилии</TextBlock>
                 <TextBlock Foreground="#000000">3-По имени</TextBlock>
                 <TextBlock Foreground="#000000">4-По отчеству</TextBlock>
             </ComboBox>
-                <Label Content="Выберите запрос из списка" HorizontalAlignment="Left" Margin="85,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}" Foreground="Black"/>
+                <Label Content="Фильтр" HorizontalAlignment="Left" Margin="85,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}" Foreground="Black"/>
             <Grid.Resources>
                 <Style TargetType="Label">
                     <Setter Property="FontSize" Value="38
