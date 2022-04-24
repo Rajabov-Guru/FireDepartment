@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,31 @@ namespace FireDepartment.Pages
     /// </summary>
     public partial class Travel_change : Page
     {
-        public Travel_change()
+        Travel t;
+        public Travel_change(Travel travel)
         {
             InitializeComponent();
+            this.t = travel;
+
+            Name_division.Text = t.Name_division;
+            //дописать
+        }
+
+        private void Cancel_Ta_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Travel_list());
+        }
+
+        private void Ok_Ta_Click(object sender, RoutedEventArgs e)
+        {
+            using (FireDB db = new FireDB()) 
+            {
+                Travel travel = db.Travels.Find(t.Id);
+                travel.Name_division = Name_division.Text;
+                //дописать
+                db.SaveChanges();
+                NavigationService.Navigate(new Travel_list());
+            }
         }
     }
 }

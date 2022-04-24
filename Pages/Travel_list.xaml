@@ -76,9 +76,9 @@
                 <DataGrid.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Добавить" Click="AddTravelClick"></MenuItem>
-                        <MenuItem Header="Изменить"></MenuItem>
-                        <MenuItem Header="Удалить"></MenuItem>
-                        <MenuItem Header="Просмотр"></MenuItem>
+                        <MenuItem Header="Изменить" Click="ChangeTravel"></MenuItem>
+                        <MenuItem Header="Удалить" Click="TravelDelete"></MenuItem>
+                        <MenuItem x:Name="travelview" Header="Просмотр" Click="view"></MenuItem>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>

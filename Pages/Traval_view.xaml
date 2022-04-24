@@ -83,17 +83,16 @@
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
-            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,75,0,0" TextWrapping="Wrap" Text="{Binding Name_division}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,113,0,0" TextWrapping="Wrap" Text="{Binding Address}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,149,0,0" TextWrapping="Wrap" Text="{Binding Obj_ignition}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,185,0,0" TextWrapping="Wrap" Text="{Binding Type_ignition}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,257,0,0" TextWrapping="Wrap" Text="{Binding Surname}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,293,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="26" Margin="253,329,0,0" TextWrapping="Wrap" Text="{Binding Patronymic}" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="26" Margin="277,365,0,0" TextWrapping="Wrap" Text="{Binding Telephone}" VerticalAlignment="Top" Width="471" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Margin="358,220,0,0"  TextWrapping="Wrap" Text="{Binding InDate}" VerticalAlignment="Top" Width="390" Height="26" IsEnabled="False" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
-            <Button Content="Ok" Height="36" Name="Ok_Tv" HorizontalAlignment="Left" Margin="253,405,0,0" VerticalAlignment="Top" Width="97" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18"/>
-            <Button Content="Отмена" Height="36" Name="Cancel_Tv" HorizontalAlignment="Left" Margin="470,405,0,0" VerticalAlignment="Top" Width="107" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171"/>
+            <TextBox x:Name="guardName" HorizontalAlignment="Left" Height="26" Margin="253,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox x:Name="Address" HorizontalAlignment="Left" Height="26" Margin="253,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox x:Name="Obj_ignition" HorizontalAlignment="Left" Height="26" Margin="253,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox x:Name="type_ignition" HorizontalAlignment="Left" Height="26" Margin="253,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox x:Name="surname" HorizontalAlignment="Left" Height="26" Margin="253,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox x:Name="name" HorizontalAlignment="Left" Height="26" Margin="253,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox x:Name="patronimyc" HorizontalAlignment="Left" Height="26" Margin="253,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="495" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox x:Name="telephone" HorizontalAlignment="Left" Height="26" Margin="277,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="471" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" IsEnabled="False"/>
+            <TextBox x:Name="MessageDate" HorizontalAlignment="Left" Margin="358,220,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Height="26" IsEnabled="False" FontFamily="/FireDepartment;component/Pages/#Roboto Light"/>
+            <Button Content="Назад" Height="36" Name="Cancel_Tv" HorizontalAlignment="Left" Margin="313,404,0,0" VerticalAlignment="Top" Width="107" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" RenderTransformOrigin="0.525,-0.171" Click="Cancel_Tv_Click"/>
             <Grid.Resources>
                 <Style TargetType="Label">
                     <Setter Property="FontSize" Value="38

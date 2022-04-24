@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,21 @@ namespace FireDepartment.Pages
     /// </summary>
     public partial class Traval_view : Page
     {
-        public Traval_view()
+        Travel t;
+        public Traval_view(Travel travel)
         {
             InitializeComponent();
+            this.t = travel;
+            guardName.Text = $"Расчет №{t.GuardId}";
+
+            Address.Text = t.Address;
+            //..
+
+        }
+
+        private void Cancel_Tv_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Travel_list());
         }
     }
 }

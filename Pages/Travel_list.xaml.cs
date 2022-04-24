@@ -32,7 +32,15 @@ namespace FireDepartment.Pages
             }
             travelGrid.ItemsSource = source;
         }
-
+        public void UpdatreGrid()
+        {
+            using (FireDB db = new FireDB())
+            {
+                this.source = db.Travels.ToList();
+            }
+            travelGrid.ItemsSource = null;
+            travelGrid.ItemsSource = source;
+        }
         private void Add_Ta_Click(object sender, RoutedEventArgs e)
         {
 
@@ -63,6 +71,51 @@ namespace FireDepartment.Pages
             else 
             {
                 MessageBox.Show("Выберите путевку");
+            }
+        }
+
+        private void ChangeTravel(object sender, RoutedEventArgs e)
+        {
+            if (travelGrid.SelectedItem != null)
+            {
+                Travel t = (Travel)travelGrid.SelectedItem;
+                NavigationService.Navigate(new Travel_change(t));
+            }
+            else
+            {
+                MessageBox.Show("Выберите путевку");
+            }
+        }
+
+        private void TravelDelete(object sender, RoutedEventArgs e)
+        {
+            if (travelGrid.SelectedItem != null)
+            {
+                Travel t = (Travel)travelGrid.SelectedItem;
+                using (FireDB db = new FireDB())
+                {
+                    Travel travel = db.Travels.Find(t.Id);
+                    db.Travels.Remove(travel);
+                    db.SaveChanges();
+                    this.UpdatreGrid();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Выберите комплект");
+            }
+        }
+
+        private void view(object sender, RoutedEventArgs e)
+        {
+            if (travelGrid.SelectedItem != null)
+            {
+                Travel t = (Travel)travelGrid.SelectedItem;
+                NavigationService.Navigate(new Traval_view(t));
+            }
+            else
+            {
+                MessageBox.Show("Выберите комплект");
             }
         }
     }
