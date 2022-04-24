@@ -32,6 +32,15 @@ namespace FireDepartment.Pages
             complectGrid.ItemsSource = source;
         }
 
+        public void UpdatreGrid()
+        {
+            using (FireDB db = new FireDB())
+            {
+                this.source = db.Complects.ToList();
+            }
+            complectGrid.ItemsSource = null;
+            complectGrid.ItemsSource = source;
+        }
         private void AddComplectClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Complect_add());
@@ -39,17 +48,37 @@ namespace FireDepartment.Pages
 
         private void ChangeComplectClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Complect_change());
+            if (complectGrid.SelectedItem != null)
+            {
+                Complect c = (Complect)complectGrid.SelectedItem;
+                NavigationService.Navigate(new Complect_change(c));
+            }
+            else 
+            {
+                MessageBox.Show("Выберите комплект");
+            }
+            
         }
 
         private void ComplectDelClick(object sender, RoutedEventArgs e)
         {
-
+            if (complectGrid.SelectedItem != null)
+            {
+                Complect c = (Complect)complectGrid.SelectedItem;
+                using (FireDB db = new FireDB()) 
+                {
+                    Complect complect=db.Complects.Find(c.Id);
+                    db.Complects.Remove(complect);
+                    db.SaveChanges();
+                    this.UpdatreGrid();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Выберите комплект");
+            }
         }
 
-        private void ViewClick(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
     }
 }

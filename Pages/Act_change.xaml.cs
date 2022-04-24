@@ -74,11 +74,10 @@ namespace FireDepartment.Pages
             //проверки
             using (FireDB db = new FireDB())
             {
-                Act a = new Act();
-                /*a.somthing=Somthing.Text;
+                Act act = db.Acts.Find(a.Id);
+                /*act.somthing=Somthing.Text;
                 ....
                 */
-                db.Acts.Add(a);
                 db.SaveChanges();
                 NavigationService.Navigate(new Act_list());
             }

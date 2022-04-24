@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireDepartment.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,28 @@ namespace FireDepartment.Pages
     /// </summary>
     public partial class Complect_change : Page
     {
-        public Complect_change()
+        Complect c;
+        public Complect_change(Complect complect)
         {
             InitializeComponent();
+            this.c = complect;
+            EquipmentList.Text = c.EquipmentList;
+        }
+
+        private void Ok_Ca_Click(object sender, RoutedEventArgs e)
+        {
+            using (FireDB db = new FireDB()) 
+            {
+                Complect complect = db.Complects.Find(c.Id);
+                complect.EquipmentList = EquipmentList.Text;
+                db.SaveChanges();
+                NavigationService.Navigate(new Complect_list());
+            }
+        }
+
+        private void Cancel_Ca_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Complect_list());
         }
     }
 }

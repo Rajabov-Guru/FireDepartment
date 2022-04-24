@@ -37,6 +37,16 @@ namespace FireDepartment.Pages
         {
 
         }
+        public void UpdatreGrid()
+        {
+
+            using (FireDB db = new FireDB())
+            {
+                this.source = db.Acts.ToList();
+            }
+            actGrid.ItemsSource = null;
+            actGrid.ItemsSource = source;
+        }
 
         private void AddActClick(object sender, RoutedEventArgs e)
         {
@@ -62,12 +72,14 @@ namespace FireDepartment.Pages
             if (actGrid.SelectedItem != null)
             {
 
-                //Act a = (Act)actGrid.SelectedItem;
-                //using (FireDB db = new FireDB()) 
-                //{
-                //    db.Acts.Remove(a);
-                //    db.SaveChanges();
-                //}
+                Act a = (Act)actGrid.SelectedItem;
+                using (FireDB db = new FireDB())
+                {
+                    Act act = db.Acts.Find(a.Id);
+                    db.Acts.Remove(act);
+                    db.SaveChanges();
+                    this.UpdatreGrid();
+                }
                 MessageBox.Show("Акт удален из базы данных");
             }
             else
@@ -75,7 +87,7 @@ namespace FireDepartment.Pages
                 MessageBox.Show("Выберите акт");
             }
         }
-
+        
         private void ViewClick(object sender, RoutedEventArgs e)
         {
             if (actGrid.SelectedItem != null)

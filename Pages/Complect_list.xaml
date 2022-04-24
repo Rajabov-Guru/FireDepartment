@@ -25,7 +25,7 @@
                         <MenuItem Header="Добавить" Click="AddComplectClick"></MenuItem>
                         <MenuItem Header="Изменить" Click="ChangeComplectClick"></MenuItem>
                         <MenuItem Header="Удалить" Click="ComplectDelClick"></MenuItem>
-                        <MenuItem Header="Просмотр" Click="ViewClick"></MenuItem>
+                        
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>
@@ -40,7 +40,6 @@
             <Button Content="Поиск"  HorizontalAlignment="Left" Margin="94,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
             <ComboBox HorizontalAlignment="Left" Margin="85,312,0,0" VerticalAlignment="Top" Width="163"/>
             <Label Content="Выберите запрос из списка" HorizontalAlignment="Left" Margin="85,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}" Foreground="Black"/>
-            <Button Content="Распечатать"  HorizontalAlignment="Left" Margin="586,305,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top"/>
             <Grid.Resources>
                 <Style TargetType="Label">
                     <Setter Property="FontSize" Value="38
