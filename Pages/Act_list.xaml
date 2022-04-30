@@ -21,7 +21,7 @@
 
     <Viewbox>
         <Grid Height="450" Width="800" Background="#FFFFFF">
-            <DataGrid x:Name="actGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="61,107,0,0" VerticalAlignment="Top" Width="685" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0" Foreground="Black">
+            <DataGrid x:Name="actGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="166" Margin="61,129,0,0" VerticalAlignment="Top" Width="685" FontFamily="/FireDepartment;component/Pages/#Roboto Light" Background="#FFE0E0E0" Foreground="Black">
                 <DataGrid.BorderBrush>
                     <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
                         <GradientStop Color="#FF686868" Offset="0.204"/>
@@ -133,8 +133,8 @@
                 </DataGrid.Columns>
             </DataGrid>
             <Button Content="Поиск"  HorizontalAlignment="Left" Margin="70,388,0,0" Width="134" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Height="35" VerticalAlignment="Top" Click="Button_Click_1"></Button>
-            <Button Content="Распечатать" HorizontalAlignment="Left" Margin="600.8,315.41,0,0" Width="120" FontSize="18" Height="36" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" UseLayoutRounding="False" Click="Button_Click_2"/>
-            <ComboBox x:Name="ReportBox" HorizontalAlignment="Left" Margin="270,312,0,0" VerticalAlignment="Top" Width="146" >
+            <Button Content="Распечатать" HorizontalAlignment="Left" Margin="600.8,350.301,0,0" Width="120" FontSize="18" Height="36" VerticalAlignment="Top" FontFamily="/FireDepartment;component/Pages/#Roboto Light" UseLayoutRounding="False" Click="Button_Click_2"/>
+            <ComboBox x:Name="ReportBox" HorizontalAlignment="Left" Margin="266,329,0,0" VerticalAlignment="Top" Width="146" >
                 <TextBlock Foreground="#000000">1-За день</TextBlock>
                 <TextBlock Foreground="#000000">2-За неделю</TextBlock>
                 <TextBlock Foreground="#000000">3-За месяц</TextBlock>
@@ -145,9 +145,9 @@
 
 
 
-            <Label Content="Выберите отчетный период" HorizontalAlignment="Left" Margin="258,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
+            <Label Content="Выберите отчетный период" HorizontalAlignment="Left" Margin="250,300,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
             <Button Content="Сформировать" Name ="Form_Al" HorizontalAlignment="Left" Margin="277,388,0,27" Width="135" FontFamily="/FireDepartment;component/Pages/#Roboto Light" FontSize="18" Click="Form_Al_Click" />
-            <ComboBox x:Name="queries" HorizontalAlignment="Left" Margin="61,312,0,0" VerticalAlignment="Top" Width="163">
+            <ComboBox x:Name="queries" HorizontalAlignment="Left" Margin="61,329,0,0" VerticalAlignment="Top" Width="163">
                 <TextBlock Foreground="#000000">1-По принадлежности</TextBlock>
                 <TextBlock Foreground="#000000">2-По дате обнаружения</TextBlock>
                 <TextBlock Foreground="#000000">3-По количеству погибших</TextBlock>
@@ -155,8 +155,11 @@
                 <TextBlock Foreground="#000000">5-По количество погибших детей</TextBlock>
                 <TextBlock Foreground="#000000">6-По количеству спасенных</TextBlock>
             </ComboBox>
-            <Label Content="Фильтр" HorizontalAlignment="Left" Margin="61,283,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
-            <Label Content="      СПИСОК&#xD;&#xA;актов о пожаре" HorizontalAlignment="Left" Margin="277,8,0,0" VerticalAlignment="Top"/>
+            <Label Content="Фильтр" HorizontalAlignment="Left" Margin="61,300,0,0" VerticalAlignment="Top" Style="{DynamicResource MyLabelStyle}"/>
+            <Label Content="      СПИСОК&#xD;&#xA;актов о пожаре" HorizontalAlignment="Left" Margin="277,8,0,0" VerticalAlignment="Top" Height="94"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="211,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="358"/>
+            <Label Content="Ответственный:" HorizontalAlignment="Left" Margin="108,100,0,0" VerticalAlignment="Top" FontSize="12"/>
+            <DatePicker HorizontalAlignment="Left" Margin="621,100,0,0" VerticalAlignment="Top"/>
 
             <Grid.Resources>
                 <Style TargetType="Label">
