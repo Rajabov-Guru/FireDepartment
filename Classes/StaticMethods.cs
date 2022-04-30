@@ -33,7 +33,7 @@ namespace FireDepartment.Classes
             try
             {
                 WordDocument w = new WordDocument();
-                string name1 = AppDomain.CurrentDomain.BaseDirectory + "Shablons\\Travel2.docx";
+                string name1 = AppDomain.CurrentDomain.BaseDirectory + "Shablons\\Travel4.docx";
                 string newName1 = AppDomain.CurrentDomain.BaseDirectory + "docs\\Путевка (" + DateTime.Now.ToString("dd.MM.yyyy_HH_mm") + ").docx";
 
                 w.AddDoc(name1, newName1);
