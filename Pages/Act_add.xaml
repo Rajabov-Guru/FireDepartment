@@ -493,8 +493,8 @@
                     <TextBlock Foreground="#000000">90</TextBlock>
                     <TextBlock Foreground="#000000">100</TextBlock>
                 </ComboBox>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="671,520,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="841,483,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+                <TextBox x:Name="Cause" HorizontalAlignment="Left" Height="23" Margin="671,520,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289"/>
+                <TextBox x:Name="Terms" HorizontalAlignment="Left" Height="23" Margin="841,483,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
                 <Grid.Resources>
                     <Style TargetType="Label">
                         <Setter Property="FontSize" Value="38
