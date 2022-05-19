@@ -18,15 +18,15 @@
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Content="" Margin="0,30,-0.4,0" Foreground="#FF333333"/>
         <Menu Height="25" VerticalAlignment="Top" Background="#FF767676">
             <MenuItem Header="Справочники" Foreground="#FFF3EFEF">
-                <MenuItem Header="Акт о пожаре" Click="MenuItem_Click"></MenuItem>
-                <MenuItem Header="Путевка" Click="Travel_Click" ></MenuItem>
-                <MenuItem Header="Расчет" Click="Guard_Click" ></MenuItem>
-                <MenuItem Header="Боец пожарной части" Click="Fireman_Click" ></MenuItem>
-                <MenuItem Header="Комплект" Click="Complect_Click" ></MenuItem>
+                <MenuItem Header="Акт о пожаре" Click="MenuItem_Click" Background="White" Foreground="Black"></MenuItem>
+                <MenuItem Header="Путевка" Click="Travel_Click" Background="White" Foreground="Black" ></MenuItem>
+                <MenuItem Header="Расчет" Click="Guard_Click" Foreground="Black" ></MenuItem>
+                <MenuItem Header="Боец пожарной части" Click="Fireman_Click" Background="White" Foreground="Black" ></MenuItem>
+                <MenuItem Header="Комплект" Click="Complect_Click" Foreground="Black" ></MenuItem>
             </MenuItem>
             <MenuItem Header="Справка" Foreground="#FFF3EFEF" >
-                <MenuItem Header="О программе" ></MenuItem>
-                <MenuItem Header="Помощь" ></MenuItem>
+                <MenuItem Header="О программе" Foreground="Black" ></MenuItem>
+                <MenuItem Header="Помощь" Foreground="Black" ></MenuItem>
             </MenuItem>
             <MenuItem Header="Выход" Foreground="#FFF3EFEF" ></MenuItem>
         </Menu>
